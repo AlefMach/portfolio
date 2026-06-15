@@ -1,7 +1,8 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 
 import { useTranslation } from "../../../hooks/useTranslation";
-import { SectionHeading } from "../SectionHeading";
+import { StackCategoryGrid } from "./components/StackCategoryGrid";
+import { StackHeader } from "./components/StackHeader";
 
 export function TechStack() {
   const { t } = useTranslation();
@@ -19,64 +20,15 @@ export function TechStack() {
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
         <Stack spacing={4}>
-          <SectionHeading
+          <StackHeader
             title={t.home.stackTitle}
             description={t.home.stackDescription}
           />
 
-          <Box
-            sx={{
-              display: "grid",
-              gap: { xs: 2, md: 3 },
-              gridTemplateColumns: {
-                xs: "1fr",
-                sm: "repeat(2, minmax(0, 1fr))",
-                md: "repeat(3, minmax(0, 1fr))",
-              },
-            }}
-          >
-            {t.home.stackCategories.map((category) => (
-              <Stack
-                key={category.title}
-                spacing={2}
-                sx={{
-                  border: 1,
-                  borderColor: "divider",
-                  borderRadius: 2,
-                  p: { xs: 2.5, md: 3 },
-                }}
-              >
-                <Typography
-                  component="h3"
-                  sx={{ fontSize: "1.125rem", fontWeight: 800 }}
-                >
-                  {category.title}
-                </Typography>
-
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-                  {category.items.map((item) => (
-                    <Box
-                      key={item}
-                      component="span"
-                      sx={{
-                        border: 1,
-                        borderColor: "divider",
-                        borderRadius: 999,
-                        color: "text.secondary",
-                        fontSize: "0.75rem",
-                        fontWeight: 700,
-                        lineHeight: 1,
-                        px: 1.25,
-                        py: 0.75,
-                      }}
-                    >
-                      {item}
-                    </Box>
-                  ))}
-                </Box>
-              </Stack>
-            ))}
-          </Box>
+          <StackCategoryGrid
+            categories={t.home.stackCategories}
+            toolsLabel={t.home.stackToolsLabel}
+          />
         </Stack>
       </Container>
     </Box>

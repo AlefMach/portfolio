@@ -18,6 +18,29 @@
     "title": "Home",
     "aboutTitle": "Sobre",
     "aboutDescription": "Atuo no desenvolvimento de produtos digitais, APIs e integrações com foco em clareza técnica, confiabilidade e impacto no processo. Tenho interesse especial por arquitetura de software, IA aplicada, observabilidade e automação de rotinas que reduzem trabalho manual.",
+    "aboutFocusItems": [
+      "Full Stack",
+      "APIs",
+      "IA aplicada",
+      "Automação",
+      "Observabilidade"
+    ],
+    "aboutIntro": "Gosto de entrar onde produto, engenharia e operação se encontram.",
+    "aboutDetail": "Meu foco é transformar problemas ambíguos em sistemas simples de entender, fáceis de operar e preparados para evoluir. Trabalho conectando interfaces, APIs, filas, integrações e métricas para que a solução funcione bem na prática, não só no repositório.",
+    "aboutCards": [
+      {
+        "title": "Produto",
+        "description": "Construo pensando no fluxo real de uso, nas decisões que a interface precisa apoiar e no impacto para quem opera."
+      },
+      {
+        "title": "Engenharia",
+        "description": "Organizo código, integrações e arquitetura para reduzir acoplamento, facilitar manutenção e sustentar evolução."
+      },
+      {
+        "title": "Operação",
+        "description": "Dou atenção a logs, métricas, automações e diagnóstico para que o sistema seja observável desde cedo."
+      }
+    ],
     "projectsTitle": "Projetos em destaque",
     "projectsDescription": "Projetos que conectam produto, engenharia e operação: plataformas web, integrações, automações, mensageria e sistemas preparados para escala.",
     "projectCards": [
@@ -111,6 +134,7 @@
     ],
     "stackTitle": "Stack",
     "stackDescription": "Tecnologias que uso com foco em construção de produtos, integrações, automações e sistemas observáveis.",
+    "stackToolsLabel": "ferramentas no fluxo",
     "stackCategories": [
       {
         "title": "Frontend",
@@ -118,7 +142,7 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Elixir", "APIs", "Mensageria"]
+        "items": ["Node.js", "Elixir", "kotlin", "APIs", "Mensageria"]
       },
       {
         "title": "Banco de Dados",

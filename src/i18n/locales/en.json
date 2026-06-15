@@ -18,6 +18,29 @@
     "title": "Home",
     "aboutTitle": "About",
     "aboutDescription": "I work on digital products, APIs and integrations with a focus on technical clarity, reliability and process impact. I am especially interested in software architecture, applied AI, observability and automation that reduces manual work.",
+    "aboutFocusItems": [
+      "Full Stack",
+      "APIs",
+      "Applied AI",
+      "Automation",
+      "Observability"
+    ],
+    "aboutIntro": "I like working where product, engineering and operations meet.",
+    "aboutDetail": "My focus is turning ambiguous problems into systems that are easy to understand, simple to operate and ready to evolve. I connect interfaces, APIs, queues, integrations and metrics so the solution works well in practice, not only in the repository.",
+    "aboutCards": [
+      {
+        "title": "Product",
+        "description": "I build with the real user flow in mind, the decisions the interface needs to support and the impact on daily operations."
+      },
+      {
+        "title": "Engineering",
+        "description": "I organize code, integrations and architecture to reduce coupling, simplify maintenance and support evolution."
+      },
+      {
+        "title": "Operations",
+        "description": "I pay attention to logs, metrics, automation and diagnosis so systems are observable from early versions."
+      }
+    ],
     "projectsTitle": "Featured projects",
     "projectsDescription": "Projects that connect product, engineering and operations: web platforms, integrations, automations, messaging and systems designed for scale.",
     "projectCards": [
@@ -111,6 +134,7 @@
     ],
     "stackTitle": "Stack",
     "stackDescription": "Technologies I use to build products, integrations, automations and observable systems.",
+    "stackToolsLabel": "tools in flow",
     "stackCategories": [
       {
         "title": "Frontend",
