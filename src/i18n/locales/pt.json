@@ -5,23 +5,52 @@
     "english": "Inglês"
   },
   "nav": {
-    "brand": "Meu Portfólio",
     "home": "Início",
     "projects": "Projetos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "menu": "Abrir menu"
   },
   "theme": {
     "activateDark": "Ativar tema escuro",
     "activateLight": "Ativar tema claro"
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "projectsTitle": "Projetos em destaque",
+    "projectsDescription": "Uma seleção inicial preparada para crescer com seus melhores trabalhos, mantendo leitura confortável em desktop, tablet e mobile.",
+    "projectCards": [
+      {
+        "title": "Aplicação web",
+        "description": "Interface responsiva com componentes reutilizáveis e atenção a estados de uso reais."
+      },
+      {
+        "title": "Design system",
+        "description": "Base visual consistente para tipografia, espaçamento, cores e navegação."
+      },
+      {
+        "title": "Integrações",
+        "description": "Experiências conectadas a APIs, dados e fluxos de produto."
+      }
+    ],
+    "contactTitle": "Vamos conversar",
+    "contactDescription": "Use esta seção para adicionar e-mail, redes sociais ou um formulário de contato quando quiser completar o portfólio."
   },
   "hero": {
-    "title": "Hero"
+    "eyebrow": "Vamos construir algo incrível juntos!",
+    "title": "Olá, meu nome é Alef,",
+    "skills": [
+      "Engenheiro de software.",
+      "Desenvolvedor Full stack.",
+      "Arquiteto de Sistemas.",
+      "Problem Solver.",
+      "Entusiasta de Sistemas Distribuídos."
+    ],
+    "description": "Engenheiro de software focado em construir sistemas confiáveis, escaláveis e resilientes.",
+    "primaryAction": "Ver projetos",
+    "secondaryAction": "Entrar em contato"
   },
   "footer": {
-    "title": "Footer"
+    "title": "© 2026 Alef. Todos os direitos reservados."
   },
   "notFound": {
     "title": "404"

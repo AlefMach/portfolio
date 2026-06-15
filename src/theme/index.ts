@@ -1,11 +1,16 @@
 import { createTheme } from "@mui/material/styles";
 
+import { breakpoints } from "../styles/breakpoints";
 import { darkPalette, lightPalette } from "./palette";
 
 export const getTheme = (mode: "light" | "dark") => {
   const palette = mode === "light" ? lightPalette : darkPalette;
 
   return createTheme({
+    breakpoints: {
+      values: breakpoints.values,
+    },
+
     palette,
 
     typography: {
@@ -29,6 +34,12 @@ export const getTheme = (mode: "light" | "dark") => {
     components: {
       MuiCssBaseline: {
         styleOverrides: {
+          "*": {
+            boxSizing: "border-box",
+          },
+          html: {
+            scrollBehavior: "smooth",
+          },
           "html, body, #root": {
             minHeight: "100%",
           },
@@ -37,10 +48,21 @@ export const getTheme = (mode: "light" | "dark") => {
               mode === "light"
                 ? palette.background.paper
                 : palette.background.paper,
+            margin: 0,
+            overflowX: "hidden",
+          },
+          "#root": {
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
           },
           a: {
             color: "inherit",
             textDecoration: "none",
+          },
+          img: {
+            display: "block",
+            maxWidth: "100%",
           },
         },
       },

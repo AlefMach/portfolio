@@ -5,23 +5,52 @@
     "english": "English"
   },
   "nav": {
-    "brand": "My Portfolio",
     "home": "Home",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Open menu"
   },
   "theme": {
     "activateDark": "Enable dark theme",
     "activateLight": "Enable light theme"
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "projectsTitle": "Featured projects",
+    "projectsDescription": "A starter selection ready to grow with your best work while staying readable across desktop, tablet, and mobile.",
+    "projectCards": [
+      {
+        "title": "Web application",
+        "description": "Responsive interface with reusable components and attention to real usage states."
+      },
+      {
+        "title": "Design system",
+        "description": "Consistent visual foundation for typography, spacing, colors, and navigation."
+      },
+      {
+        "title": "Integrations",
+        "description": "Experiences connected to APIs, data, and product workflows."
+      }
+    ],
+    "contactTitle": "Let's talk",
+    "contactDescription": "Use this section to add email, social links, or a contact form when you are ready to complete the portfolio."
   },
   "hero": {
-    "title": "Hero"
+    "eyebrow": "Let's build something amazing together!",
+    "title": "Hi, I'm Alef,",
+    "skills": [
+      "Software Engineer.",
+      "Full stack developer.",
+      "Systems Architect.",
+      "Problem Solver.",
+      "Distributed Systems enthusiast."
+    ],
+    "description": "Software Engineer focused on building reliable, scalable and resilient systems.",
+    "primaryAction": "View projects",
+    "secondaryAction": "Get in touch"
   },
   "footer": {
-    "title": "Footer"
+    "title": "© 2026 Alef. All rights reserved."
   },
   "notFound": {
     "title": "404"
