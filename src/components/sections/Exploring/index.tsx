@@ -2,9 +2,11 @@ import { Box, Container, Stack } from "@mui/material";
 
 import { useTranslation } from "../../../hooks/useTranslation";
 import { SectionHeading } from "../SectionHeading";
+import { ExploringGrid } from "./components/ExploringGrid";
 
 export function Exploring() {
   const { t } = useTranslation();
+  const exploringContent = t.home;
 
   return (
     <Box
@@ -20,31 +22,11 @@ export function Exploring() {
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
         <Stack spacing={4}>
           <SectionHeading
-            title={t.home.exploringTitle}
-            description={t.home.exploringDescription}
+            title={exploringContent.exploringTitle}
+            description={exploringContent.exploringDescription}
           />
 
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-            {t.home.exploringItems.map((item) => (
-              <Box
-                key={item}
-                component="span"
-                sx={{
-                  border: 1,
-                  borderColor: "divider",
-                  borderRadius: 999,
-                  color: "text.secondary",
-                  fontSize: "0.875rem",
-                  fontWeight: 700,
-                  lineHeight: 1,
-                  px: 1.5,
-                  py: 1,
-                }}
-              >
-                {item}
-              </Box>
-            ))}
-          </Box>
+          <ExploringGrid cards={exploringContent.exploringCards} />
         </Stack>
       </Container>
     </Box>

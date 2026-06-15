@@ -1,10 +1,26 @@
 import { Box, Container, Stack } from "@mui/material";
+import { motion, useInView, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
 
 import { useTranslation } from "../../../hooks/useTranslation";
-import { SectionHeading } from "../SectionHeading";
+import { BuildProcessHeading } from "./components/BuildProcessHeading";
+import { Pipeline } from "./components/Pipeline";
+import { sectionVariants } from "./motion";
+import { getPipelineSteps, getStageLabels } from "./utils";
 
 export function BuildProcess() {
-  const { t } = useTranslation();
+  const { language, t } = useTranslation();
+  const shouldReduceMotion = Boolean(useReducedMotion());
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, {
+    amount: 0.25,
+    margin: "0px 0px -12% 0px",
+    once: true,
+  });
+  const steps = getPipelineSteps(
+    t.home.buildPrinciples,
+    getStageLabels(language),
+  );
 
   return (
     <Box
@@ -17,43 +33,24 @@ export function BuildProcess() {
         py: { xs: 6, sm: 8, md: 10 },
       }}
     >
-      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
-        <Stack spacing={4}>
-          <SectionHeading
-            title={t.home.buildTitle}
-            description={t.home.buildDescription}
-          />
+      <motion.div
+        ref={sectionRef}
+        animate={shouldReduceMotion || isInView ? "visible" : "hidden"}
+        initial={shouldReduceMotion ? false : "hidden"}
+        variants={shouldReduceMotion ? undefined : sectionVariants}
+      >
+        <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
+          <Stack spacing={4}>
+            <BuildProcessHeading
+              title={t.home.buildTitle}
+              description={t.home.buildDescription}
+              shouldReduceMotion={shouldReduceMotion}
+            />
 
-          <Box
-            sx={{
-              display: "grid",
-              gap: { xs: 1.5, md: 2 },
-              gridTemplateColumns: {
-                xs: "1fr",
-                sm: "repeat(2, minmax(0, 1fr))",
-                md: "repeat(3, minmax(0, 1fr))",
-              },
-            }}
-          >
-            {t.home.buildPrinciples.map((principle) => (
-              <Box
-                key={principle}
-                sx={{
-                  border: 1,
-                  borderColor: "divider",
-                  borderRadius: 2,
-                  color: "text.secondary",
-                  fontWeight: 700,
-                  lineHeight: 1.5,
-                  p: { xs: 2, md: 2.5 },
-                }}
-              >
-                {principle}
-              </Box>
-            ))}
-          </Box>
-        </Stack>
-      </Container>
+            <Pipeline steps={steps} shouldReduceMotion={shouldReduceMotion} />
+          </Stack>
+        </Container>
+      </motion.div>
     </Box>
   );
 }
