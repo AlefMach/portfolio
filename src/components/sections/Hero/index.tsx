@@ -90,95 +90,54 @@ export function Hero() {
     return () => clearTimeout(timeout);
   }, [currentSkill, displayedSkill, isDeleting, skillSignature, skills.length]);
 
-  const photoProfileMobile = <Box
-      aria-hidden="true"
-      sx={{
-        display: { xs: "block", sm: "none" },
-        width: 112,
-        height: 112,
-        borderRadius: "50%",
-        overflow: "hidden",
-        border: "2px solid",
-        borderColor: "divider",
-        boxShadow: "0 18px 45px rgba(108,137,204,.18)",
-        position: "relative",
-        mb: 1,
-        animation: "avatarFloat 8s ease-in-out infinite",
-        "@keyframes avatarFloat": {
-          "0%,100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-8px)" },
-        },
-        "&::after": {
-          content: '""',
-          position: "absolute",
-          inset: 0,
-          background:
-            "linear-gradient(to bottom, transparent, rgba(0,0,0,.18))",
-          zIndex: 2,
-        },
-      }}
-    >
-      {" "}
-      <Box
-        component="img"
-        src="/portifolio/images/unnamed.png"
-        alt=""
-        sx={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          filter: "grayscale(1) contrast(1.08)",
-          transform: "scale(1.08)",
-        }}
-      />{" "}
-    </Box>;
-
-  const photoProfileDesktop = (
+  const photoProfile = (
     <Box
-      aria-hidden="true"
       sx={{
-        aspectRatio: "1 / 1",
-        border: 1,
-        borderColor: "divider",
-        borderRadius: 3,
-        boxShadow: "0 24px 80px rgba(108, 137, 204, 0.18)",
-        display: { xs: "none", sm: "block" },
-        maxWidth: { sm: 420, md: "none" },
-        mx: { sm: "auto", md: 0 },
-        overflow: "hidden",
-        position: "relative",
         width: "100%",
+
+        maxWidth: {
+          xs: 150,
+          sm: 320,
+          md: 420,
+          lg: 520,
+        },
+
+        aspectRatio: "1 / 1",
+
+        mx: {
+          xs: "auto",
+          sm: 0,
+        },
+
+        justifySelf: {
+          xs: "center",
+          sm: "end",
+        },
+
+        borderRadius: {
+          xs: "50%",
+          sm: 4,
+        },
+
+        overflow: "hidden",
+
+        border: "1px solid",
+        borderColor: "divider",
+
+        boxShadow: {
+          xs: "0 12px 40px rgba(108,137,204,.15)",
+          md: "0 24px 80px rgba(108,137,204,.18)",
+        },
+
+        position: "relative",
 
         "&::before": {
           content: '""',
           position: "absolute",
           inset: 0,
           zIndex: 2,
-
           background:
-            "linear-gradient(135deg, rgba(255,255,255,.03), rgba(73, 73, 73, 0.18))",
-
-          animation: "overlayBreath 10s ease-in-out infinite",
-
-          "@keyframes overlayBreath": {
-            "0%,100%": {
-              opacity: 0.55,
-            },
-
-            "50%": {
-              opacity: 0.9,
-            },
-          },
-        },
-
-        "&::after": {
-          border: "1px solid rgba(255,255,255,.55)",
-          borderRadius: 2,
-          content: '""',
-          inset: "6%",
-          position: "absolute",
-          zIndex: 3,
-          pointerEvents: "none",
+            "linear-gradient(135deg, rgba(255,255,255,.04), rgba(0,0,0,.18))",
         },
       }}
     >
@@ -187,45 +146,23 @@ export function Hero() {
         src="/portifolio/images/unnamed.png"
         alt=""
         sx={{
-          position: "absolute",
-          inset: 0,
-
           width: "100%",
           height: "100%",
 
           objectFit: "cover",
-          objectPosition: "center",
 
-          filter: "grayscale(1) contrast(1.08)",
-
-          transformOrigin: "center",
-
-          animation: "heroFloat 14s ease-in-out infinite",
-
-          "@keyframes heroFloat": {
-            "0%": {
-              transform: "scale(1.02) translate3d(0, 0, 0)",
-            },
-
-            "50%": {
-              transform: "scale(1.08) translate3d(0, -14px, 0)",
-            },
-
-            "100%": {
-              transform: "scale(1.02) translate3d(0, 0, 0)",
-            },
+          objectPosition: {
+            xs: "center top",
+            sm: "center",
           },
-        }}
-      />
 
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "10%",
-          left: "10%",
-          right: "10%",
-          height: 1,
-          zIndex: 4,
+          filter: "grayscale(.95) contrast(1.05)",
+
+          transition: "transform .8s ease",
+
+          "&:hover": {
+            transform: "scale(1.04)",
+          },
         }}
       />
     </Box>
@@ -247,13 +184,19 @@ export function Hero() {
           sx={{
             display: "grid",
             gap: { xs: 5, md: 8 },
-            gridTemplateColumns: { xs: "1fr", md: "minmax(0, 1.1fr) 0.9fr" },
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "1.1fr .9fr",
+              lg: "1.15fr .85fr",
+            },
             alignItems: "center",
+            minHeight: {
+              xs: "auto",
+              sm: "70vh",
+              md: "calc(100vh - 72px)",
+            },
           }}
         >
-          <Box sx={{ display: { xs: "block", sm: "none" } }}>
-            {photoProfileMobile}
-          </Box>
           <Stack spacing={{ xs: 2.5, md: 3 }}>
             <Typography
               component="p"
@@ -332,7 +275,23 @@ export function Hero() {
               </Button>
             </Stack>
           </Stack>
-          {photoProfileDesktop}
+          <Box
+            sx={{
+              order: {
+                xs: -1,
+                sm: 0,
+              },
+
+              display: "flex",
+
+              justifyContent: {
+                xs: "center",
+                sm: "flex-end",
+              },
+            }}
+          >
+            {photoProfile}
+          </Box>
         </Box>
       </Container>
     </Box>
