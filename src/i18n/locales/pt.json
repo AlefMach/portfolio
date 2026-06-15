@@ -234,7 +234,7 @@
       "submitting": "Enviando...",
       "success": "Mensagem enviada. Vou retornar em breve.",
       "error": "Não foi possível enviar a mensagem agora. Tente novamente ou use o link de email.",
-      "configError": "O envio por email ainda não está configurado. Adicione as variáveis do EmailJS descritas em docs/emailjs-contact-form.md."
+      "configError": "Erro ao enviar a mensagem. Tente novamente mais tarde ou use o link de email direto."
     }
   },
   "hero": {

@@ -6,7 +6,7 @@ import { profileLinks } from "../../../../utils/profileLinks";
 import { SocialLinks } from "../../../common/SocialLinks";
 
 type ContactInfoProps = {
-  email: string;
+  email?: string;
   meta: string;
   primaryAction: string;
   secondaryAction: string;

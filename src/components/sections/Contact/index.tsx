@@ -37,7 +37,6 @@ export function Contact() {
             }}
           >
             <ContactInfo
-              email="alef_mac@hotmail.com"
               meta={t.home.contactMeta}
               primaryAction={t.home.contactPrimaryAction}
               secondaryAction={t.home.contactSecondaryAction}
