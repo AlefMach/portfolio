@@ -218,7 +218,24 @@
     "contactDescription": "Se você precisa construir um produto, automatizar processos ou evoluir uma arquitetura com mais clareza e observabilidade, posso ajudar a transformar a ideia em uma solução prática.",
     "contactPrimaryAction": "Enviar email",
     "contactSecondaryAction": "Ver LinkedIn",
-    "contactMeta": "Brasil / remoto. Aberto a oportunidades Full Stack, Backend, automação, IA aplicada e consultoria técnica."
+    "contactMeta": "Brasil / remoto. Aberto a oportunidades Full Stack, Backend, automação, IA aplicada e consultoria técnica.",
+    "contactForm": {
+      "title": "Envie uma mensagem",
+      "description": "Use o formulário para compartilhar contexto, objetivos ou dúvidas técnicas. Vou receber diretamente por email.",
+      "nameLabel": "Nome",
+      "namePlaceholder": "Seu nome",
+      "emailLabel": "Email",
+      "emailPlaceholder": "voce@exemplo.com",
+      "subjectLabel": "Assunto",
+      "subjectPlaceholder": "Projeto, consultoria ou dúvida técnica",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Conte o que você quer construir ou melhorar.",
+      "submit": "Enviar mensagem",
+      "submitting": "Enviando...",
+      "success": "Mensagem enviada. Vou retornar em breve.",
+      "error": "Não foi possível enviar a mensagem agora. Tente novamente ou use o link de email.",
+      "configError": "O envio por email ainda não está configurado. Adicione as variáveis do EmailJS descritas em docs/emailjs-contact-form.md."
+    }
   },
   "hero": {
     "eyebrow": "Full Stack, IA aplicada e automação",

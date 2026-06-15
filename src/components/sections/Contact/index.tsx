@@ -1,9 +1,9 @@
-import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 
 import { useTranslation } from "../../../hooks/useTranslation";
-import { profileLinks } from "../../../utils/profileLinks";
-import { SocialLinks } from "../../common/SocialLinks";
 import { SectionHeading } from "../SectionHeading";
+import { ContactForm } from "./components/ContactForm";
+import { ContactInfo } from "./components/ContactInfo";
 
 export function Contact() {
   const { t } = useTranslation();
@@ -20,48 +20,30 @@ export function Contact() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
-        <Stack spacing={3}>
+        <Stack spacing={4}>
           <SectionHeading
             title={t.home.contactTitle}
             description={t.home.contactDescription}
           />
 
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={1.5}
-            sx={{ width: { xs: "100%", sm: "auto" } }}
+          <Box
+            sx={{
+              display: "grid",
+              gap: { xs: 4, md: 5 },
+              gridTemplateColumns: {
+                xs: "1fr",
+                md: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
+              },
+            }}
           >
-            <Button
-              href={profileLinks.email}
-              size="large"
-              variant="contained"
-              sx={{ minHeight: 48, px: 3 }}
-            >
-              {t.home.contactPrimaryAction}
-            </Button>
-            <Button
-              href={profileLinks.linkedin}
-              rel="noopener noreferrer"
-              size="large"
-              target="_blank"
-              variant="outlined"
-              sx={{ minHeight: 48, px: 3 }}
-            >
-              {t.home.contactSecondaryAction}
-            </Button>
-          </Stack>
-
-          <Stack spacing={1.5}>
-            <Typography sx={{ color: "text.secondary", lineHeight: 1.7 }}>
-              {t.home.contactMeta}
-            </Typography>
-            <Typography sx={{ color: "text.secondary", lineHeight: 1.7 }}>
-              <Link href={profileLinks.email} underline="hover">
-                alef_mac@hotmail.com
-              </Link>
-            </Typography>
-            <SocialLinks />
-          </Stack>
+            <ContactInfo
+              email="alef_mac@hotmail.com"
+              meta={t.home.contactMeta}
+              primaryAction={t.home.contactPrimaryAction}
+              secondaryAction={t.home.contactSecondaryAction}
+            />
+            <ContactForm labels={t.home.contactForm} />
+          </Box>
         </Stack>
       </Container>
     </Box>

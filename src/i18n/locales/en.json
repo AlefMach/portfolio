@@ -218,7 +218,24 @@
     "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution.",
     "contactPrimaryAction": "Send email",
     "contactSecondaryAction": "View LinkedIn",
-    "contactMeta": "Brazil / remote. Open to Full Stack, Backend, automation, applied AI and technical consulting opportunities."
+    "contactMeta": "Brazil / remote. Open to Full Stack, Backend, automation, applied AI and technical consulting opportunities.",
+    "contactForm": {
+      "title": "Send a message",
+      "description": "Use the form to share context, goals or technical questions. I will receive it directly by email.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Project, consulting or technical question",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me what you are trying to build or improve.",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success": "Message sent. I will get back to you soon.",
+      "error": "The message could not be sent right now. Please try again or use the email link.",
+      "configError": "Email delivery is not configured yet. Add the EmailJS environment variables described in docs/emailjs-contact-form.md."
+    }
   },
   "hero": {
     "eyebrow": "Full Stack, applied AI and automation",
