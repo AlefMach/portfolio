@@ -111,7 +111,7 @@ export function StackCategoryCard({
             sm: "1fr",
             lg: "repeat(2, minmax(0, 1fr))",
           },
-          position: "relative"
+          position: "relative",
         }}
       >
         {category.items.map((item) => (

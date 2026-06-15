@@ -162,16 +162,20 @@
       }
     ],
     "exploringTitle": "Currently exploring",
-    "exploringDescription": "Topics I have been studying and applying to create smarter, more integrated and easier-to-operate products.",
-    "exploringItems": [
-      "Applied AI",
-      "n8n and automations",
-      "Observability",
-      "OpenTelemetry",
-      "Monolith First",
-      "Systems architecture",
-      "Event-driven architecture",
-      "LLMs and RAG"
+    "exploringDescription": "I have been going deeper into AI and system design in the new applications emerging at my current company, connecting automation, architecture and operations from the first decisions.",
+    "exploringCards": [
+      {
+        "title": "Applied AI",
+        "description": "I use LLMs and automations to classify requests, reduce manual steps and create flows that support real product decisions.",
+        "visual": "ai",
+        "items": ["LLMs", "RAG", "n8n", "Slack", "Automation"]
+      },
+      {
+        "title": "System Design",
+        "description": "I design APIs, queues, observability and integrations with the evolution, diagnosis and operation of new applications in mind.",
+        "visual": "system",
+        "items": ["APIs", "Queues", "OpenTelemetry", "Monolith First", "Events"]
+      }
     ],
     "contactTitle": "Let's talk",
     "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution."
