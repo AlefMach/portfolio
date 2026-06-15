@@ -90,6 +90,147 @@ export function Hero() {
     return () => clearTimeout(timeout);
   }, [currentSkill, displayedSkill, isDeleting, skillSignature, skills.length]);
 
+  const photoProfileMobile = <Box
+      aria-hidden="true"
+      sx={{
+        display: { xs: "block", sm: "none" },
+        width: 112,
+        height: 112,
+        borderRadius: "50%",
+        overflow: "hidden",
+        border: "2px solid",
+        borderColor: "divider",
+        boxShadow: "0 18px 45px rgba(108,137,204,.18)",
+        position: "relative",
+        mb: 1,
+        animation: "avatarFloat 8s ease-in-out infinite",
+        "@keyframes avatarFloat": {
+          "0%,100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        "&::after": {
+          content: '""',
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to bottom, transparent, rgba(0,0,0,.18))",
+          zIndex: 2,
+        },
+      }}
+    >
+      {" "}
+      <Box
+        component="img"
+        src="/portifolio/images/unnamed.png"
+        alt=""
+        sx={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          filter: "grayscale(1) contrast(1.08)",
+          transform: "scale(1.08)",
+        }}
+      />{" "}
+    </Box>;
+
+  const photoProfileDesktop = (
+    <Box
+      aria-hidden="true"
+      sx={{
+        aspectRatio: "1 / 1",
+        border: 1,
+        borderColor: "divider",
+        borderRadius: 3,
+        boxShadow: "0 24px 80px rgba(108, 137, 204, 0.18)",
+        display: { xs: "none", sm: "block" },
+        maxWidth: { sm: 420, md: "none" },
+        mx: { sm: "auto", md: 0 },
+        overflow: "hidden",
+        position: "relative",
+        width: "100%",
+
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          inset: 0,
+          zIndex: 2,
+
+          background:
+            "linear-gradient(135deg, rgba(255,255,255,.03), rgba(73, 73, 73, 0.18))",
+
+          animation: "overlayBreath 10s ease-in-out infinite",
+
+          "@keyframes overlayBreath": {
+            "0%,100%": {
+              opacity: 0.55,
+            },
+
+            "50%": {
+              opacity: 0.9,
+            },
+          },
+        },
+
+        "&::after": {
+          border: "1px solid rgba(255,255,255,.55)",
+          borderRadius: 2,
+          content: '""',
+          inset: "6%",
+          position: "absolute",
+          zIndex: 3,
+          pointerEvents: "none",
+        },
+      }}
+    >
+      <Box
+        component="img"
+        src="/portifolio/images/unnamed.png"
+        alt=""
+        sx={{
+          position: "absolute",
+          inset: 0,
+
+          width: "100%",
+          height: "100%",
+
+          objectFit: "cover",
+          objectPosition: "center",
+
+          filter: "grayscale(1) contrast(1.08)",
+
+          transformOrigin: "center",
+
+          animation: "heroFloat 14s ease-in-out infinite",
+
+          "@keyframes heroFloat": {
+            "0%": {
+              transform: "scale(1.02) translate3d(0, 0, 0)",
+            },
+
+            "50%": {
+              transform: "scale(1.08) translate3d(0, -14px, 0)",
+            },
+
+            "100%": {
+              transform: "scale(1.02) translate3d(0, 0, 0)",
+            },
+          },
+        }}
+      />
+
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: "10%",
+          left: "10%",
+          right: "10%",
+          height: 1,
+          zIndex: 4,
+        }}
+      />
+    </Box>
+  );
+
   return (
     <Box
       component="section"
@@ -110,6 +251,9 @@ export function Hero() {
             alignItems: "center",
           }}
         >
+          <Box sx={{ display: { xs: "block", sm: "none" } }}>
+            {photoProfileMobile}
+          </Box>
           <Stack spacing={{ xs: 2.5, md: 3 }}>
             <Typography
               component="p"
@@ -188,101 +332,7 @@ export function Hero() {
               </Button>
             </Stack>
           </Stack>
-          <Box
-            aria-hidden="true"
-            sx={{
-              aspectRatio: "1 / 1",
-              border: 1,
-              borderColor: "divider",
-              borderRadius: 3,
-              boxShadow: "0 24px 80px rgba(108, 137, 204, 0.18)",
-              display: { xs: "none", sm: "block" },
-              maxWidth: { sm: 420, md: "none" },
-              mx: { sm: "auto", md: 0 },
-              overflow: "hidden",
-              position: "relative",
-              width: "100%",
-
-              "&::before": {
-                content: '""',
-                position: "absolute",
-                inset: 0,
-                zIndex: 2,
-
-                background:
-                  "linear-gradient(135deg, rgba(255,255,255,.03), rgba(73, 73, 73, 0.18))",
-
-                animation: "overlayBreath 10s ease-in-out infinite",
-
-                "@keyframes overlayBreath": {
-                  "0%,100%": {
-                    opacity: 0.55,
-                  },
-
-                  "50%": {
-                    opacity: 0.9,
-                  },
-                },
-              },
-
-              "&::after": {
-                border: "1px solid rgba(255,255,255,.55)",
-                borderRadius: 2,
-                content: '""',
-                inset: "6%",
-                position: "absolute",
-                zIndex: 3,
-                pointerEvents: "none",
-              },
-            }}
-          >
-            <Box
-              component="img"
-              src="/portifolio/images/unnamed.png"
-              alt=""
-              sx={{
-                position: "absolute",
-                inset: 0,
-
-                width: "100%",
-                height: "100%",
-
-                objectFit: "cover",
-                objectPosition: "center",
-
-                filter: "grayscale(1) contrast(1.08)",
-
-                transformOrigin: "center",
-
-                animation: "heroFloat 14s ease-in-out infinite",
-
-                "@keyframes heroFloat": {
-                  "0%": {
-                    transform: "scale(1.02) translate3d(0, 0, 0)",
-                  },
-
-                  "50%": {
-                    transform: "scale(1.08) translate3d(0, -14px, 0)",
-                  },
-
-                  "100%": {
-                    transform: "scale(1.02) translate3d(0, 0, 0)",
-                  },
-                },
-              }}
-            />
-
-            <Box
-              sx={{
-                position: "absolute",
-                bottom: "10%",
-                left: "10%",
-                right: "10%",
-                height: 1,
-                zIndex: 4,
-              }}
-            />
-          </Box>
+          {photoProfileDesktop}
         </Box>
       </Container>
     </Box>
