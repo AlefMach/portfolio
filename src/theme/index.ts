@@ -2,15 +2,53 @@ import { createTheme } from "@mui/material/styles";
 
 import { darkPalette, lightPalette } from "./palette";
 
-export const getTheme = (mode: "light" | "dark") =>
-  createTheme({
-    palette: mode === "light" ? lightPalette : darkPalette,
+export const getTheme = (mode: "light" | "dark") => {
+    const palette = mode === "light" ? lightPalette : darkPalette;
 
-    typography: {
-      fontFamily: "Inter, sans-serif",
-    },
+    return createTheme({
+      palette,
 
-    shape: {
-      borderRadius: 12,
-    },
-  });
+      typography: {
+        fontFamily: "Inter, sans-serif",
+        h1: {
+          fontWeight: 800,
+        },
+        h2: {
+          fontWeight: 750,
+        },
+        button: {
+          fontWeight: 700,
+          textTransform: "none",
+        },
+      },
+
+      shape: {
+        borderRadius: 10,
+      },
+
+      components: {
+        MuiCssBaseline: {
+          styleOverrides: {
+            "html, body, #root": {
+              minHeight: "100%",
+            },
+            body: {
+              background:
+                mode === "light"
+                  ? palette.background.paper
+                  : palette.background.paper,
+            },
+            a: {
+              color: "inherit",
+              textDecoration: "none",
+            },
+          },
+        },
+        MuiAppBar: {
+          defaultProps: {
+            elevation: 0,
+          },
+        },
+      },
+    });
+};
