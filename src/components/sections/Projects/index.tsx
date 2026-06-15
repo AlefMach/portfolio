@@ -53,9 +53,10 @@ export function Projects() {
               },
             }}
           >
-            {t.home.projectCards.map((project) => {
+            {t.home.projectCards.map((project, index) => {
               const hasLink = "link" in project && Boolean(project.link);
-              const buttonLabel = "button" in project ? project.button : undefined;
+              const buttonLabel =
+                "button" in project ? project.button : undefined;
 
               return (
                 <Box
@@ -71,19 +72,50 @@ export function Projects() {
                     overflow: "hidden",
                     textDecoration: "none",
                     color: "inherit",
-                    transition: "0.2s ease",
+                    transition:
+                      "transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
                     display: "flex",
                     flexDirection: "column",
                     minHeight: "100%",
+                    opacity: 0,
+                    transform: "translateY(14px)",
+                    animation: "projectCardIn 0.55s ease forwards",
+                    animationDelay: `${index * 90}ms`,
+                    "@keyframes projectCardIn": {
+                      from: {
+                        opacity: 0,
+                        transform: "translateY(14px)",
+                      },
+                      to: {
+                        opacity: 1,
+                        transform: "translateY(0)",
+                      },
+                    },
                     "&:hover": hasLink
                       ? {
                           transform: "translateY(-4px)",
                           borderColor: "primary.main",
+                          boxShadow: 2,
                         }
                       : {},
+                    "&:hover .project-card-image": hasLink
+                      ? {
+                          transform: "scale(1.025)",
+                        }
+                      : {},
+                    "@media (prefers-reduced-motion: reduce)": {
+                      opacity: 1,
+                      transform: "none",
+                      animation: "none",
+                      transition: "none",
+                      "&:hover": {
+                        transform: "none",
+                      },
+                    },
                   }}
                 >
                   <Box
+                    className="project-card-image"
                     component="img"
                     src={project.image}
                     alt={project.alt}
@@ -93,6 +125,7 @@ export function Projects() {
                       width: "100%",
                       objectFit: "cover",
                       bgcolor: "action.hover",
+                      transition: "transform 0.35s ease",
                     }}
                   />
 
@@ -149,7 +182,11 @@ export function Projects() {
                     </Box>
 
                     {hasLink && buttonLabel && (
-                      <Link component="span" underline="hover" sx={{ fontWeight: 700 }}>
+                      <Link
+                        component="span"
+                        underline="hover"
+                        sx={{ fontWeight: 700 }}
+                      >
                         {buttonLabel} →
                       </Link>
                     )}
