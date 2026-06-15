@@ -16,12 +16,14 @@
   },
   "home": {
     "title": "Home",
+    "aboutTitle": "About",
+    "aboutDescription": "I work on digital products, APIs and integrations with a focus on technical clarity, reliability and process impact. I am especially interested in software architecture, applied AI, observability and automation that reduces manual work.",
     "projectsTitle": "Featured projects",
-    "projectsDescription": "Projects that connect product, engineering and user experience, from web platforms and integrations to distributed systems with high processing volume and real-time automations.",
+    "projectsDescription": "Projects that connect product, engineering and operations: web platforms, integrations, automations, messaging and systems designed for scale.",
     "projectCards": [
       {
         "title": "Think Cloud",
-        "description": "Platform for benchmarking and comparative analysis of cloud costs.",
+        "description": "Platform for comparing cloud costs and supporting FinOps decisions. The solution organizes benchmarks and indicators into dashboards, bringing more clarity to technical and commercial analysis.",
         "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
         "image": "/portifolio/images/projects/think-cloud.jpg",
         "alt": "Think Cloud dashboard",
@@ -30,7 +32,7 @@
       },
       {
         "title": "Notification System • Swap",
-        "description": "System responsible for more than 150 thousand requests per minute.",
+        "description": "Messaging system built to handle a high volume of events and notifications. The architecture prioritized resilience, asynchronous processing and observability to sustain more than 150 thousand requests per minute.",
         "link": "https://beneficios.swap.financial/?utm_source=google&utm_medium=cpc&utm_campaign=bigh_swap_trafego&utm_term=swap&utm_campaign=%5BBIGH%5D+%5BTR%C3%81FEGO%5D+%5BBENEF%C3%8DCIOS%5D&utm_source=adwords&utm_medium=ppc&hsa_acc=4062785619&hsa_cam=23727201969&hsa_grp=198716974961&hsa_ad=804190000995&hsa_src=g&hsa_tgt=kwd-12161512&hsa_kw=swap&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23727201969&gbraid=0AAAAABb-cK8vevSJ6JjylnFvMXmyyBqGO&gclid=Cj0KCQjwornRBhCrARIsAON5exEAQ4n4W3R-uLeoUUQJ24k6AJ34_L6oBHlRIn_f1jc7kRWMwgHCJwkaAtwFEALw_wcB",
         "image": "/portifolio/images/projects/notifications.png",
         "alt": "Notification system monitoring",
@@ -39,7 +41,7 @@
       },
       {
         "title": "Conversational Bots • Alertrack",
-        "description": "Real-time messages and automations for Whatsapp.",
+        "description": "Customer service and real-time communication automation through WhatsApp. The flows connect messages, business rules and integrations to reduce manual steps and accelerate operational responses.",
         "link": "https://alertrack.com.br/",
         "image": "/portifolio/images/projects/bots.webp",
         "alt": "Conversation flow with bots",
@@ -48,7 +50,7 @@
       },
       {
         "title": "Integrations with n8n",
-        "description": "Construction of integrations and automations connecting APIs, internal workflows and operational processes between different platforms.",
+        "description": "n8n workflows to automate internal processes, connect APIs, send Slack alerts and classify requests with AI support. The goal is to reduce rework and bring more predictability to operations.",
         "link": "https://n8n.io/",
         "image": "/portifolio/images/projects/n8n.png",
         "alt": "n8n integration example",
@@ -56,20 +58,71 @@
         "button": "View site"
       }
     ],
+    "buildTitle": "How I build software",
+    "buildDescription": "Principles I use to make technical decisions with a focus on product, maintenance and system evolution.",
+    "buildPrinciples": [
+      "Monolith First",
+      "Microservices when needed",
+      "Observability from the start",
+      "Automation before manual work",
+      "Simplicity before complexity",
+      "Applied AI for real problems"
+    ],
+    "stackTitle": "Stack",
+    "stackDescription": "Technologies I use to build products, integrations, automations and observable systems.",
+    "stackCategories": [
+      {
+        "title": "Frontend",
+        "items": ["React", "TypeScript", "Material UI"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Elixir", "APIs", "Messaging"]
+      },
+      {
+        "title": "Database",
+        "items": ["PostgreSQL", "Redis"]
+      },
+      {
+        "title": "Cloud",
+        "items": ["AWS", "Docker", "CI/CD"]
+      },
+      {
+        "title": "Observability",
+        "items": ["OpenTelemetry", "Logs", "Metrics", "Tracing"]
+      },
+      {
+        "title": "AI and Automation",
+        "items": ["n8n", "LLMs", "RAG", "Slack"]
+      }
+    ],
+    "exploringTitle": "Currently exploring",
+    "exploringDescription": "Topics I have been studying and applying to create smarter, more integrated and easier-to-operate products.",
+    "exploringItems": [
+      "Applied AI for products",
+      "Agents and automations",
+      "n8n",
+      "Observability",
+      "OpenTelemetry",
+      "Systems architecture",
+      "Monolith First",
+      "Event-driven Architecture",
+      "LLMs and RAG"
+    ],
     "contactTitle": "Let's talk",
-    "contactDescription": "Use this section to add email, social links, or a contact form when you are ready to complete the portfolio."
+    "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution."
   },
   "hero": {
-    "eyebrow": "Let's build something amazing together!",
+    "eyebrow": "Full Stack, applied AI and automation",
     "title": "Hi, I'm Alef,",
     "skills": [
-      "Software Engineer.",
-      "Full stack developer.",
-      "Systems Architect.",
-      "Problem Solver.",
-      "Distributed Systems enthusiast."
+      "Full Stack Developer.",
+      "I build digital products.",
+      "I apply AI to real processes.",
+      "I automate operational flows.",
+      "I design observable systems."
     ],
-    "description": "Software Engineer focused on building reliable, scalable and resilient systems.",
+    "description": "I build products, integrations and automations focused on solving real problems, reducing manual work and creating reliable systems from the first version.",
     "primaryAction": "View projects",
     "secondaryAction": "Get in touch"
   },

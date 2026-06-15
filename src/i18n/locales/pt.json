@@ -16,12 +16,14 @@
   },
   "home": {
     "title": "Home",
+    "aboutTitle": "Sobre",
+    "aboutDescription": "Atuo no desenvolvimento de produtos digitais, APIs e integrações com foco em clareza técnica, confiabilidade e impacto no processo. Tenho interesse especial por arquitetura de software, IA aplicada, observabilidade e automação de rotinas que reduzem trabalho manual.",
     "projectsTitle": "Projetos em destaque",
-    "projectsDescription": "Projetos que conectam produto, engenharia e experiência do usuário, de plataformas web e integrações até sistemas distribuídos com alto volume de processamento e automações em tempo real.",
+    "projectsDescription": "Projetos que conectam produto, engenharia e operação: plataformas web, integrações, automações, mensageria e sistemas preparados para escala.",
     "projectCards": [
       {
         "title": "Think Cloud",
-        "description": "Plataforma para benchmark e análise comparativa de custos cloud.",
+        "description": "Plataforma para comparar custos cloud e apoiar decisões de FinOps. A solução organiza benchmarks e indicadores em dashboards, dando mais clareza para análises técnicas e comerciais.",
         "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
         "image": "/portifolio/images/projects/think-cloud.jpg",
         "alt": "Dashboard do Think Cloud",
@@ -30,7 +32,7 @@
       },
       {
         "title": "Sistema de Notificações • Swap",
-        "description": "Sistema responsável por mais de 150 mil requisições por minuto.",
+        "description": "Sistema de mensageria para lidar com alto volume de eventos e notificações. A arquitetura priorizou resiliência, processamento assíncrono e observabilidade para sustentar mais de 150 mil requisições por minuto.",
         "link": "https://beneficios.swap.financial/?utm_source=google&utm_medium=cpc&utm_campaign=bigh_swap_trafego&utm_term=swap&utm_campaign=%5BBIGH%5D+%5BTR%C3%81FEGO%5D+%5BBENEF%C3%8DCIOS%5D&utm_source=adwords&utm_medium=ppc&hsa_acc=4062785619&hsa_cam=23727201969&hsa_grp=198716974961&hsa_ad=804190000995&hsa_src=g&hsa_tgt=kwd-12161512&hsa_kw=swap&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23727201969&gbraid=0AAAAABb-cK8vevSJ6JjylnFvMXmyyBqGO&gclid=Cj0KCQjwornRBhCrARIsAON5exEAQ4n4W3R-uLeoUUQJ24k6AJ34_L6oBHlRIn_f1jc7kRWMwgHCJwkaAtwFEALw_wcB",
         "image": "/portifolio/images/projects/notifications.png",
         "alt": "Monitoramento do sistema de notificações",
@@ -39,7 +41,7 @@
       },
       {
         "title": "Bots Conversacionais • Alertrack",
-        "description": "Mensagens em tempo real e automações para Whatsapp.",
+        "description": "Automação de atendimento e comunicação em tempo real via WhatsApp. Os fluxos conectam mensagens, regras de negócio e integrações para reduzir etapas manuais e acelerar respostas operacionais.",
         "link": "https://alertrack.com.br/",
         "image": "/portifolio/images/projects/bots.webp",
         "alt": "Fluxo de conversação com bots",
@@ -48,7 +50,7 @@
       },
       {
         "title": "Integrações com n8n",
-        "description": "Construção de integrações e automações conectando APIs, fluxos internos e processos operacionais entre diferentes plataformas.",
+        "description": "Fluxos n8n para automatizar processos internos, conectar APIs, enviar alertas no Slack e classificar demandas com apoio de IA. O objetivo é reduzir retrabalho e dar mais previsibilidade à operação.",
         "link": "https://n8n.io/",
         "image": "/portifolio/images/projects/n8n.png",
         "alt": "Exemplo de integração com n8n",
@@ -56,20 +58,71 @@
         "button": "Ver site"
       }
     ],
+    "buildTitle": "Como eu construo software",
+    "buildDescription": "Princípios que uso para tomar decisões técnicas com foco em produto, manutenção e evolução do sistema.",
+    "buildPrinciples": [
+      "Monolith First",
+      "Microservices quando necessários",
+      "Observabilidade desde o início",
+      "Automação antes de trabalho manual",
+      "Simplicidade antes de complexidade",
+      "IA aplicada para resolver problemas reais"
+    ],
+    "stackTitle": "Stack",
+    "stackDescription": "Tecnologias que uso com foco em construção de produtos, integrações, automações e sistemas observáveis.",
+    "stackCategories": [
+      {
+        "title": "Frontend",
+        "items": ["React", "TypeScript", "Material UI"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Elixir", "APIs", "Mensageria"]
+      },
+      {
+        "title": "Banco de Dados",
+        "items": ["PostgreSQL", "Redis"]
+      },
+      {
+        "title": "Cloud",
+        "items": ["AWS", "Docker", "CI/CD"]
+      },
+      {
+        "title": "Observabilidade",
+        "items": ["OpenTelemetry", "Logs", "Métricas", "Tracing"]
+      },
+      {
+        "title": "IA e Automação",
+        "items": ["n8n", "LLMs", "RAG", "Slack"]
+      }
+    ],
+    "exploringTitle": "Explorando atualmente",
+    "exploringDescription": "Temas que venho estudando e aplicando para criar produtos mais inteligentes, integrados e fáceis de operar.",
+    "exploringItems": [
+      "IA aplicada a produtos",
+      "Agentes e automações",
+      "n8n",
+      "Observabilidade",
+      "OpenTelemetry",
+      "Arquitetura de sistemas",
+      "Monolith First",
+      "Event-driven Architecture",
+      "LLMs e RAG"
+    ],
     "contactTitle": "Vamos conversar",
-    "contactDescription": "Use esta seção para adicionar e-mail, redes sociais ou um formulário de contato quando quiser completar o portfólio."
+    "contactDescription": "Se você precisa construir um produto, automatizar processos ou evoluir uma arquitetura com mais clareza e observabilidade, posso ajudar a transformar a ideia em uma solução prática."
   },
   "hero": {
-    "eyebrow": "Vamos construir algo incrível juntos!",
+    "eyebrow": "Full Stack, IA aplicada e automação",
     "title": "Olá, meu nome é Alef,",
     "skills": [
-      "Engenheiro de software.",
-      "Desenvolvedor Full stack.",
-      "Arquiteto de Sistemas.",
-      "Problem Solver.",
-      "Entusiasta de Sistemas Distribuídos."
+      "Desenvolvedor Full Stack.",
+      "Construo produtos digitais.",
+      "Aplico IA a processos reais.",
+      "Automatizo fluxos operacionais.",
+      "Projeto sistemas observáveis."
     ],
-    "description": "Engenheiro de software focado em construir sistemas confiáveis, escaláveis e resilientes.",
+    "description": "Desenvolvo produtos, integrações e automações com foco em resolver problemas reais, reduzir trabalho manual e criar sistemas confiáveis desde a primeira versão.",
     "primaryAction": "Ver projetos",
     "secondaryAction": "Entrar em contato"
   },
