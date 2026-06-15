@@ -90,6 +90,84 @@ export function Hero() {
     return () => clearTimeout(timeout);
   }, [currentSkill, displayedSkill, isDeleting, skillSignature, skills.length]);
 
+  const photoProfile = (
+    <Box
+      sx={{
+        width: "100%",
+
+        maxWidth: {
+          xs: 150,
+          sm: 320,
+          md: 420,
+          lg: 520,
+        },
+
+        aspectRatio: "1 / 1",
+
+        mx: {
+          xs: "auto",
+          sm: 0,
+        },
+
+        justifySelf: {
+          xs: "center",
+          sm: "end",
+        },
+
+        borderRadius: {
+          xs: "50%",
+          sm: 4,
+        },
+
+        overflow: "hidden",
+
+        border: "1px solid",
+        borderColor: "divider",
+
+        boxShadow: {
+          xs: "0 12px 40px rgba(108,137,204,.15)",
+          md: "0 24px 80px rgba(108,137,204,.18)",
+        },
+
+        position: "relative",
+
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          inset: 0,
+          zIndex: 2,
+          background:
+            "linear-gradient(135deg, rgba(255,255,255,.04), rgba(0,0,0,.18))",
+        },
+      }}
+    >
+      <Box
+        component="img"
+        src="/portifolio/images/unnamed.png"
+        alt=""
+        sx={{
+          width: "100%",
+          height: "100%",
+
+          objectFit: "cover",
+
+          objectPosition: {
+            xs: "center top",
+            sm: "center",
+          },
+
+          filter: "grayscale(.95) contrast(1.05)",
+
+          transition: "transform .8s ease",
+
+          "&:hover": {
+            transform: "scale(1.04)",
+          },
+        }}
+      />
+    </Box>
+  );
+
   return (
     <Box
       component="section"
@@ -106,8 +184,17 @@ export function Hero() {
           sx={{
             display: "grid",
             gap: { xs: 5, md: 8 },
-            gridTemplateColumns: { xs: "1fr", md: "minmax(0, 1.1fr) 0.9fr" },
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "1.1fr .9fr",
+              lg: "1.15fr .85fr",
+            },
             alignItems: "center",
+            minHeight: {
+              xs: "auto",
+              sm: "70vh",
+              md: "calc(100vh - 72px)",
+            },
           }}
         >
           <Stack spacing={{ xs: 2.5, md: 3 }}>
@@ -188,35 +275,23 @@ export function Hero() {
               </Button>
             </Stack>
           </Stack>
-
           <Box
-            aria-hidden="true"
             sx={{
-              aspectRatio: "1 / 1",
-              border: 1,
-              borderColor: "divider",
-              borderRadius: 3,
-              display: { xs: "none", sm: "block" },
-              maxWidth: { sm: 420, md: "none" },
-              mx: { sm: "auto", md: 0 },
-              overflow: "hidden",
-              position: "relative",
-              width: "100%",
-              "&::before": {
-                background:
-                  "linear-gradient(135deg, rgba(37,99,235,0.9), rgba(15,118,110,0.8))",
-                content: '""',
-                inset: 0,
-                position: "absolute",
+              order: {
+                xs: -1,
+                sm: 0,
               },
-              "&::after": {
-                border: "1px solid rgba(255,255,255,0.5)",
-                content: '""',
-                inset: "18%",
-                position: "absolute",
+
+              display: "flex",
+
+              justifyContent: {
+                xs: "center",
+                sm: "flex-end",
               },
             }}
-          />
+          >
+            {photoProfile}
+          </Box>
         </Box>
       </Container>
     </Box>
