@@ -188,7 +188,6 @@ export function Hero() {
               </Button>
             </Stack>
           </Stack>
-
           <Box
             aria-hidden="true"
             sx={{
@@ -196,27 +195,94 @@ export function Hero() {
               border: 1,
               borderColor: "divider",
               borderRadius: 3,
+              boxShadow: "0 24px 80px rgba(108, 137, 204, 0.18)",
               display: { xs: "none", sm: "block" },
               maxWidth: { sm: 420, md: "none" },
               mx: { sm: "auto", md: 0 },
               overflow: "hidden",
               position: "relative",
               width: "100%",
+
               "&::before": {
-                background:
-                  "linear-gradient(135deg, rgba(37,99,235,0.9), rgba(15,118,110,0.8))",
                 content: '""',
+                position: "absolute",
                 inset: 0,
-                position: "absolute",
+                zIndex: 2,
+
+                background:
+                  "linear-gradient(135deg, rgba(255,255,255,.03), rgba(73, 73, 73, 0.18))",
+
+                animation: "overlayBreath 10s ease-in-out infinite",
+
+                "@keyframes overlayBreath": {
+                  "0%,100%": {
+                    opacity: 0.55,
+                  },
+
+                  "50%": {
+                    opacity: 0.9,
+                  },
+                },
               },
+
               "&::after": {
-                border: "1px solid rgba(255,255,255,0.5)",
+                border: "1px solid rgba(255,255,255,.55)",
+                borderRadius: 2,
                 content: '""',
-                inset: "18%",
+                inset: "6%",
                 position: "absolute",
+                zIndex: 3,
+                pointerEvents: "none",
               },
             }}
-          />
+          >
+            <Box
+              component="img"
+              src="/portifolio/images/unnamed.png"
+              alt=""
+              sx={{
+                position: "absolute",
+                inset: 0,
+
+                width: "100%",
+                height: "100%",
+
+                objectFit: "cover",
+                objectPosition: "center",
+
+                filter: "grayscale(1) contrast(1.08)",
+
+                transformOrigin: "center",
+
+                animation: "heroFloat 14s ease-in-out infinite",
+
+                "@keyframes heroFloat": {
+                  "0%": {
+                    transform: "scale(1.02) translate3d(0, 0, 0)",
+                  },
+
+                  "50%": {
+                    transform: "scale(1.08) translate3d(0, -14px, 0)",
+                  },
+
+                  "100%": {
+                    transform: "scale(1.02) translate3d(0, 0, 0)",
+                  },
+                },
+              }}
+            />
+
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: "10%",
+                left: "10%",
+                right: "10%",
+                height: 1,
+                zIndex: 4,
+              }}
+            />
+          </Box>
         </Box>
       </Container>
     </Box>
