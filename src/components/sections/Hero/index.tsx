@@ -223,7 +223,7 @@ export function Hero() {
   return (
     <Box
       component="section"
-      id="inicio"
+      id="home"
       sx={{
         alignItems: "center",
         display: "flex",
@@ -310,7 +310,7 @@ export function Hero() {
               sx={{ pt: 1, width: { xs: "100%", sm: "auto" } }}
             >
               <Button
-                href="#projetos"
+                href="#projects"
                 size="large"
                 variant="contained"
                 sx={{ minHeight: 48, px: 3 }}
@@ -318,7 +318,7 @@ export function Hero() {
                 {t.hero.primaryAction}
               </Button>
               <Button
-                href="#contato"
+                href="#contact"
                 size="large"
                 variant="outlined"
                 sx={{ minHeight: 48, px: 3 }}

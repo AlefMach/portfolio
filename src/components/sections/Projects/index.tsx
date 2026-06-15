@@ -83,7 +83,7 @@ export function Projects() {
   return (
     <Box
       component="section"
-      id="projetos"
+      id="projects"
       sx={{
         bgcolor: "background.default",
         borderTop: 1,
@@ -141,10 +141,11 @@ export function Projects() {
                   const hasLink = "link" in project && Boolean(project.link);
                   const buttonLabel =
                     "button" in project ? project.button : undefined;
+                  const projectKey = `${project.image}-${index}`;
 
                   return (
                     <motion.div
-                      key={project.title}
+                      key={projectKey}
                       custom={
                         {
                           direction: index % 2 === 0 ? "left" : "right",

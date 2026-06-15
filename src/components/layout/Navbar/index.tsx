@@ -21,9 +21,9 @@ export default function Navbar() {
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navItems = [
-    { label: t.nav.home, href: "#inicio" },
-    { label: t.nav.projects, href: "#projetos" },
-    { label: t.nav.contact, href: "#contato" },
+    { label: t.nav.home, href: "#home" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.contact, href: "#contact" },
   ];
 
   const brand = "{ Alef /} ";
@@ -55,7 +55,7 @@ export default function Navbar() {
         >
           <Typography
             component="a"
-            href="#inicio"
+            href="#home"
             variant="h6"
             sx={{
               color: "text.primary",
