@@ -2,6 +2,7 @@ import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 
 import { useTranslation } from "../../../hooks/useTranslation";
+import { SocialLinks } from "../../common/SocialLinks";
 
 type TypewriterState = {
   displayedSkill: string;
@@ -326,6 +327,7 @@ export function Hero() {
                 {t.hero.secondaryAction}
               </Button>
             </Stack>
+            <SocialLinks />
           </Stack>
           <Box
             sx={{

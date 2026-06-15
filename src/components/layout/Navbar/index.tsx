@@ -15,6 +15,7 @@ import { useState } from "react";
 import { useTranslation } from "../../../hooks/useTranslation";
 import { darkPalette, lightPalette } from "../../../theme/palette";
 import { LanguageToggle } from "../../common/LanguageToggle";
+import { SocialLinks } from "../../common/SocialLinks";
 import { ThemeToggle } from "../../common/ThemeToggle";
 
 export default function Navbar() {
@@ -22,6 +23,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navItems = [
     { label: t.nav.home, href: "#home" },
+    { label: t.nav.experience, href: "#experience" },
     { label: t.nav.projects, href: "#projects" },
     { label: t.nav.contact, href: "#contact" },
   ];
@@ -101,6 +103,9 @@ export default function Navbar() {
           <Box sx={{ display: { xs: "none", sm: "contents" } }}>
             <LanguageToggle />
           </Box>
+          <Box sx={{ display: { xs: "none", lg: "block" } }}>
+            <SocialLinks size="small" />
+          </Box>
           <ThemeToggle />
           <IconButton
             aria-label={t.nav.menu}
@@ -158,6 +163,9 @@ export default function Navbar() {
           ))}
           <Box sx={{ pt: 1 }}>
             <LanguageToggle />
+          </Box>
+          <Box sx={{ pt: 1 }}>
+            <SocialLinks />
           </Box>
         </Stack>
       </Drawer>

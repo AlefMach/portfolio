@@ -29,7 +29,7 @@ export function BuildProcess() {
       sx={{
         borderTop: 1,
         borderColor: "divider",
-        bgcolor: "background.default",
+        bgcolor: "background.paper",
         py: { xs: 6, sm: 8, md: 10 },
       }}
     >

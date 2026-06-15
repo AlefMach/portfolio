@@ -12,7 +12,7 @@ export function TechStack() {
       component="section"
       id="tech-stack"
       sx={{
-        bgcolor: "background.paper",
+        bgcolor: "background.default",
         borderTop: 1,
         borderColor: "divider",
         py: { xs: 6, sm: 8, md: 10 },

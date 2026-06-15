@@ -91,7 +91,7 @@ export function Projects() {
       component="section"
       id="projects"
       sx={{
-        bgcolor: "background.paper",
+        bgcolor: "background.default",
         borderTop: 1,
         borderColor: "divider",
         py: { xs: 6, sm: 8, md: 10 },
@@ -151,6 +151,11 @@ export function Projects() {
                           ? project.impactLabel
                           : undefined,
                       text: "impact" in project ? project.impact : undefined,
+                    },
+                    {
+                      label:
+                        "roleLabel" in project ? project.roleLabel : undefined,
+                      text: "role" in project ? project.role : undefined,
                     },
                   ].filter((field): field is Required<ProjectCaseField> =>
                     Boolean(field.label && field.text),

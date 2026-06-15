@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import { About } from "../../components/sections/About";
 import { BuildProcess } from "../../components/sections/BuildProcess";
 import { Contact } from "../../components/sections/Contact";
+import { Experience } from "../../components/sections/Experience";
 import { Exploring } from "../../components/sections/Exploring";
 import { Hero } from "../../components/sections/Hero";
 import { Projects } from "../../components/sections/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
     <Box component="main" sx={{ flex: 1 }}>
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <BuildProcess />
       <TechStack />

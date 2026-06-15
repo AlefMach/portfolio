@@ -6,6 +6,7 @@
   },
   "nav": {
     "home": "Home",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact",
     "menu": "Open menu"
@@ -41,6 +42,28 @@
         "description": "I pay attention to logs, metrics, automation and diagnosis so systems are observable from early versions."
       }
     ],
+    "experienceTitle": "Experience",
+    "experienceDescription": "Recent work connecting product development, integrations, automation and production operations.",
+    "experienceItems": [
+      {
+        "company": "Swap",
+        "period": "Professional experience",
+        "role": "Software engineering and observability",
+        "description": "I worked on event-driven systems, webhooks, workers and telemetry, making queues, URLs, realms and production processing bottlenecks visible."
+      },
+      {
+        "company": "Alertrack",
+        "period": "Professional experience",
+        "role": "Conversational platform development",
+        "description": "I worked on conversational bots and real-time WhatsApp integrations, focusing on concurrency, webhooks, cache and automation for customer service at scale."
+      },
+      {
+        "company": "Current projects",
+        "period": "Research and application",
+        "role": "Applied AI, automation and system design",
+        "description": "I have been going deeper into flows with LLMs, RAG, n8n, Slack and API and queue design to reduce manual work and support new applications with operational clarity."
+      }
+    ],
     "projectsTitle": "Featured projects",
     "projectsDescription": "Projects that connect product, engineering and operations: web platforms, integrations, automations, messaging and systems designed for scale.",
     "projectCards": [
@@ -55,6 +78,8 @@
         "solution": "I developed an n8n automation integrated with AI and Slack to classify requests, identify context, route each item to the responsible team and start steps related to fix or refactor tasks.",
         "impactLabel": "Learnings",
         "impact": "The project reinforced the importance of observable, resilient automations focused on real operational bottlenecks, while applying AI to automated decision-making and internal process orchestration.",
+        "roleLabel": "Role",
+        "role": "I developed the flow end to end, connecting AI classification, n8n orchestration, Slack notifications and development workflow steps.",
         "tags": [
           "n8n",
           "AI",
@@ -71,6 +96,14 @@
         "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
         "image": "/portifolio/images/projects/think-cloud.jpg",
         "alt": "Think Cloud dashboard",
+        "problemLabel": "Context",
+        "problem": "Cloud cost comparisons need to bring technical and commercial indicators together clearly to support FinOps decisions.",
+        "solutionLabel": "Solution",
+        "solution": "The platform structures benchmarks and dashboards so cost, capacity and opportunity analysis is easier to compare.",
+        "impactLabel": "Impact",
+        "impact": "It supports technical and commercial conversations with better organized data, reducing dependence on scattered manual analysis.",
+        "roleLabel": "Role",
+        "role": "I contributed to the web experience and information structure for technical reading and decision-making.",
         "tags": ["Cloud", "Dashboard", "FinOps"],
         "button": "View site"
       },
@@ -86,6 +119,8 @@
         "solution": "I instrumented telemetry to count messages by URL, realm and application flow, connecting operational metrics to worker behavior and making queue buildup visible.",
         "impactLabel": "Impact",
         "impact": "The diagnosis moved beyond guesswork: it became possible to identify bottlenecks, adjust processing priorities and explain the incident in a technical article covering the investigation and fix.",
+        "roleLabel": "Role",
+        "role": "I instrumented telemetry, investigated Oban worker behavior and documented the diagnosis process in a technical article.",
         "tags": [
           "Elixir",
           "Oban",
@@ -108,6 +143,8 @@
         "solution": "I used Elixir for its lightweight process-based concurrency, modeling message intake through webhooks and cache heavy loads to keep the system responsive under load.",
         "impactLabel": "Outcome",
         "impact": "The architecture handled high real-time message volume, reduced manual customer service steps and made it possible to evolve automations without compromising operational stability.",
+        "roleLabel": "Role",
+        "role": "I worked on backend and integrations, modeling webhook intake, concurrent processing and support for external automations.",
         "tags": ["Elixir", "Whatsapp", "Webhooks", "n8n", "Realtime", "Bots"],
         "button": "View site"
       }
@@ -178,7 +215,10 @@
       }
     ],
     "contactTitle": "Let's talk",
-    "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution."
+    "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution.",
+    "contactPrimaryAction": "Send email",
+    "contactSecondaryAction": "View LinkedIn",
+    "contactMeta": "Brazil / remote. Open to Full Stack, Backend, automation, applied AI and technical consulting opportunities."
   },
   "hero": {
     "eyebrow": "Full Stack, applied AI and automation",

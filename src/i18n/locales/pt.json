@@ -6,6 +6,7 @@
   },
   "nav": {
     "home": "Início",
+    "experience": "Experiência",
     "projects": "Projetos",
     "contact": "Contato",
     "menu": "Abrir menu"
@@ -41,6 +42,28 @@
         "description": "Dou atenção a logs, métricas, automações e diagnóstico para que o sistema seja observável desde cedo."
       }
     ],
+    "experienceTitle": "Experiência",
+    "experienceDescription": "Trajetória recente conectando desenvolvimento de produto, integrações, automação e operação de sistemas em produção.",
+    "experienceItems": [
+      {
+        "company": "Swap",
+        "period": "Experiência profissional",
+        "role": "Engenharia de software e observabilidade",
+        "description": "Atuo em sistemas orientada a eventos, webhooks, workers e telemetria, dando visibilidade a filas, URLs, realms e gargalos de processamento em produção."
+      },
+      {
+        "company": "Alertrack",
+        "period": "Experiência profissional",
+        "role": "Desenvolvimento de plataforma conversacional",
+        "description": "Trabalhei em bots conversacionais e integrações em tempo real via WhatsApp, com foco em concorrência, webhooks, cache e automações para atendimento em escala."
+      },
+      {
+        "company": "Projetos atuais",
+        "period": "Pesquisa e aplicação",
+        "role": "IA aplicada, automação e system design",
+        "description": "Tenho aprofundado fluxos com LLMs, RAG, n8n, Slack e desenho de APIs e filas para reduzir trabalho manual e sustentar novas aplicações com clareza operacional."
+      }
+    ],
     "projectsTitle": "Projetos em destaque",
     "projectsDescription": "Projetos que conectam produto, engenharia e operação: plataformas web, integrações, automações, mensageria e sistemas preparados para escala.",
     "projectCards": [
@@ -55,6 +78,8 @@
         "solution": "Desenvolvi uma automação com n8n integrada com IA e Slack para classificar demandas, identificar contexto, direcionar cada item ao time responsável e iniciar etapas relacionadas a tarefas fix ou refactor.",
         "impactLabel": "Aprendizados",
         "impact": "O projeto reforçou a importância de automações observáveis, resilientes e orientadas a gargalos reais, além de aplicar IA em tomada de decisão automatizada e orquestração de processos internos.",
+        "roleLabel": "Papel",
+        "role": "Desenvolvi o fluxo ponta a ponta, conectando classificação com IA, orquestração no n8n, notificações no Slack e etapas do workflow de desenvolvimento.",
         "tags": [
           "n8n",
           "IA",
@@ -71,6 +96,14 @@
         "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
         "image": "/portifolio/images/projects/think-cloud.jpg",
         "alt": "Dashboard do Think Cloud",
+        "problemLabel": "Contexto",
+        "problem": "Comparações de custo cloud precisam reunir indicadores técnicos e comerciais de forma clara para apoiar decisões de FinOps.",
+        "solutionLabel": "Solução",
+        "solution": "A plataforma estrutura benchmarks e dashboards para tornar análises de custo, capacidade e oportunidade mais fáceis de comparar.",
+        "impactLabel": "Impacto",
+        "impact": "Apoia conversas técnicas e comerciais com dados mais organizados, reduzindo a dependência de análises manuais e dispersas.",
+        "roleLabel": "Papel",
+        "role": "Participei da construção da experiência web e da organização das informações para leitura técnica e tomada de decisão.",
         "tags": ["Cloud", "Dashboard", "FinOps"],
         "button": "Ver site"
       },
@@ -86,6 +119,8 @@
         "solution": "Instrumentei telemetria para contar mensagens por URL, realm e fluxo da aplicação, conectando métricas operacionais ao comportamento dos workers e tornando visível onde a fila realmente acumulava.",
         "impactLabel": "Impacto",
         "impact": "O diagnóstico saiu do campo da intuição: ficou possível identificar gargalos, ajustar prioridades de processamento e explicar o incidente em um artigo técnico com o caminho de investigação e correção.",
+        "roleLabel": "Papel",
+        "role": "Instrumentei telemetria, investiguei o comportamento dos workers Oban e documentei o processo de diagnóstico em artigo técnico.",
         "tags": [
           "Elixir",
           "Oban",
@@ -108,6 +143,8 @@
         "solution": "Usei Elixir pela concorrência baseada em processos leves, modelando o recebimento via webhooks e cache pesado para manter o sistema responsivo sob carga.",
         "impactLabel": "Resultado",
         "impact": "A arquitetura absorveu alto volume de mensagens em tempo real, reduziu etapas manuais no atendimento e permitiu evoluir automações sem comprometer a estabilidade da operação.",
+        "roleLabel": "Papel",
+        "role": "Atuei no backend e nas integrações, modelando recebimento por webhooks, processamento concorrente e suporte a automações externas.",
         "tags": ["Elixir", "Whatsapp", "Webhooks", "n8n", "Realtime", "Bots"],
         "button": "Ver site"
       }
@@ -142,7 +179,7 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Elixir", "kotlin", "APIs", "Mensageria"]
+        "items": ["Node.js", "Elixir", "Kotlin", "APIs", "Mensageria"]
       },
       {
         "title": "Banco de Dados",
@@ -178,7 +215,10 @@
       }
     ],
     "contactTitle": "Vamos conversar",
-    "contactDescription": "Se você precisa construir um produto, automatizar processos ou evoluir uma arquitetura com mais clareza e observabilidade, posso ajudar a transformar a ideia em uma solução prática."
+    "contactDescription": "Se você precisa construir um produto, automatizar processos ou evoluir uma arquitetura com mais clareza e observabilidade, posso ajudar a transformar a ideia em uma solução prática.",
+    "contactPrimaryAction": "Enviar email",
+    "contactSecondaryAction": "Ver LinkedIn",
+    "contactMeta": "Brasil / remoto. Aberto a oportunidades Full Stack, Backend, automação, IA aplicada e consultoria técnica."
   },
   "hero": {
     "eyebrow": "Full Stack, IA aplicada e automação",
