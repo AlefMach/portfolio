@@ -11,6 +11,7 @@ export function Footer() {
       sx={{
         borderTop: 1,
         borderColor: "divider",
+        bgcolor: "background.default",
         py: { xs: 3, md: 4 },
       }}
     >

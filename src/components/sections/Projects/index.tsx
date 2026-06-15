@@ -11,6 +11,7 @@ import type { Variants } from "framer-motion";
 import { motion, useReducedMotion } from "framer-motion";
 
 import { useTranslation } from "../../../hooks/useTranslation";
+import { SectionHeading } from "../SectionHeading";
 
 const sectionVariants: Variants = {
   hidden: {
@@ -19,7 +20,7 @@ const sectionVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.45,
+      duration: 0.60,
       ease: "easeOut",
       when: "beforeChildren",
       staggerChildren: 0.08,
@@ -85,7 +86,7 @@ export function Projects() {
       component="section"
       id="projects"
       sx={{
-        bgcolor: "background.default",
+        bgcolor: "background.paper",
         borderTop: 1,
         borderColor: "divider",
         py: { xs: 6, sm: 8, md: 10 },
@@ -100,29 +101,10 @@ export function Projects() {
         <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
           <Stack spacing={4}>
             <motion.div variants={activeHeadingVariants}>
-              <Box sx={{ maxWidth: 720 }}>
-                <Typography
-                  component="h2"
-                  sx={{
-                    fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                    fontWeight: 800,
-                    lineHeight: 1.1,
-                    mb: 1.5,
-                  }}
-                >
-                  {t.home.projectsTitle}
-                </Typography>
-
-                <Typography
-                  sx={{
-                    color: "text.secondary",
-                    fontSize: { xs: "1rem", md: "1.125rem" },
-                    lineHeight: 1.7,
-                  }}
-                >
-                  {t.home.projectsDescription}
-                </Typography>
-              </Box>
+              <SectionHeading
+                title={t.home.projectsTitle}
+                description={t.home.projectsDescription}
+              />
             </motion.div>
 
             <motion.div variants={activeSectionVariants}>
