@@ -200,7 +200,7 @@ export function Hero() {
     >
       <Box
         component="img"
-        src="/portifolio/images/unnamed.png"
+        src="/portfolio/images/unnamed.png"
         alt=""
         sx={{
           width: "100%",

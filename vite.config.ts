@@ -10,5 +10,5 @@ export default defineConfig({
       gzipSize: true,
     }),
   ],
-  base: "/portifolio/",
+  base: "/portfolio/",
 });

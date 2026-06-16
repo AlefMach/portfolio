@@ -28,7 +28,7 @@ npm run lint
 
 ## Deploy
 
-O projeto esta configurado para GitHub Pages com base `/portifolio/`.
+O projeto esta configurado para GitHub Pages com base `/portfolio/`.
 
 ```bash
 npm run deploy
