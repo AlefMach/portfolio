@@ -51,10 +51,11 @@
         "period": "2025 - Atual",
         "role": "Software Engineer",
         "highlights": [
-          "Sistemas de contas e pagamentos",
-          "Escalabilidade",
-          "Disponibilidade",
-          "Operações críticas 24/7"
+          "Plataforma de contas e pagamentos",
+          "APIs críticas de movimentação financeira",
+          "Observabilidade e monitoração",
+          "Operações críticas 24/7",
+          "Processando milhares de transações por dia"
         ]
       },
       {

@@ -51,10 +51,11 @@
         "period": "2025 - Present",
         "role": "Software Engineer",
         "highlights": [
-          "Account and payment systems",
-          "Scalability",
-          "Availability",
-          "Critical 24/7 operations"
+          "Payment platform",
+          "Critical financial APIs",
+          "Observability and monitoring",
+          "24/7 critical operations",
+          "Processing thousands of transactions per day"
         ]
       },
       {
