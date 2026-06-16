@@ -9,10 +9,10 @@ export const sectionVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.35,
       ease: "easeOut",
       when: "beforeChildren",
-      staggerChildren: 0.08,
+      staggerChildren: 0.04,
     },
   },
 };
@@ -26,7 +26,7 @@ export const headingVariants: Variants = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.55,
+      duration: 0.35,
       ease: [0.22, 1, 0.36, 1],
     },
   },
@@ -43,7 +43,7 @@ export const cardVariants: Variants = {
     x: 0,
     scale: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.42,
       ease: [0.22, 1, 0.36, 1],
     },
   },

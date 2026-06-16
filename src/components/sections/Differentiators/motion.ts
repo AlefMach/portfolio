@@ -7,9 +7,9 @@ export const sectionVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.35,
       ease: "easeOut",
-      staggerChildren: 0.12,
+      staggerChildren: 0.05,
       when: "beforeChildren",
     },
   },
@@ -24,7 +24,7 @@ export const headingVariants: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.55,
+      duration: 0.35,
       ease: motionEase,
     },
   },

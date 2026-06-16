@@ -1,57 +1,25 @@
 import { Box } from "@mui/material";
-import { lazy, Suspense } from "react";
 
+import { About } from "../../components/sections/About";
+import { Contact } from "../../components/sections/Contact";
+import { Differentiators } from "../../components/sections/Differentiators";
+import { Experience } from "../../components/sections/Experience";
+import { Exploring } from "../../components/sections/Exploring";
 import { Hero } from "../../components/sections/Hero";
-
-const About = lazy(() =>
-  import("../../components/sections/About").then((module) => ({
-    default: module.About,
-  })),
-);
-const Experience = lazy(() =>
-  import("../../components/sections/Experience").then((module) => ({
-    default: module.Experience,
-  })),
-);
-const Projects = lazy(() =>
-  import("../../components/sections/Projects").then((module) => ({
-    default: module.Projects,
-  })),
-);
-const Differentiators = lazy(() =>
-  import("../../components/sections/Differentiators").then((module) => ({
-    default: module.Differentiators,
-  })),
-);
-const TechStack = lazy(() =>
-  import("../../components/sections/TechStack").then((module) => ({
-    default: module.TechStack,
-  })),
-);
-const Exploring = lazy(() =>
-  import("../../components/sections/Exploring").then((module) => ({
-    default: module.Exploring,
-  })),
-);
-const Contact = lazy(() =>
-  import("../../components/sections/Contact").then((module) => ({
-    default: module.Contact,
-  })),
-);
+import { Projects } from "../../components/sections/Projects";
+import { TechStack } from "../../components/sections/TechStack";
 
 export default function Home() {
   return (
     <Box component="main" sx={{ flex: 1 }}>
       <Hero />
-      <Suspense fallback={null}>
-        <About />
-        <Experience />
-        <Projects />
-        <Differentiators />
-        <TechStack />
-        <Exploring />
-        <Contact />
-      </Suspense>
+      <About />
+      <Experience />
+      <Projects />
+      <Differentiators />
+      <TechStack />
+      <Exploring />
+      <Contact />
     </Box>
   );
 }

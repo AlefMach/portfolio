@@ -28,8 +28,8 @@ export function Differentiators() {
   const shouldReduceMotion = Boolean(useReducedMotion());
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {
-    amount: 0.25,
-    margin: "0px 0px -12% 0px",
+    amount: 0.08,
+    margin: "0px 0px 18% 0px",
     once: true,
   });
 

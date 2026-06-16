@@ -22,8 +22,8 @@ export function Projects() {
   const activeCardVariants = shouldReduceMotion ? undefined : cardVariants;
   const cardOffset = isXs ? 0 : isSm ? 48 : isMd ? 92 : 128;
   const viewport = isXs
-    ? { amount: 0.05, margin: "0px 0px -4% 0px", once: false }
-    : { amount: 0.18, margin: "0px 0px -12% 0px", once: false };
+    ? { amount: 0.01, margin: "0px 0px 8% 0px", once: true }
+    : { amount: 0.05, margin: "0px 0px 18% 0px", once: true };
 
   return (
     <Box
