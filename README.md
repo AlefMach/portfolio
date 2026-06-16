@@ -42,6 +42,7 @@ As variaveis acima sao usadas pelo formulario de contato. Mais detalhes estao em
 npm run dev
 npm run build
 npm run lint
+npm run test
 npm run check-format
 npm run preview
 ```
@@ -51,6 +52,20 @@ Comandos de manutencao:
 ```bash
 npm run lint:fix
 npm run format
+```
+
+## Testes
+
+Os testes unitarios rodam com Vitest:
+
+```bash
+npm run test
+```
+
+O arquivo `src/utils/resumePdf.test.ts` cobre o contrato do HTML/CSS usado para gerar o curriculo em PDF. Alteracoes intencionais no layout devem ser revisadas e registradas atualizando o snapshot:
+
+```bash
+npm run test -- -u
 ```
 
 ## Estrutura

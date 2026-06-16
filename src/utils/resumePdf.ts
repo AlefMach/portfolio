@@ -1,4 +1,7 @@
-import { type Language, type TranslationDictionary } from "../i18n/translations";
+import {
+  type Language,
+  type TranslationDictionary,
+} from "../i18n/translations";
 import { profileLinks } from "./profileLinks";
 
 const portfolioUrl = "https://alefmach.github.io/portfolio/#home";
@@ -82,7 +85,10 @@ const renderStack = (t: TranslationDictionary) =>
     )
     .join("");
 
-const buildResumeTemplate = (language: Language, t: TranslationDictionary) => {
+export const buildResumeTemplate = (
+  language: Language,
+  t: TranslationDictionary,
+) => {
   const currentLabels = labels[language];
   const email = profileLinks.email.replace("mailto:", "");
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&margin=8&data=${encodeURIComponent(
@@ -333,7 +339,9 @@ const buildResumeTemplate = (language: Language, t: TranslationDictionary) => {
           <div class="pill-list">
             ${t.home.buildPrinciples
               .slice(0, 6)
-              .map((item) => `<span class="pill">${escapeHtml(item.title)}</span>`)
+              .map(
+                (item) => `<span class="pill">${escapeHtml(item.title)}</span>`,
+              )
               .join("")}
           </div>
         </section>

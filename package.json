@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
     "check-format": "prettier . --check",
+    "test": "vitest run",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -40,6 +41,7 @@
     "rollup-plugin-visualizer": "^7.0.1",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vitest": "^4.1.9"
   }
 }
