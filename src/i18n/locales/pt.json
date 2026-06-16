@@ -20,7 +20,7 @@
     "aboutTitle": "Sobre",
     "aboutDescription": "Backend Software Engineer com 4+ anos desenvolvendo software para produtos digitais, fintech, pagamentos e sistemas críticos. Atuo com foco em confiabilidade, escalabilidade e operação de ambientes 24/7.",
     "aboutFocusItems": [
-      "5+ anos desenvolvendo software",
+      "4+ anos desenvolvendo software",
       "Fintech e pagamentos",
       "Sistemas críticos 24/7",
       "Kubernetes e cloud-native",
@@ -216,15 +216,24 @@
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Elixir", "Kotlin", "APIs", "Mensageria"]
+        "items": [
+          "Node.js",
+          "Elixir",
+          "Kotlin",
+          "Python",
+          "Go",
+          "APIs",
+          "Mensageria",
+          "Arquitetura orientada a eventos"
+        ]
       },
       {
         "title": "Banco de Dados",
-        "items": ["PostgreSQL", "Redis"]
+        "items": ["PostgreSQL", "SqlServer", "Cassandra", "MongoDB", "Redis"]
       },
       {
         "title": "Cloud",
-        "items": ["AWS", "Docker", "CI/CD"]
+        "items": ["AWS", "Docker", "CI/CD", "Kubernetes", "Terraform"]
       },
       {
         "title": "Observabilidade",
