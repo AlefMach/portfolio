@@ -270,7 +270,7 @@ exports[`buildResumeTemplate > matches the resume PDF layout contract 1`] = `
             <span>2025 - Atual</span>
           </div>
           <p class="company">Swap</p>
-          <ul><li>Plataforma de contas e pagamentos</li><li>APIs críticas de movimentação financeira</li><li>Observabilidade e monitoração</li><li>Operações críticas 24/7</li><li>Processando milhares de transações por dia</li></ul>
+          <ul><li>Plataforma de contas e pagamentos</li><li>APIs críticas de movimentação financeira</li><li>Transferências bancárias</li><li>Observabilidade</li><li>Monitoração</li></ul>
         </article>
       
         <article class="item">
@@ -279,7 +279,7 @@ exports[`buildResumeTemplate > matches the resume PDF layout contract 1`] = `
             <span>2024 - 2025</span>
           </div>
           <p class="company">Ghisolfi</p>
-          <ul><li>Sistemas internos</li><li>Integrações</li><li>Infraestrutura</li><li>Escala para milhares de usuários</li></ul>
+          <ul><li>Sistemas internos</li><li>Integrações</li><li>APIs</li><li>Servidores locais (On-Premise)</li><li>Infraestrutura</li></ul>
         </article>
       
         <article class="item">
@@ -288,7 +288,7 @@ exports[`buildResumeTemplate > matches the resume PDF layout contract 1`] = `
             <span>2022 - 2023</span>
           </div>
           <p class="company">Solfácil</p>
-          <ul><li>Métodos de pagamento</li><li>Backend e frontend</li><li>QA</li><li>Deploys</li><li>Monitoramento</li></ul>
+          <ul><li>Métodos de pagamento</li><li>Backend</li><li>Frontend</li><li>QA</li><li>Deploys</li></ul>
         </article>
       
         <article class="item">
@@ -297,7 +297,7 @@ exports[`buildResumeTemplate > matches the resume PDF layout contract 1`] = `
             <span>2021 - 2022</span>
           </div>
           <p class="company">Alertrack</p>
-          <ul><li>Backend e frontend</li><li>QA</li><li>Deploys</li><li>Monitoramento</li><li>Build system do zero</li></ul>
+          <ul><li>Backend</li><li>Frontend</li><li>QA</li><li>Deploys</li><li>Monitoramento</li></ul>
         </article>
       
         </section>

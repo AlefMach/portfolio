@@ -51,11 +51,17 @@
         "period": "2025 - Present",
         "role": "Software Engineer",
         "highlights": [
-          "Payment platform",
-          "Critical financial APIs",
-          "Observability and monitoring",
-          "24/7 critical operations",
-          "Processing thousands of transactions per day"
+          "Banking and Payments Platform",
+          "Financial Transaction APIs",
+          "Bank Transfers",
+          "Observability",
+          "Monitoring",
+          "Incident Response",
+          "24/7 Critical Operations",
+          "High-Volume Transaction Processing",
+          "Financial Integrations",
+          "Messaging Systems",
+          "High Availability"
         ]
       },
       {
@@ -63,10 +69,18 @@
         "period": "2024 - 2025",
         "role": "Software Engineer",
         "highlights": [
-          "Internal systems",
-          "Integrations",
-          "Infrastructure",
-          "Scale for thousands of users"
+          "Internal Systems",
+          "System Integrations",
+          "API Development",
+          "On-Premises Servers",
+          "Infrastructure Management",
+          "Process Automation",
+          "Database Management",
+          "Environment Maintenance",
+          "Scalable Applications",
+          "Monitoring",
+          "Deployments",
+          "Technical Operations"
         ]
       },
       {
@@ -74,11 +88,18 @@
         "period": "2022 - 2023",
         "role": "Software Engineer",
         "highlights": [
-          "Payment methods",
-          "Backend and frontend",
-          "QA",
+          "Payment Methods",
+          "Backend Development",
+          "Frontend Development",
+          "Quality Assurance",
           "Deployments",
-          "Monitoring"
+          "Monitoring",
+          "System Integrations",
+          "API Development",
+          "Bug Fixing",
+          "System Maintenance",
+          "Production Support",
+          "Application Reliability"
         ]
       },
       {
@@ -86,15 +107,22 @@
         "period": "2021 - 2022",
         "role": "Software Engineer",
         "highlights": [
-          "Backend and frontend",
-          "QA",
+          "Backend Development",
+          "Frontend Development",
+          "Quality Assurance",
           "Deployments",
           "Monitoring",
-          "Build system from scratch"
+          "Build System Development",
+          "System Integrations",
+          "API Development",
+          "On-Premises Servers",
+          "Infrastructure Management",
+          "Process Automation",
+          "Environment Maintenance"
         ]
       }
     ],
-    "projectsTitle": "Engineering case studies",
+    "projectsTitle": "Engineering case",
     "projectsDescription": "Practical cases in critical systems, payments, messaging, observability and AI automation, connecting technical decisions to operational impact.",
     "projectCards": [
       {
@@ -156,6 +184,7 @@
           "Oban",
           "Telemetry",
           "Webhooks",
+          "kafka",
           "Observability",
           "Messaging"
         ],

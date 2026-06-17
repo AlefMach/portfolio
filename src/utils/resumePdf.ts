@@ -5,6 +5,7 @@ import {
 import { profileLinks } from "./profileLinks";
 
 const portfolioUrl = "https://alefmach.github.io/portfolio/#home";
+const maxResumeExperienceHighlights = 5;
 
 const labels = {
   en: {
@@ -54,7 +55,7 @@ const renderExperience = (t: TranslationDictionary) =>
             <span>${escapeHtml(item.period)}</span>
           </div>
           <p class="company">${escapeHtml(item.company)}</p>
-          ${renderList(item.highlights)}
+          ${renderList(item.highlights.slice(0, maxResumeExperienceHighlights))}
         </article>
       `,
     )

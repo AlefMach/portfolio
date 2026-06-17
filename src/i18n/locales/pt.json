@@ -53,9 +53,15 @@
         "highlights": [
           "Plataforma de contas e pagamentos",
           "APIs críticas de movimentação financeira",
-          "Observabilidade e monitoração",
+          "Transferências bancárias",
+          "Observabilidade",
+          "Monitoração",
+          "Tratamento de incidentes",
           "Operações críticas 24/7",
-          "Processando milhares de transações por dia"
+          "Processamento de milhares de transações por dia",
+          "Integrações financeiras",
+          "Mensageria",
+          "Alta disponibilidade"
         ]
       },
       {
@@ -65,8 +71,16 @@
         "highlights": [
           "Sistemas internos",
           "Integrações",
+          "APIs",
+          "Servidores locais (On-Premise)",
           "Infraestrutura",
-          "Escala para milhares de usuários"
+          "Automações",
+          "Banco de dados",
+          "Manutenção de ambientes",
+          "Escala para milhares de usuários",
+          "Monitoramento",
+          "Deploys",
+          "Suporte técnico"
         ]
       },
       {
@@ -75,10 +89,17 @@
         "role": "Software Engineer",
         "highlights": [
           "Métodos de pagamento",
-          "Backend e frontend",
+          "Backend",
+          "Frontend",
           "QA",
           "Deploys",
-          "Monitoramento"
+          "Monitoramento",
+          "Integrações",
+          "APIs",
+          "Correção de bugs",
+          "Manutenção de sistemas",
+          "Sustentação",
+          "Ambiente produtivo"
         ]
       },
       {
@@ -86,11 +107,18 @@
         "period": "2021 - 2022",
         "role": "Software Engineer",
         "highlights": [
-          "Backend e frontend",
+          "Backend",
+          "Frontend",
           "QA",
           "Deploys",
           "Monitoramento",
-          "Build system do zero"
+          "Build system do zero",
+          "Integrações",
+          "APIs",
+          "Servidores locais (On-Premise)",
+          "Infraestrutura",
+          "Automações",
+          "Manutenção de ambientes"
         ]
       }
     ],
@@ -156,6 +184,7 @@
           "Oban",
           "Telemetry",
           "Webhooks",
+          "kafka",
           "Observabilidade",
           "Mensageria"
         ],
