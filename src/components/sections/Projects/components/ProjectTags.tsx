@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { alpha, Box } from "@mui/material";
 
 type ProjectTagsProps = {
   hasCaseFields: boolean;
@@ -20,8 +20,9 @@ export function ProjectTags({ hasCaseFields, tags }: ProjectTagsProps) {
           key={tag}
           component="span"
           sx={{
+            bgcolor: (theme) => alpha(theme.palette.primary.main, 0.06),
             border: 1,
-            borderColor: "divider",
+            borderColor: (theme) => alpha(theme.palette.primary.main, 0.16),
             borderRadius: 999,
             color: "text.secondary",
             fontSize: "0.75rem",

@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { alpha, Box, Stack, Typography } from "@mui/material";
 
 import type { ProjectCaseField } from "../types";
 
@@ -14,7 +14,14 @@ export function ProjectCaseFields({ fields }: ProjectCaseFieldsProps) {
   return (
     <Stack spacing={1.5} sx={{ mt: "auto" }}>
       {fields.map((field) => (
-        <Box key={field.label}>
+        <Box
+          key={field.label}
+          sx={{
+            borderLeft: 2,
+            borderColor: (theme) => alpha(theme.palette.primary.main, 0.5),
+            pl: 1.5,
+          }}
+        >
           <Typography
             component="h4"
             sx={{
