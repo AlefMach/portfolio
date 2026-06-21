@@ -17,16 +17,26 @@ export function About() {
         borderTop: 1,
         borderColor: "divider",
         bgcolor: "background.default",
-        py: { xs: 6, sm: 8, md: 10 },
+        py: { xs: 5, sm: 7, md: 7, lg: 10 },
+        "@media (min-width: 900px) and (max-height: 820px)": {
+          py: 5,
+        },
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
         <Box
           sx={{
             display: "grid",
-            gap: { xs: 4, md: 6 },
-            gridTemplateColumns: { xs: "1fr", md: "0.9fr 1.1fr" },
+            gap: { xs: 3.5, md: 4, lg: 6 },
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "minmax(0, 0.85fr) minmax(0, 1.15fr)",
+              lg: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
+            },
             alignItems: "start",
+            "@media (min-width: 900px) and (max-height: 820px)": {
+              gap: 3,
+            },
           }}
         >
           <AboutHeader

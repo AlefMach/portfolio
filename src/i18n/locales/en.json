@@ -18,50 +18,45 @@
   "home": {
     "title": "Home",
     "aboutTitle": "About",
-    "aboutDescription": "Backend Software Engineer with 4+ years building software for digital products, fintech, payments and critical systems. I focus on reliability, scalability and 24/7 production operations.",
+    "aboutDescription": "Backend Software Engineer at Mid-Level III, focused on fintech, payments, and mission-critical systems. I build and maintain backend services with an emphasis on reliability, traceability, observability, and 24/7 operations.",
     "aboutFocusItems": [
-      "4+ years building software",
+      "Mid-Level III backend engineering",
       "Fintech and payments",
-      "Critical 24/7 systems",
-      "Kubernetes and cloud-native",
+      "Mission-critical production systems",
+      "APIs, messaging, and integrations",
       "Observability and reliability",
       "AI applied to automation"
     ],
-    "aboutIntro": "I build and operate backend software for environments where availability, traceability and technical evolution directly affect the business.",
-    "aboutDetail": "My experience spans account systems, payments, integrations, messaging, deployments, QA, monitoring and infrastructure. I work with Elixir, Kotlin, Kubernetes, cloud-native practices, observability and AI automation to reduce manual work and improve operational predictability.",
+    "aboutIntro": "I build, evolve, and operate backend software for environments where availability, traceability, and operational predictability directly impact the business.",
+    "aboutDetail": "My experience spans account systems, payments, bank transfers, notifications, financial integrations, messaging, deployments, QA, monitoring, and infrastructure. I work with Elixir, Kotlin, Kubernetes, cloud-native practices, observability, and AI-powered automations, helping reduce manual work, improve incident diagnosis, and bring more predictability to operations.",
     "aboutCards": [
       {
         "title": "Fintech and payments",
-        "description": "Experience with accounts, transfers, notifications, payment methods and critical integrations for financial operations."
+        "description": "Experience with accounts, transfers, notifications, payment methods, and critical integrations for financial operations."
       },
       {
-        "title": "Reliable systems",
-        "description": "Development focused on scalability, availability, observability and continuous production operations."
+        "title": "Production reliability",
+        "description": "Development and maintenance of systems with attention to availability, traceability, observability, and incident response."
       },
       {
         "title": "Applied automation",
-        "description": "I use AI, n8n, LLMs and integrations to automate workflows, classify requests and reduce manual steps."
+        "description": "I use AI, n8n, LLMs, and integrations to automate workflows, classify requests, and reduce manual steps in real processes."
       }
     ],
     "experienceTitle": "Experience",
-    "experienceDescription": "Executive track record across backend engineering, payments, integrations and critical system operations.",
+    "experienceDescription": "Experience in backend engineering, payments, integrations, automation, and operation of mission-critical production systems.",
     "experienceItems": [
       {
         "company": "Swap",
         "period": "2025 - Present",
-        "role": "Software Engineer",
+        "role": "Software Engineer, Mid-Level III",
         "highlights": [
-          "Banking and Payments Platform",
-          "Financial Transaction APIs",
-          "Bank Transfers",
-          "Observability",
-          "Monitoring",
-          "Incident Response",
-          "24/7 Critical Operations",
-          "High-Volume Transaction Processing",
-          "Financial Integrations",
-          "Messaging Systems",
-          "High Availability"
+          "Worked on an accounts and payments platform processing thousands of transactions per day.",
+          "Developed and maintained critical financial transaction APIs, with a focus on traceability, reliability, and operational safety.",
+          "Evolved bank transfer flows, financial integrations, notifications, and asynchronous processing.",
+          "Instrumented metrics, logs, and alerts to improve visibility into queues, workers, webhooks, and production application behavior.",
+          "Participated in incident investigation and response in a 24/7 environment, connecting technical symptoms to operational impact.",
+          "Collaborated on architecture, messaging, and observability decisions to increase predictability and reduce bottlenecks in critical systems."
         ]
       },
       {
@@ -69,37 +64,23 @@
         "period": "2024 - 2025",
         "role": "Software Engineer",
         "highlights": [
-          "Internal Systems",
-          "System Integrations",
-          "API Development",
-          "On-Premises Servers",
-          "Infrastructure Management",
-          "Process Automation",
-          "Database Management",
-          "Environment Maintenance",
-          "Scalable Applications",
-          "Monitoring",
-          "Deployments",
-          "Technical Operations"
+          "Developed internal systems, APIs, and integrations to support the company's operational processes.",
+          "Worked across infrastructure, on-premise servers, databases, deployments, and environment maintenance.",
+          "Built automations to reduce manual tasks and increase predictability in internal routines.",
+          "Maintained applications used by thousands of users, including technical support, monitoring, and production issue resolution.",
+          "Contributed to improvements in organization, reliability, and maintainability of legacy systems and local environments."
         ]
       },
       {
-        "company": "Solfácil",
+        "company": "Solf\u00e1cil",
         "period": "2022 - 2023",
         "role": "Software Engineer",
         "highlights": [
-          "Payment Methods",
-          "Backend Development",
-          "Frontend Development",
-          "Quality Assurance",
-          "Deployments",
-          "Monitoring",
-          "System Integrations",
-          "API Development",
-          "Bug Fixing",
-          "System Maintenance",
-          "Production Support",
-          "Application Reliability"
+          "Worked on payment methods, integrations, APIs, and system maintenance in production environments.",
+          "Developed backend and frontend features, supporting product flows, maintenance, and feature evolution.",
+          "Participated in QA, deployments, monitoring, bug fixing, and production issue analysis.",
+          "Collaborated with product and engineering teams to deliver improvements in financial and operational workflows.",
+          "Gained hands-on experience with maintenance, traceability, and incremental evolution of existing systems."
         ]
       },
       {
@@ -107,37 +88,30 @@
         "period": "2021 - 2022",
         "role": "Software Engineer",
         "highlights": [
-          "Backend Development",
-          "Frontend Development",
-          "Quality Assurance",
-          "Deployments",
-          "Monitoring",
-          "Build System Development",
-          "System Integrations",
-          "API Development",
-          "On-Premises Servers",
-          "Infrastructure Management",
-          "Process Automation",
-          "Environment Maintenance"
+          "Developed backend and frontend features for a real-time communication, bots, and automation platform.",
+          "Built a build system from scratch and supported deployments, QA, monitoring, and environment maintenance.",
+          "Integrated APIs, webhooks, on-premise servers, and external automations.",
+          "Worked on infrastructure, technical support, and maintenance of applications used by a high volume of users.",
+          "Used Elixir and concurrent processing to handle real-time message flows and integrations."
         ]
       }
     ],
-    "projectsTitle": "Engineering case",
-    "projectsDescription": "Practical cases in critical systems, payments, messaging, observability and AI automation, connecting technical decisions to operational impact.",
+    "projectsTitle": "Engineering Cases",
+    "projectsDescription": "Practical cases in critical systems, payments, messaging, observability, and AI automation, connecting technical decisions to operational impact.",
     "projectCards": [
       {
         "title": "Intelligent Triage and Development Workflow Automation",
-        "description": "n8n • AI • Slack • Git Workflow Automation. Automation built to classify requests, integrate internal systems and reduce manual steps across operational and development workflows.",
+        "description": "n8n \u2022 AI \u2022 Slack \u2022 Git Workflow Automation. Automation built to classify requests, integrate internal systems, and reduce manual steps across operational and development workflows.",
         "image": "/portfolio/images/projects/n8n.png",
-        "alt": "Workflow diagram with connected nodes representing automation, integrations and development pipeline",
+        "alt": "Workflow diagram with connected nodes representing automation, integrations, and a development pipeline",
         "problemLabel": "Problem",
-        "problem": "The team continuously received helper requests, fixes and refactors that had to be analyzed, routed and communicated manually before development work could begin.",
+        "problem": "The team continuously received helper requests, fixes, and refactors that had to be analyzed, classified, routed, and communicated manually before development could begin.",
         "solutionLabel": "Solution",
-        "solution": "I developed an n8n automation integrated with AI and Slack to classify requests, identify context, route each item to the responsible team and start steps related to fix or refactor tasks.",
-        "impactLabel": "Learnings",
-        "impact": "The project reinforced the importance of observable, resilient automations focused on real operational bottlenecks, while applying AI to automated decision-making and internal process orchestration.",
+        "solution": "I built an automation with n8n integrated with AI and Slack to interpret context, classify requests, route each item to the correct flow, and start steps related to fix or refactor tasks.",
+        "impactLabel": "Impact and learnings",
+        "impact": "The automation reduced manual steps in the triage flow and reinforced the importance of building observable, resilient automations aimed at real bottlenecks, using AI as support for operational decision-making.",
         "roleLabel": "Role",
-        "role": "I developed the flow end to end, connecting AI classification, n8n orchestration, Slack notifications and development workflow steps.",
+        "role": "I developed the end-to-end flow, connecting AI classification, n8n orchestration, Slack notifications, and development workflow steps.",
         "tags": [
           "n8n",
           "AI",
@@ -150,59 +124,59 @@
       },
       {
         "title": "Think Cloud",
-        "description": "Platform for comparing cloud costs and supporting FinOps decisions. The solution organizes benchmarks and indicators into dashboards, bringing more clarity to technical and commercial analysis.",
+        "description": "Platform for comparing cloud costs and supporting FinOps decisions. The solution organizes benchmarks, indicators, and visualizations to bring more clarity to technical and business analysis.",
         "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
         "image": "/portfolio/images/projects/think-cloud.jpg",
         "alt": "Think Cloud dashboard",
         "problemLabel": "Context",
-        "problem": "Cloud cost comparisons need to bring technical and commercial indicators together clearly to support FinOps decisions.",
+        "problem": "Cloud cost comparisons require technical and business indicators to be organized clearly, avoiding manual, scattered, and hard-to-compare analysis.",
         "solutionLabel": "Solution",
-        "solution": "The platform structures benchmarks and dashboards so cost, capacity and opportunity analysis is easier to compare.",
+        "solution": "The platform structures benchmarks, dashboards, and indicators to make cost, capacity, and opportunity analysis easier to consult and compare.",
         "impactLabel": "Impact",
-        "impact": "It supports technical and commercial conversations with better organized data, reducing dependence on scattered manual analysis.",
+        "impact": "It supports technical and business conversations with more organized data, reducing dependency on manual analysis and improving how FinOps scenarios are evaluated.",
         "roleLabel": "Role",
-        "role": "I contributed to the web experience and information structure for technical reading and decision-making.",
+        "role": "I contributed to the web experience and information organization for technical reading, indicator comparison, and decision support.",
         "tags": ["Cloud", "Dashboard", "FinOps"],
         "button": "View site"
       },
       {
-        "title": "Webhooks and Notifications • Swap",
-        "description": "Messaging system for high-volume webhooks and notifications. The work made the real message flow visible by volume, URL and realm, exposing bottlenecks that were previously hidden inside the application.",
+        "title": "Webhooks and Notifications \u2022 Swap",
+        "description": "Messaging system for high-volume webhooks and notifications. The work brought visibility into the real message flow by quantity, URL, and realm, exposing bottlenecks that were previously invisible in the application.",
         "link": "https://medium.com/@alef_mac/3-horas-para-descobrir-que-nossos-workers-oban-n%C3%A3o-tinham-prioridade-nenhuma-5dd8e324d760",
         "image": "/portfolio/images/projects/notifications.png",
         "alt": "Notification system monitoring",
         "problemLabel": "Problem",
-        "problem": "The system processed a high volume of messages, but operations lacked clarity on which URLs, realms and queues concentrated load, or how Oban worker priority affected processing.",
+        "problem": "The system processed a high volume of messages, but operations lacked clarity on which URLs, realms, and queues concentrated load, or how Oban worker priorities affected processing.",
         "solutionLabel": "Solution",
-        "solution": "I instrumented telemetry to count messages by URL, realm and application flow, connecting operational metrics to worker behavior and making queue buildup visible.",
+        "solution": "I instrumented telemetry to count messages by URL, realm, and application flow, connecting operational metrics to worker behavior and making visible where the queue was actually accumulating.",
         "impactLabel": "Impact",
-        "impact": "The diagnosis moved beyond guesswork: it became possible to identify bottlenecks, adjust processing priorities and explain the incident in a technical article covering the investigation and fix.",
+        "impact": "The diagnosis moved beyond intuition: it became possible to identify bottlenecks, adjust processing priorities, and document the incident in a technical article with the investigation and correction path.",
         "roleLabel": "Role",
-        "role": "I instrumented telemetry, investigated Oban worker behavior and documented the diagnosis process in a technical article.",
+        "role": "I instrumented telemetry, investigated Oban worker behavior, connected metrics to operational impact, and documented the diagnostic process in a technical article.",
         "tags": [
           "Elixir",
           "Oban",
           "Telemetry",
           "Webhooks",
-          "kafka",
+          "Kafka",
           "Observability",
           "Messaging"
         ],
         "button": "Read article"
       },
       {
-        "title": "In-Memory Cache for Elixir",
-        "description": "RememberMe • Elixir • ETS • Performance Engineering",
+        "title": "In-Memory Cache to Reduce Database Load",
+        "description": "RememberMe \u2022 Elixir \u2022 ETS \u2022 Performance Engineering. Open-source in-memory cache library created to reduce repetitive queries and improve read performance in high-concurrency scenarios.",
         "link": "https://hex.pm/packages/remember_me",
         "image": "/portfolio/images/projects/logo.jpg",
         "problemLabel": "Problem",
-        "problem": "A service was receiving thousands of concurrent requests querying the exact same dataset. Despite the simplicity of the queries, the repeated database access created unnecessary load and increased application latency.",
+        "problem": "A service was receiving approximately 2,000 concurrent requests querying the same dataset. Repetitive access created unnecessary database load and increased application latency.",
         "solutionLabel": "Solution",
-        "solution": "I developed RememberMe, an ETS-based in-memory caching library designed to store frequently accessed data and eliminate redundant database queries. The library was published as an open-source Hex package for reuse across projects.",
+        "solution": "I developed RememberMe, an ETS-based in-memory caching solution to store frequently accessed data and avoid repeated database queries. The project was published as an open-source package on Hex for reuse across different applications.",
         "impactLabel": "Impact",
-        "impact": "Reduced database load, improved response times for read-heavy workloads, and optimized resource utilization in scenarios with high levels of concurrent access.",
+        "impact": "The solution reduced pressure on the database, improved read-operation latency, and consolidated a reusable in-memory cache approach for Elixir applications in high-concurrency scenarios.",
         "roleLabel": "Role",
-        "role": "Identified the bottleneck, designed the caching strategy, implemented the library, published the package on Hex, and documented its usage.",
+        "role": "I identified the performance bottleneck, defined the caching strategy, implemented the library, published the package on Hex, and documented its usage.",
         "tags": [
           "Elixir",
           "ETS",
@@ -212,104 +186,103 @@
           "Open Source",
           "Library Design"
         ],
-        "button": "View Package"
+        "button": "View package"
       },
       {
-        "title": "Conversational Bots • Alertrack",
-        "description": "Conversational bot platform for customer service and real-time WhatsApp communication, connecting messages, business rules, webhooks and external automations.",
+        "title": "Conversational Bots \u2022 Alertrack",
+        "description": "Conversational bot platform for real-time customer service and communication via WhatsApp, connecting messages, business rules, webhooks, and external automations.",
         "link": "https://alertrack.com.br/",
         "image": "/portfolio/images/projects/bots.webp",
-        "alt": "Conversation flow with bots",
+        "alt": "Bot conversation flow",
         "problemLabel": "Challenge",
-        "problem": "Support more than 15,000 active users sending messages simultaneously, without turning conversation processing and integrations into an operational bottleneck.",
+        "problem": "Support more than 500 thousand active users sending messages simultaneously without turning conversation processing, integrations, and webhooks into an operational bottleneck.",
         "solutionLabel": "Solution",
-        "solution": "I used Elixir for its lightweight process-based concurrency, modeling message intake through webhooks and cache heavy loads to keep the system responsive under load.",
-        "impactLabel": "Outcome",
-        "impact": "The architecture handled high real-time message volume, reduced manual customer service steps and made it possible to evolve automations without compromising operational stability.",
+        "solution": "I used Elixir for its lightweight process-based concurrency, modeling webhook ingestion, asynchronous processing, and heavy caching to keep the system responsive under load.",
+        "impactLabel": "Result",
+        "impact": "The architecture absorbed a high volume of real-time messages, reduced manual steps in customer service, and allowed automations to evolve without compromising operational stability.",
         "roleLabel": "Role",
-        "role": "I worked on backend and integrations, modeling webhook intake, concurrent processing and support for external automations.",
-        "tags": ["Elixir", "Whatsapp", "Webhooks", "n8n", "Realtime", "Bots"],
+        "role": "I worked on the backend and integrations, modeling webhook ingestion, concurrent processing, caching, and support for external automations.",
+        "tags": ["Elixir", "WhatsApp", "Webhooks", "n8n", "Realtime", "Bots"],
         "button": "View site"
       }
     ],
-    "buildTitle": "Core Expertise",
-    "buildDescription": "Experience building and operating production systems with a strong focus on reliability, scalability, operational excellence, and business impact.",
+    "buildTitle": "Focus Areas",
+    "buildDescription": "Experience building and operating production systems with a focus on reliability, traceability, scalability, diagnosis, and business impact.",
     "buildPrinciples": [
       {
-        "title": "High Availability & Reliability",
-        "description": "Development and operation of mission-critical systems with emphasis on resilience, fault tolerance, incident response, and service continuity."
+        "title": "Production Reliability",
+        "description": "Development and maintenance of critical systems with a focus on resilience, fault tolerance, traceability, incident response, and service continuity."
       },
       {
-        "title": "Distributed Systems",
-        "description": "Architecture and development of APIs, messaging systems, asynchronous processing, event-driven workflows, and integrations designed for scale and fault isolation."
+        "title": "APIs, Messaging & Distributed Systems",
+        "description": "Building APIs, asynchronous processing, queues, events, and integrations designed for scale, fault isolation, and safe evolution."
       },
       {
         "title": "Payments & Financial Infrastructure",
-        "description": "Experience with accounts, transfers, transaction processing, notifications, payment methods, and mission-critical financial workflows."
+        "description": "Experience with accounts, transfers, transaction processing, notifications, payment methods, and critical financial workflows."
       },
       {
-        "title": "Cloud Native & Platform Engineering",
-        "description": "Containers, Kubernetes, CI/CD, infrastructure automation, and modern operational practices for scalable and highly available environments."
+        "title": "Cloud Native & Operations",
+        "description": "Use of containers, Kubernetes, CI/CD, infrastructure automation, and modern practices to support scalable and observable environments."
       },
       {
-        "title": "Observability & Operational Excellence",
-        "description": "Implementation of logging, metrics, tracing, alerting, and telemetry strategies to improve visibility, reliability, and operational efficiency."
+        "title": "Observability & Diagnosis",
+        "description": "Implementation of logs, metrics, tracing, alerts, and telemetry to increase visibility, reduce uncertainty, and support decisions during incidents."
       },
       {
-        "title": "AI Automation",
-        "description": "Design of automated workflows powered by AI, LLMs, RAG architectures, and integrations to streamline processes and reduce manual effort."
+        "title": "Technical Ownership",
+        "description": "Work beyond implementation: problem investigation, technical documentation, workflow improvement, solution review, and continuous evolution of existing systems."
       }
     ],
     "stackTitle": "Stack",
-    "stackDescription": "Technologies I use to build products, integrations, automations and observable systems.",
+    "stackDescription": "Technologies I use to build backend products, integrations, automations, and observable production systems.",
     "stackToolsLabel": "tools in flow",
     "stackCategories": [
       {
-        "title": "Frontend",
-        "items": ["React", "TypeScript", "Material UI"]
-      },
-      {
-        "title": "Backend",
+        "title": "Core Backend",
         "items": [
-          "Node.js",
           "Elixir",
           "Kotlin",
+          "Node.js",
           "Python",
-          "Go",
-          "APIs",
+          "REST APIs",
           "Messaging",
           "Event-driven Architecture"
         ]
       },
       {
-        "title": "Database",
-        "items": ["PostgreSQL", "SqlServer", "Cassandra", "MongoDB", "Redis"]
+        "title": "Data and Persistence",
+        "items": ["PostgreSQL", "Redis", "Cassandra", "MongoDB", "SQL Server"]
       },
       {
-        "title": "Cloud",
-        "items": ["AWS", "Docker", "CI/CD", "Kubernetes", "Terraform"]
+        "title": "Production and Platform",
+        "items": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
       },
       {
         "title": "Observability",
-        "items": ["OpenTelemetry", "Logs", "Metrics", "Tracing"]
+        "items": ["OpenTelemetry", "Logs", "Metrics", "Tracing", "Alerts"]
       },
       {
         "title": "AI and Automation",
-        "items": ["n8n", "LLMs", "RAG", "Slack"]
+        "items": ["n8n", "LLMs", "RAG", "Slack", "Internal Workflows"]
+      },
+      {
+        "title": "Supporting Frontend",
+        "items": ["React", "TypeScript", "Material UI"]
       }
     ],
-    "exploringTitle": "Currently exploring",
-    "exploringDescription": "I have been going deeper into AI and system design in the new applications emerging at my current company, connecting automation, architecture and operations from the first decisions.",
+    "exploringTitle": "Currently Exploring",
+    "exploringDescription": "I have been going deeper into applied AI and system design in new applications, connecting automation, architecture, observability, and operations from the first technical decisions.",
     "exploringCards": [
       {
         "title": "Applied AI",
-        "description": "I use LLMs and automations to classify requests, reduce manual steps and create flows that support real product decisions.",
+        "description": "I use LLMs and automations to classify requests, reduce manual steps, and create flows that support real product and operations decisions.",
         "visual": "ai",
         "items": ["LLMs", "RAG", "n8n", "Slack", "Automation"]
       },
       {
         "title": "System Design",
-        "description": "I design APIs, queues, observability and integrations with the evolution, diagnosis and operation of new applications in mind.",
+        "description": "I design APIs, queues, observability, and integrations with evolution, diagnosis, operations, and trade-offs in mind from the first technical decisions.",
         "visual": "system",
         "items": [
           "APIs",
@@ -322,46 +295,46 @@
       }
     ],
     "contactTitle": "Let's talk",
-    "contactDescription": "If you need to build a product, automate processes or evolve an architecture with more clarity and observability, I can help turn the idea into a practical solution.",
+    "contactDescription": "If you need to build a product, automate processes, or evolve an architecture with more clarity, observability, and reliability, I can help turn the problem into a practical solution.",
     "contactPrimaryAction": "Send email",
     "contactSecondaryAction": "View LinkedIn",
-    "contactMeta": "Brazil / remote. Open to international opportunities in Backend, fintech, payments, distributed systems, automation and technical consulting.",
+    "contactMeta": "Brazil / remote. Open to opportunities in Backend, fintech, payments, distributed systems, automation, applied AI, and technical consulting.",
     "contactForm": {
       "title": "Send a message",
-      "description": "Use the form to share context, goals or technical questions. I will receive it directly by email.",
+      "description": "Use the form to share context, goals, or technical questions. I will receive it directly by email.",
       "nameLabel": "Name",
       "namePlaceholder": "Your name",
       "emailLabel": "Email",
       "emailPlaceholder": "you@example.com",
       "subjectLabel": "Subject",
-      "subjectPlaceholder": "Project, consulting or technical question",
+      "subjectPlaceholder": "Project, consulting, or technical question",
       "messageLabel": "Message",
-      "messagePlaceholder": "Tell me what you are trying to build or improve.",
+      "messagePlaceholder": "Tell me what you want to build or improve.",
       "submit": "Send message",
       "submitting": "Sending...",
       "success": "Message sent. I will get back to you soon.",
-      "error": "The message could not be sent right now. Please try again or use the email link.",
-      "configError": "Error sending the message. Please try again later or use the direct email link."
+      "error": "It was not possible to send the message right now. Please try again or use the email link.",
+      "configError": "There was an error sending the message. Please try again later or use the direct email link."
     }
   },
   "hero": {
-    "eyebrow": "Fintech • Payments • Distributed Systems • AI Automation",
+    "eyebrow": "Backend \u2022 Fintech \u2022 Payments \u2022 Observability \u2022 Applied AI",
     "title": "Hi, I'm Alef,",
     "skills": [
-      "Full Stack Developer.",
-      "I build digital products.",
-      "I apply AI to real processes.",
-      "I automate operational flows.",
-      "I design observable systems.",
-      "Problem Solver."
+      "Backend Engineer for critical financial systems.",
+      "I design resilient APIs, queues, and integrations.",
+      "I build observable production systems.",
+      "I work with payments, fintech, and 24/7 operations.",
+      "I automate workflows with applied AI.",
+      "I solve scale and reliability problems."
     ],
-    "description": "I build resilient systems for critical operations, payments and AI-based automations.",
-    "primaryAction": "View projects",
+    "description": "I build and operate resilient backend systems for payments, critical operations, and AI-based automations, connecting architecture, reliability, and business impact.",
+    "primaryAction": "View engineering cases",
     "secondaryAction": "Get in touch",
     "resumeAction": "Download resume"
   },
   "footer": {
-    "title": "© 2026 Alef Machado. All rights reserved.",
+    "title": "\u00a9 2026 Alef Machado. All rights reserved.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "email": "Email"

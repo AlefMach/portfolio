@@ -16,24 +16,25 @@ export function Hero() {
         alignItems: "center",
         display: "flex",
         minHeight: { xs: "calc(100svh - 64px)", md: "calc(100vh - 72px)" },
-        py: { xs: 6, sm: 8, md: 10 },
+        py: { xs: 5, sm: 7, md: 7, lg: 8 },
+        "@media (min-width: 900px) and (max-height: 900px)": {
+          py: 5,
+        },
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3 } }}>
         <Box
           sx={{
             display: "grid",
-            gap: { xs: 5, md: 8 },
+            gap: { xs: 4, md: 5, lg: 7 },
             gridTemplateColumns: {
               xs: "1fr",
               sm: "1.1fr .9fr",
               lg: "1.15fr .85fr",
             },
             alignItems: "center",
-            minHeight: {
-              xs: "auto",
-              sm: "70vh",
-              md: "calc(100vh - 72px)",
+            "@media (min-width: 900px) and (max-height: 900px)": {
+              gap: 4,
             },
           }}
         >

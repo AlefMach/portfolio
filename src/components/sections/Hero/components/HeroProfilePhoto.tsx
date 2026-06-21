@@ -13,6 +13,9 @@ export function HeroProfilePhoto() {
           md: 420,
           lg: 520,
         },
+        "@media (min-width: 900px) and (max-height: 900px)": {
+          maxWidth: 400,
+        },
         aspectRatio: "1 / 1",
         mx: {
           xs: "auto",

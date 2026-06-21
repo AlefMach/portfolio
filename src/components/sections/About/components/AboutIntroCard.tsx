@@ -15,10 +15,13 @@ export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
         border: 1,
         borderColor: "divider",
         borderRadius: 2,
-        p: { xs: 2.5, md: 3.5 },
+        p: { xs: 2.25, md: 3, lg: 3.5 },
         background:
           "linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0))",
         boxShadow: "0 18px 48px rgba(15, 23, 42, 0.06)",
+        "@media (min-width: 900px) and (max-height: 820px)": {
+          p: 2.5,
+        },
         "&::before": {
           content: '""',
           position: "absolute",
@@ -32,7 +35,16 @@ export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
         },
       }}
     >
-      <Stack spacing={2.5} sx={{ position: "relative", zIndex: 1 }}>
+      <Stack
+        spacing={{ xs: 2, lg: 2.5 }}
+        sx={{
+          position: "relative",
+          zIndex: 1,
+          "@media (min-width: 900px) and (max-height: 820px)": {
+            gap: 2,
+          },
+        }}
+      >
         <Box
           sx={{
             alignItems: "center",
@@ -42,9 +54,13 @@ export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
             borderRadius: 2,
             color: "primary.main",
             display: "flex",
-            height: 48,
+            height: { xs: 44, lg: 48 },
             justifyContent: "center",
-            width: 48,
+            width: { xs: 44, lg: 48 },
+            "@media (min-width: 900px) and (max-height: 820px)": {
+              height: 42,
+              width: 42,
+            },
           }}
         >
           <RouteOutlinedIcon fontSize="small" />
@@ -53,9 +69,13 @@ export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
         <Typography
           sx={{
             color: "text.primary",
-            fontSize: { xs: "1.15rem", md: "1.35rem" },
+            fontSize: { xs: "1.1rem", md: "1.25rem", lg: "1.35rem" },
             fontWeight: 800,
             lineHeight: 1.35,
+            "@media (min-width: 900px) and (max-height: 820px)": {
+              fontSize: "1.15rem",
+              lineHeight: 1.3,
+            },
           }}
         >
           {intro}
@@ -64,7 +84,11 @@ export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
         <Typography
           sx={{
             color: "text.secondary",
-            lineHeight: 1.75,
+            lineHeight: { xs: 1.65, lg: 1.75 },
+            "@media (min-width: 900px) and (max-height: 820px)": {
+              fontSize: "0.95rem",
+              lineHeight: 1.6,
+            },
           }}
         >
           {detail}
