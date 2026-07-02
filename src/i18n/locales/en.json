@@ -123,21 +123,19 @@
         ]
       },
       {
-        "title": "Think Cloud",
-        "description": "Platform for comparing cloud costs and supporting FinOps decisions. The solution organizes benchmarks, indicators, and visualizations to bring more clarity to technical and business analysis.",
-        "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
-        "image": "/portfolio/images/projects/think-cloud.jpg",
-        "alt": "Think Cloud dashboard",
+        "title": "Statement 2.0 • Swap",
+        "description": "Statement flow redesign with Kotlin and MongoDB to provide a more consistent balance history, using clear contracts and a data model shaped for financial queries.",
+        "image": "/portfolio/images/projects/extrato-bancário.webp",
+        "alt": "Swap Statement 2.0 flow",
         "problemLabel": "Context",
-        "problem": "Cloud cost comparisons require technical and business indicators to be organized clearly, avoiding manual, scattered, and hard-to-compare analysis.",
+        "problem": "BalanceHistory 1.0 depended on ETL, had poor synchronization, and often returned unrealistic data for statement and balance queries.",
         "solutionLabel": "Solution",
-        "solution": "The platform structures benchmarks, dashboards, and indicators to make cost, capacity, and opportunity analysis easier to consult and compare.",
+        "solution": "I refactored the Statement 2.0 flow in Kotlin, structured MongoDB around the PACELC method, defined clear contracts, and handled race conditions.",
         "impactLabel": "Impact",
-        "impact": "It supports technical and business conversations with more organized data, reducing dependency on manual analysis and improving how FinOps scenarios are evaluated.",
+        "impact": "The new structure reduced balance-history inconsistencies, improved query reliability, and made the flow less dependent on fragile asynchronous processes.",
         "roleLabel": "Role",
-        "role": "I contributed to the web experience and information organization for technical reading, indicator comparison, and decision support.",
-        "tags": ["Cloud", "Dashboard", "FinOps"],
-        "button": "View site"
+        "role": "I worked on MongoDB modeling, service contract evolution, and concurrency concerns, while also joining MongoDB Atlas training to support the technical decisions.",
+        "tags": ["Kotlin", "MongoDB", "Fintech"]
       },
       {
         "title": "Webhooks and Notifications \u2022 Swap",

@@ -49,7 +49,7 @@
       {
         "company": "Swap",
         "period": "2025 - Atual",
-        "role": "Software Engineer Pleno III",
+        "role": "Software Engineer Pleno II",
         "highlights": [
           "Atuação em plataforma de contas e pagamentos com processamento de milhares de transações por dia.",
           "Desenvolvimento e sustentação de APIs críticas de movimentação financeira, com foco em rastreabilidade, confiabilidade e segurança operacional.",
@@ -123,21 +123,19 @@
         ]
       },
       {
-        "title": "Think Cloud",
-        "description": "Plataforma para comparar custos cloud e apoiar decisões de FinOps. A solução organiza benchmarks, indicadores e visualizações para dar mais clareza a análises técnicas e comerciais.",
-        "link": "https://www.grupothink.com.br/solucoes/think-cloud/",
-        "image": "/portfolio/images/projects/think-cloud.jpg",
-        "alt": "Dashboard do Think Cloud",
+        "title": "Extrato 2.0 • Swap",
+        "description": "Reestruturação do fluxo de extrato com Kotlin e MongoDB para entregar histórico de saldo mais consistente, com contratos claros e modelagem pensada para consultas financeiras.",
+        "image": "/portfolio/images/projects/extrato-bancário.webp",
+        "alt": "Fluxo de extrato 2.0 da Swap",
         "problemLabel": "Contexto",
-        "problem": "Comparações de custo cloud exigem reunir indicadores técnicos e comerciais de forma clara, evitando análises manuais, dispersas e difíceis de comparar.",
+        "problem": "O BalanceHistory 1.0 dependia de ETL, tinha baixa sincronização e muitas vezes retornava dados irreais para consultas de extrato e saldo.",
         "solutionLabel": "Solução",
-        "solution": "A plataforma estrutura benchmarks, dashboards e indicadores para tornar análises de custo, capacidade e oportunidade mais fáceis de consultar e comparar.",
+        "solution": "Refatorei o fluxo do Extrato 2.0 em Kotlin, estruturando o MongoDB com base no método PACELC, definindo contratos claros e tratando race conditionals.",
         "impactLabel": "Impacto",
-        "impact": "Apoia conversas técnicas e comerciais com dados mais organizados, reduzindo dependência de análises manuais e melhorando a leitura de cenários de FinOps.",
+        "impact": "A nova estrutura reduziu inconsistências no histórico de saldo, melhorou a confiabilidade das consultas e tornou o fluxo menos dependente de processos assíncronos frágeis.",
         "roleLabel": "Papel",
-        "role": "Participei da construção da experiência web e da organização das informações para leitura técnica, comparação de indicadores e apoio à tomada de decisão.",
-        "tags": ["Cloud", "Dashboard", "FinOps"],
-        "button": "Ver site"
+        "role": "Atuei na modelagem do MongoDB, na evolução dos contratos do serviço e no cuidado com concorrência, além de participar de treinamento com a MongoDB Atlas para apoiar as decisões técnicas.",
+        "tags": ["Kotlin", "MongoDB", "Fintech"]
       },
       {
         "title": "Webhooks e Notificações • Swap",
