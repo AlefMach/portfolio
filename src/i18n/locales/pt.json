@@ -51,7 +51,7 @@
         "period": "2025 - Atual",
         "role": "Software Engineer",
         "highlights": [
-          "Atuação em plataforma de contas e pagamentos com processamento de milhares de transações por dia.",
+          "Atuação em plataforma de contas e extrato com processamento de milhares de transações por dia.",
           "Desenvolvimento e sustentação de APIs críticas de movimentação financeira, com foco em rastreabilidade, confiabilidade e segurança operacional.",
           "Evolução de fluxos de transferências bancárias, integrações financeiras, notificações e processamento assíncrono.",
           "Instrumentação de métricas, logs e alertas para melhorar visibilidade sobre filas, workers, webhooks e comportamento da aplicação em produção.",
