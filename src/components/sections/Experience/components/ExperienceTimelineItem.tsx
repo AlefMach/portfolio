@@ -106,7 +106,10 @@ export function ExperienceTimelineItem({
             </Typography>
             <Typography
               component="h3"
-              sx={{ fontSize: { xs: "1.15rem", md: "1.25rem" }, fontWeight: 900 }}
+              sx={{
+                fontSize: { xs: "1.15rem", md: "1.25rem" },
+                fontWeight: 900,
+              }}
             >
               {item.role}
             </Typography>

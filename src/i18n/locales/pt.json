@@ -27,7 +27,7 @@
       "Observabilidade e confiabilidade",
       "IA aplicada: LLMs, agentes, RAG e automação"
     ],
-    "aboutIntro": "Construo, evoluo e opero software backend para ambientes onde disponibilidade, rastreabilidade e previsibilidade operacional impactam diretamente o negócio.",
+    "aboutIntro": "Atuo em backend de fintechs, pagamentos e sistemas críticos, conectando decisões de arquitetura à confiabilidade da operação. Também aplico IA, RAG e observabilidade para transformar contexto operacional em fluxos úteis e rastreáveis.",
     "aboutDetail": "Minha experiência passa por sistemas de contas, pagamentos, transferências, notificações, integrações financeiras, mensageria, deploys, QA, monitoramento e infraestrutura. Na empresa atual, também construo fluxos com IA usando LLMs, agentes, tool calling, RAG para recuperar contexto relevante e automação, reduzindo trabalho manual, melhorando o diagnóstico de incidentes e dando mais previsibilidade à operação.",
     "aboutCards": [
       {
@@ -51,13 +51,13 @@
         "period": "2025 - Atual",
         "role": "Software Engineer",
         "highlights": [
-          "Atuação em plataforma de contas e extrato com processamento de milhares de transações por dia.",
-          "Desenvolvimento e sustentação de APIs críticas de movimentação financeira, com foco em rastreabilidade, confiabilidade e segurança operacional.",
-          "Evolução de fluxos de transferências bancárias, integrações financeiras, notificações e processamento assíncrono.",
-          "Instrumentação de métricas, logs e alertas para melhorar visibilidade sobre filas, workers, webhooks e comportamento da aplicação em produção.",
-          "Construção de fluxos internos com IA usando LLMs, agentes, tool calling, RAG e orquestração para recuperar contexto relevante, classificar demandas, direcionar trabalho e reduzir etapas operacionais manuais.",
-          "Participação em investigação e tratamento de incidentes em ambiente 24/7, conectando sintomas técnicos ao impacto operacional.",
-          "Colaboração em decisões de arquitetura, mensageria e observabilidade para aumentar previsibilidade e reduzir gargalos em sistemas críticos."
+          "Evoluo serviços de contas e extrato que processam milhares de transações por dia, com foco em consistência dos dados financeiros e rastreabilidade ponta a ponta.",
+          "Desenho e mantenho APIs de movimentação financeira e fluxos assíncronos de transferências, integrações e notificações, considerando concorrência, falhas e segurança operacional.",
+          "Instrumentei métricas, logs e alertas para filas, workers e webhooks. Em um incidente documentado, a investigação identificou em 3 horas que a prioridade dos workers Oban deixava mensagens sem processamento preferencial.",
+          "Investigo incidentes em operação 24/7, conectando sinais de aplicação e mensageria ao impacto operacional para orientar mitigação e correções.",
+          "Construo automações internas com LLMs, tool calling e RAG para recuperar contexto, classificar demandas e reduzir etapas manuais; acompanho a qualidade por relevância das fontes e rastreabilidade das respostas.",
+          "Conduzo discussões técnicas sobre arquitetura, mensageria e observabilidade, propondo mudanças a partir de gargalos identificados em produção.",
+          "Atuo como buddy de pessoas em níveis de senioridade mais baixos e contribuo com code reviews para apoiar a qualidade técnica e o desenvolvimento do time."
         ]
       },
       {
@@ -68,7 +68,7 @@
           "Desenvolvimento de sistemas internos, APIs e integrações para apoiar processos operacionais da empresa.",
           "Atuação em infraestrutura, servidores locais on-premise, banco de dados, deploys e manutenção de ambientes.",
           "Criação de automações para reduzir tarefas manuais e aumentar previsibilidade em rotinas internas.",
-          "Sustentação de aplicações utilizadas por milhares de usuários, com suporte técnico, monitoramento e correção de problemas em produção.",
+          "Sustentei aplicações utilizadas por milhares de usuários, acompanhando produção, investigando falhas e entregando correções para manter os processos operacionais disponíveis.",
           "Contribuição em melhorias de organização, confiabilidade e manutenção de sistemas legados e ambientes locais."
         ]
       },
@@ -93,7 +93,7 @@
           "Construção de build system do zero e apoio em deploys, QA, monitoramento e manutenção de ambientes.",
           "Integração com APIs, webhooks, servidores locais on-premise e automações externas.",
           "Atuação em infraestrutura, suporte técnico e sustentação de aplicações utilizadas por alto volume de usuários.",
-          "Uso de Elixir e processamento concorrente para lidar com fluxos de mensagens e integrações em tempo real."
+          "Desenvolvi serviços em Elixir para uma plataforma com mais de 500 mil usuários ativos, usando processamento concorrente, webhooks e cache para absorver picos de mensagens e integrações em tempo real."
         ]
       }
     ],
@@ -188,21 +188,27 @@
         "button": "Ver pacote"
       },
       {
-        "title": "Bots Conversacionais • Alertrack",
-        "description": "Plataforma de bots conversacionais para atendimento e comunicação em tempo real via WhatsApp, conectando mensagens, regras de negócio, webhooks e automações externas.",
-        "link": "https://alertrack.com.br/",
-        "image": "/portfolio/images/projects/bots.webp",
-        "alt": "Fluxo de conversação com bots",
-        "problemLabel": "Desafio",
-        "problem": "Dar suporte a mais de 500 mil usuários ativos enviando mensagens simultaneamente, sem transformar o processamento de conversas, integrações e webhooks em gargalo operacional.",
-        "solutionLabel": "Solução",
-        "solution": "Usei Elixir pela concorrência baseada em processos leves, modelando recebimento via webhooks, processamento assíncrono e cache pesado para manter o sistema responsivo sob carga.",
-        "impactLabel": "Resultado",
-        "impact": "A arquitetura absorveu alto volume de mensagens em tempo real, reduziu etapas manuais no atendimento e permitiu evoluir automações sem comprometer a estabilidade da operação.",
-        "roleLabel": "Papel",
-        "role": "Atuei no backend e nas integrações, modelando recebimento por webhooks, processamento concorrente, cache e suporte a automações externas.",
-        "tags": ["Elixir", "Whatsapp", "Webhooks", "n8n", "Realtime", "Bots"],
-        "button": "Ver site"
+        "title": "Tech Talk: IA, RAG e Observabilidade",
+        "description": "Uma série recorrente de conversas técnicas sobre IA, RAG e observabilidade, incluindo discussões que conduzo sobre como manter sistemas resilientes quando componentes falham.",
+        "image": "/portfolio/images/projects/images.png",
+        "alt": "Visualização conceitual de busca semântica e observabilidade em um fluxo de RAG",
+        "problemLabel": "Tópicos",
+        "problem": "Como construir sistemas resilientes quando dependências falham, recuperar contexto útil sem tratar similaridade vetorial como sinônimo automático de relevância e tornar fluxos observáveis e depuráveis.",
+        "solutionLabel": "Conteúdo",
+        "solution": "Além de embeddings, busca vetorial e avaliação de RAG, a conversa abordou estratégias de resiliência diante de falhas, uso de Grafana com IA para apoiar a análise operacional e quando logs ajudam  ou só geram ruído  no diagnóstico.",
+        "impactLabel": "Observabilidade",
+        "impact": "Explora como combinar métricas, logs e rastreamento para entender falhas e manter a operação resiliente, usando Grafana e IA como apoio e avaliando a utilidade prática dos loggers em cada contexto.",
+        "roleLabel": "Formato",
+        "role": "Conduzo conversas recorrentes sobre observabilidade e resiliência, conectando exemplos de arquitetura, Grafana com IA, RAG e critérios para decidir quando logs são úteis no diagnóstico.",
+        "tags": [
+          "IA",
+          "LLMs",
+          "RAG",
+          "Embeddings",
+          "Similaridade Cosseno",
+          "Observabilidade",
+          "Avaliação"
+        ]
       }
     ],
     "buildTitle": "Áreas de atuação",
@@ -264,7 +270,15 @@
       },
       {
         "title": "IA e Automação",
-        "items": ["LLMs", "Agentes de IA", "Tool Calling", "RAG", "MCP", "n8n", "Workflows internos"]
+        "items": [
+          "LLMs",
+          "Agentes de IA",
+          "Tool Calling",
+          "RAG",
+          "MCP",
+          "n8n",
+          "Workflows internos"
+        ]
       },
       {
         "title": "Frontend de apoio",
@@ -278,7 +292,15 @@
         "title": "IA aplicada em produção",
         "description": "Um fluxo operacional real: uma demanda chega por um canal interno, o agente recebe o contexto relevante por retrieval e MCP, decide quais ferramentas chamar, classifica e direciona o trabalho e então dispara a notificação ou o workflow de desenvolvimento adequado, mantendo uma trilha auditável.",
         "visual": "ai",
-        "items": ["LLMs", "Agentes de IA", "Tool Calling", "RAG", "MCP", "n8n", "Automação"]
+        "items": [
+          "LLMs",
+          "Agentes de IA",
+          "Tool Calling",
+          "RAG",
+          "MCP",
+          "n8n",
+          "Automação"
+        ]
       },
       {
         "title": "System Design",

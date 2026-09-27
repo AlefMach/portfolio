@@ -27,7 +27,7 @@
       "Observability and reliability",
       "Applied AI: LLMs, agents, RAG, and automation"
     ],
-    "aboutIntro": "I build, evolve, and operate backend software for environments where availability, traceability, and operational predictability directly impact the business.",
+    "aboutIntro": "I work on fintech, payments, and mission-critical backend systems, connecting architecture decisions to operational reliability. I also apply AI, RAG, and observability to turn operational context into useful, traceable workflows.",
     "aboutDetail": "My experience spans account systems, payments, bank transfers, notifications, financial integrations, messaging, deployments, QA, monitoring, and infrastructure. In my current role, I also build AI-powered workflows using LLMs, agents, tool calling, RAG to retrieve relevant context, and automation to reduce manual work, improve incident diagnosis, and bring more predictability to operations.",
     "aboutCards": [
       {
@@ -51,13 +51,13 @@
         "period": "2025 - Present",
         "role": "Software Engineer",
         "highlights": [
-          "Worked on an accounts and payments platform processing thousands of transactions per day.",
-          "Developed and maintained critical financial transaction APIs, with a focus on traceability, reliability, and operational safety.",
-          "Evolved bank transfer flows, financial integrations, notifications, and asynchronous processing.",
-          "Instrumented metrics, logs, and alerts to improve visibility into queues, workers, webhooks, and production application behavior.",
-          "Built AI-powered internal workflows using LLMs, agents, tool calling, RAG, and orchestration to retrieve relevant context, classify requests, route work, and reduce manual operational steps.",
-          "Participated in incident investigation and response in a 24/7 environment, connecting technical symptoms to operational impact.",
-          "Collaborated on architecture, messaging, and observability decisions to increase predictability and reduce bottlenecks in critical systems."
+          "Evolve account and statement services processing thousands of transactions per day, with a focus on financial data consistency and end-to-end traceability.",
+          "Design and maintain financial transaction APIs and asynchronous flows for transfers, integrations, and notifications, accounting for concurrency, failures, and operational safety.",
+          "Instrumented metrics, logs, and alerts across queues, workers, and webhooks. In a documented incident, the investigation found within 3 hours that Oban worker priorities were leaving messages without preferred processing.",
+          "Investigate incidents in a 24/7 operation, connecting application and messaging signals to operational impact to guide mitigation and follow-up fixes.",
+          "Build internal automations with LLMs, tool calling, and RAG to retrieve context, classify requests, and reduce manual steps; track quality through source relevance and response traceability.",
+          "Lead technical discussions on architecture, messaging, and observability, proposing changes based on production bottlenecks.",
+          "Act as a buddy for less senior teammates and contribute code reviews to support technical quality and team growth."
         ]
       },
       {
@@ -68,7 +68,7 @@
           "Developed internal systems, APIs, and integrations to support the company's operational processes.",
           "Worked across infrastructure, on-premise servers, databases, deployments, and environment maintenance.",
           "Built automations to reduce manual tasks and increase predictability in internal routines.",
-          "Maintained applications used by thousands of users, including technical support, monitoring, and production issue resolution.",
+          "Maintained applications used by thousands of users, monitoring production, investigating failures, and delivering fixes to keep operational workflows available.",
           "Contributed to improvements in organization, reliability, and maintainability of legacy systems and local environments."
         ]
       },
@@ -93,7 +93,7 @@
           "Built a build system from scratch and supported deployments, QA, monitoring, and environment maintenance.",
           "Integrated APIs, webhooks, on-premise servers, and external automations.",
           "Worked on infrastructure, technical support, and maintenance of applications used by a high volume of users.",
-          "Used Elixir and concurrent processing to handle real-time message flows and integrations."
+          "Built Elixir services for a platform with more than 500,000 active users, using concurrent processing, webhooks, and caching to handle peaks in real-time messages and integrations."
         ]
       }
     ],
@@ -188,21 +188,27 @@
         "button": "View package"
       },
       {
-        "title": "Conversational Bots \u2022 Alertrack",
-        "description": "Conversational bot platform for real-time customer service and communication via WhatsApp, connecting messages, business rules, webhooks, and external automations.",
-        "link": "https://alertrack.com.br/",
-        "image": "/portfolio/images/projects/bots.webp",
-        "alt": "Bot conversation flow",
-        "problemLabel": "Challenge",
-        "problem": "Support more than 500 thousand active users sending messages simultaneously without turning conversation processing, integrations, and webhooks into an operational bottleneck.",
-        "solutionLabel": "Solution",
-        "solution": "I used Elixir for its lightweight process-based concurrency, modeling webhook ingestion, asynchronous processing, and heavy caching to keep the system responsive under load.",
-        "impactLabel": "Result",
-        "impact": "The architecture absorbed a high volume of real-time messages, reduced manual steps in customer service, and allowed automations to evolve without compromising operational stability.",
-        "roleLabel": "Role",
-        "role": "I worked on the backend and integrations, modeling webhook ingestion, concurrent processing, caching, and support for external automations.",
-        "tags": ["Elixir", "WhatsApp", "Webhooks", "n8n", "Realtime", "Bots"],
-        "button": "View site"
+        "title": "Tech Talk: AI, RAG, and Observability",
+        "description": "A recurring series of technical discussions on AI, RAG, and observability, including topics I lead on keeping systems resilient when components fail.",
+        "image": "/portfolio/images/projects/images.png",
+        "alt": "Conceptual view of semantic search and observability in a RAG workflow",
+        "problemLabel": "Topics",
+        "problem": "How to build resilient systems when dependencies fail, retrieve useful context without treating vector similarity as an automatic proxy for relevance, and make workflows observable and debuggable.",
+        "solutionLabel": "Content",
+        "solution": "Alongside embeddings, vector search, and RAG evaluation, the discussion covered resilience strategies for failures, using Grafana with AI to support operational analysis, and when logs helpor only add noiseto diagnosis.",
+        "impactLabel": "Observability",
+        "impact": "Explores how to combine metrics, logs, and traces to understand failures and keep operations resilient, using Grafana and AI as support while judging the practical value of loggers in each context.",
+        "roleLabel": "Format",
+        "role": "I lead recurring discussions on observability and resilience, connecting architecture examples, Grafana with AI, RAG, and criteria for deciding when logs help diagnosis.",
+        "tags": [
+          "AI",
+          "LLMs",
+          "RAG",
+          "Embeddings",
+          "Cosine Similarity",
+          "Observability",
+          "Evaluation"
+        ]
       }
     ],
     "buildTitle": "Focus Areas",
@@ -264,7 +270,15 @@
       },
       {
         "title": "AI and Automation",
-        "items": ["LLMs", "AI Agents", "Tool Calling", "RAG", "MCP", "n8n", "Internal Workflows"]
+        "items": [
+          "LLMs",
+          "AI Agents",
+          "Tool Calling",
+          "RAG",
+          "MCP",
+          "n8n",
+          "Internal Workflows"
+        ]
       },
       {
         "title": "Supporting Frontend",
@@ -278,7 +292,15 @@
         "title": "Applied AI in Production",
         "description": "A real operational flow: a request arrives through an internal channel, the agent receives the relevant context through retrieval and MCP, decides which tools to call, classifies and routes the work, then triggers the right notification or development workflow with an auditable trail.",
         "visual": "ai",
-        "items": ["LLMs", "AI Agents", "Tool Calling", "RAG", "MCP", "n8n", "Automation"]
+        "items": [
+          "LLMs",
+          "AI Agents",
+          "Tool Calling",
+          "RAG",
+          "MCP",
+          "n8n",
+          "Automation"
+        ]
       },
       {
         "title": "System Design",
