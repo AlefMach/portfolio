@@ -18,12 +18,12 @@ export function TimelineProgressLine({
       sx={{
         bgcolor: "divider",
         bottom: 0,
-        left: { xs: 16, md: "50%" },
+        left: { xs: 20, md: "50%" },
         overflow: "hidden",
         position: "absolute",
         top: 0,
         transform: { md: "translateX(-50%)" },
-        width: 3,
+        width: 2,
       }}
     >
       <Box

@@ -15,10 +15,15 @@ export function Hero() {
       sx={{
         alignItems: "center",
         display: "flex",
-        minHeight: { xs: "calc(100svh - 64px)", md: "calc(100vh - 72px)" },
-        py: { xs: 5, sm: 7, md: 7, lg: 8 },
+        minHeight: { xs: "calc(100svh - 64px)", md: "calc(100svh - 72px)" },
+        pt: { xs: 5, sm: 7, md: 7, lg: 8 },
+        pb: { xs: 5, sm: 7, md: 7, lg: 8 },
         "@media (min-width: 900px) and (max-height: 900px)": {
-          py: 5,
+          pt: 5,
+          pb: 5,
+        },
+        "@media (min-width: 900px) and (min-height: 901px)": {
+          pb: "clamp(5rem, 10vh, 8rem)",
         },
       }}
     >

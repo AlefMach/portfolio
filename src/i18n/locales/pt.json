@@ -18,17 +18,17 @@
   "home": {
     "title": "Home",
     "aboutTitle": "Sobre",
-    "aboutDescription": "Backend Software Engineer com atuação Pleno III em fintech, pagamentos e sistemas críticos. Trabalho na construção e sustentação de serviços backend com foco em confiabilidade, rastreabilidade, observabilidade e operação em ambientes 24/7.",
+    "aboutDescription": "Backend Software Engineer com atuação Pleno III em fintech, pagamentos, sistemas críticos e IA aplicada. Construo e sustento serviços backend confiáveis e observáveis, além de fluxos com IA para operações 24/7.",
     "aboutFocusItems": [
       "Atuação Pleno III em backend",
       "Fintech e pagamentos",
       "Sistemas críticos em produção",
       "APIs, mensageria e integrações",
       "Observabilidade e confiabilidade",
-      "IA aplicada a automações"
+      "IA aplicada: LLMs, agentes, RAG e automação"
     ],
     "aboutIntro": "Construo, evoluo e opero software backend para ambientes onde disponibilidade, rastreabilidade e previsibilidade operacional impactam diretamente o negócio.",
-    "aboutDetail": "Minha experiência passa por sistemas de contas, pagamentos, transferências, notificações, integrações financeiras, mensageria, deploys, QA, monitoramento e infraestrutura. Atuo com Elixir, Kotlin, Kubernetes, cloud-native, observabilidade e automações com IA, contribuindo para reduzir trabalho manual, melhorar diagnóstico de incidentes e dar mais previsibilidade à operação.",
+    "aboutDetail": "Minha experiência passa por sistemas de contas, pagamentos, transferências, notificações, integrações financeiras, mensageria, deploys, QA, monitoramento e infraestrutura. Na empresa atual, também construo fluxos com IA usando LLMs, agentes, tool calling, RAG para recuperar contexto relevante e automação, reduzindo trabalho manual, melhorando o diagnóstico de incidentes e dando mais previsibilidade à operação.",
     "aboutCards": [
       {
         "title": "Fintech e pagamentos",
@@ -39,12 +39,12 @@
         "description": "Desenvolvimento e sustentação de sistemas com atenção a disponibilidade, rastreabilidade, observabilidade e resposta a incidentes."
       },
       {
-        "title": "Automação aplicada",
-        "description": "Uso IA, n8n, LLMs e integrações para automatizar fluxos, classificar demandas e reduzir etapas manuais em processos reais."
+        "title": "Sistemas de IA aplicada",
+        "description": "Construo fluxos com IA usando LLMs, agentes, tool calling, RAG, n8n e integrações para recuperar contexto relevante, classificar demandas, direcionar trabalho e reduzir etapas manuais em processos reais."
       }
     ],
     "experienceTitle": "Experiência",
-    "experienceDescription": "Experiência em engenharia backend, pagamentos, integrações, automação e operação de sistemas críticos em produção.",
+    "experienceDescription": "Experiência em engenharia backend, pagamentos, integrações, IA aplicada, automação e operação de sistemas críticos em produção.",
     "experienceItems": [
       {
         "company": "Swap",
@@ -55,6 +55,7 @@
           "Desenvolvimento e sustentação de APIs críticas de movimentação financeira, com foco em rastreabilidade, confiabilidade e segurança operacional.",
           "Evolução de fluxos de transferências bancárias, integrações financeiras, notificações e processamento assíncrono.",
           "Instrumentação de métricas, logs e alertas para melhorar visibilidade sobre filas, workers, webhooks e comportamento da aplicação em produção.",
+          "Construção de fluxos internos com IA usando LLMs, agentes, tool calling, RAG e orquestração para recuperar contexto relevante, classificar demandas, direcionar trabalho e reduzir etapas operacionais manuais.",
           "Participação em investigação e tratamento de incidentes em ambiente 24/7, conectando sintomas técnicos ao impacto operacional.",
           "Colaboração em decisões de arquitetura, mensageria e observabilidade para aumentar previsibilidade e reduzir gargalos em sistemas críticos."
         ]
@@ -243,6 +244,7 @@
           "Kotlin",
           "Node.js",
           "Python",
+          "Go",
           "APIs REST",
           "Mensageria",
           "Arquitetura orientada a eventos"
@@ -262,21 +264,21 @@
       },
       {
         "title": "IA e Automação",
-        "items": ["n8n", "LLMs", "RAG", "Slack", "Workflows internos"]
+        "items": ["LLMs", "Agentes de IA", "Tool Calling", "RAG", "MCP", "n8n", "Workflows internos"]
       },
       {
         "title": "Frontend de apoio",
         "items": ["React", "TypeScript", "Material UI"]
       }
     ],
-    "exploringTitle": "Explorando atualmente",
-    "exploringDescription": "Tenho aprofundado IA aplicada e system design em novas aplicações, conectando automação, arquitetura, observabilidade e operação desde as primeiras decisões técnicas.",
+    "exploringTitle": "IA aplicada e System Design",
+    "exploringDescription": "Aplico IA e system design em fluxos de produção, conectando automação, arquitetura, observabilidade, segurança e operação desde as primeiras decisões técnicas.",
     "exploringCards": [
       {
-        "title": "IA aplicada",
-        "description": "Uso LLMs e automações para classificar demandas, reduzir etapas manuais e criar fluxos que apoiam decisões reais de produto e operação.",
+        "title": "IA aplicada em produção",
+        "description": "Um fluxo operacional real: uma demanda chega por um canal interno, o agente recebe o contexto relevante por retrieval e MCP, decide quais ferramentas chamar, classifica e direciona o trabalho e então dispara a notificação ou o workflow de desenvolvimento adequado, mantendo uma trilha auditável.",
         "visual": "ai",
-        "items": ["LLMs", "RAG", "n8n", "Slack", "Automação"]
+        "items": ["LLMs", "Agentes de IA", "Tool Calling", "RAG", "MCP", "n8n", "Automação"]
       },
       {
         "title": "System Design",
@@ -323,10 +325,10 @@
       "Projeto APIs, filas e integrações resilientes.",
       "Construo sistemas observáveis em produção.",
       "Atuo em pagamentos, fintech e operações 24/7.",
-      "Automatizo fluxos com IA aplicada.",
+      "Construo fluxos agentivos e automações com IA aplicada.",
       "Resolvo problemas de escala e confiabilidade."
     ],
-    "description": "Construo e opero sistemas backend resilientes para pagamentos, operações críticas e automações baseadas em IA, conectando arquitetura, confiabilidade e impacto no negócio.",
+    "description": "Construo e opero sistemas backend resilientes para pagamentos, operações críticas e fluxos agentivos com IA, conectando arquitetura, confiabilidade e impacto no negócio.",
     "primaryAction": "Ver casos de engenharia",
     "secondaryAction": "Entrar em contato",
     "resumeAction": "Baixar currículo"

@@ -11,7 +11,7 @@ export function Experience() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const shouldReduceMotion = Boolean(useReducedMotion());
   const { scrollYProgress } = useScroll({
-    offset: ["start 62%", "end 62%"],
+    offset: ["start 72%", "end end"],
     target: sectionRef,
   });
 

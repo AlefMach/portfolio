@@ -18,17 +18,17 @@
   "home": {
     "title": "Home",
     "aboutTitle": "About",
-    "aboutDescription": "Backend Software Engineer at Mid-Level III, focused on fintech, payments, and mission-critical systems. I build and maintain backend services with an emphasis on reliability, traceability, observability, and 24/7 operations.",
+    "aboutDescription": "Backend Software Engineer at Mid-Level III, focused on fintech, payments, mission-critical systems, and applied AI. I build and maintain reliable, observable backend services and AI-powered workflows for 24/7 operations.",
     "aboutFocusItems": [
       "Mid-Level III backend engineering",
       "Fintech and payments",
       "Mission-critical production systems",
       "APIs, messaging, and integrations",
       "Observability and reliability",
-      "AI applied to automation"
+      "Applied AI: LLMs, agents, RAG, and automation"
     ],
     "aboutIntro": "I build, evolve, and operate backend software for environments where availability, traceability, and operational predictability directly impact the business.",
-    "aboutDetail": "My experience spans account systems, payments, bank transfers, notifications, financial integrations, messaging, deployments, QA, monitoring, and infrastructure. I work with Elixir, Kotlin, Kubernetes, cloud-native practices, observability, and AI-powered automations, helping reduce manual work, improve incident diagnosis, and bring more predictability to operations.",
+    "aboutDetail": "My experience spans account systems, payments, bank transfers, notifications, financial integrations, messaging, deployments, QA, monitoring, and infrastructure. In my current role, I also build AI-powered workflows using LLMs, agents, tool calling, RAG to retrieve relevant context, and automation to reduce manual work, improve incident diagnosis, and bring more predictability to operations.",
     "aboutCards": [
       {
         "title": "Fintech and payments",
@@ -39,12 +39,12 @@
         "description": "Development and maintenance of systems with attention to availability, traceability, observability, and incident response."
       },
       {
-        "title": "Applied automation",
-        "description": "I use AI, n8n, LLMs, and integrations to automate workflows, classify requests, and reduce manual steps in real processes."
+        "title": "Applied AI systems",
+        "description": "I build AI-powered workflows with LLMs, agents, tool calling, RAG, n8n, and integrations to retrieve relevant context, classify requests, route work, and reduce manual steps in real processes."
       }
     ],
     "experienceTitle": "Experience",
-    "experienceDescription": "Experience in backend engineering, payments, integrations, automation, and operation of mission-critical production systems.",
+    "experienceDescription": "Experience in backend engineering, payments, integrations, applied AI, automation, and operation of mission-critical production systems.",
     "experienceItems": [
       {
         "company": "Swap",
@@ -55,6 +55,7 @@
           "Developed and maintained critical financial transaction APIs, with a focus on traceability, reliability, and operational safety.",
           "Evolved bank transfer flows, financial integrations, notifications, and asynchronous processing.",
           "Instrumented metrics, logs, and alerts to improve visibility into queues, workers, webhooks, and production application behavior.",
+          "Built AI-powered internal workflows using LLMs, agents, tool calling, RAG, and orchestration to retrieve relevant context, classify requests, route work, and reduce manual operational steps.",
           "Participated in incident investigation and response in a 24/7 environment, connecting technical symptoms to operational impact.",
           "Collaborated on architecture, messaging, and observability decisions to increase predictability and reduce bottlenecks in critical systems."
         ]
@@ -243,6 +244,7 @@
           "Kotlin",
           "Node.js",
           "Python",
+          "Go",
           "REST APIs",
           "Messaging",
           "Event-driven Architecture"
@@ -262,21 +264,21 @@
       },
       {
         "title": "AI and Automation",
-        "items": ["n8n", "LLMs", "RAG", "Slack", "Internal Workflows"]
+        "items": ["LLMs", "AI Agents", "Tool Calling", "RAG", "MCP", "n8n", "Internal Workflows"]
       },
       {
         "title": "Supporting Frontend",
         "items": ["React", "TypeScript", "Material UI"]
       }
     ],
-    "exploringTitle": "Currently Exploring",
-    "exploringDescription": "I have been going deeper into applied AI and system design in new applications, connecting automation, architecture, observability, and operations from the first technical decisions.",
+    "exploringTitle": "Applied AI and System Design",
+    "exploringDescription": "I apply AI and system design to production workflows, connecting automation, architecture, observability, security, and operations from the first technical decisions.",
     "exploringCards": [
       {
-        "title": "Applied AI",
-        "description": "I use LLMs and automations to classify requests, reduce manual steps, and create flows that support real product and operations decisions.",
+        "title": "Applied AI in Production",
+        "description": "A real operational flow: a request arrives through an internal channel, the agent receives the relevant context through retrieval and MCP, decides which tools to call, classifies and routes the work, then triggers the right notification or development workflow with an auditable trail.",
         "visual": "ai",
-        "items": ["LLMs", "RAG", "n8n", "Slack", "Automation"]
+        "items": ["LLMs", "AI Agents", "Tool Calling", "RAG", "MCP", "n8n", "Automation"]
       },
       {
         "title": "System Design",
@@ -323,10 +325,10 @@
       "I design resilient APIs, queues, and integrations.",
       "I build observable production systems.",
       "I work with payments, fintech, and 24/7 operations.",
-      "I automate workflows with applied AI.",
+      "I build agentic workflows and automations with applied AI.",
       "I solve scale and reliability problems."
     ],
-    "description": "I build and operate resilient backend systems for payments, critical operations, and AI-based automations, connecting architecture, reliability, and business impact.",
+    "description": "I build and operate resilient backend systems for payments, critical operations, and AI-powered agentic workflows, connecting architecture, reliability, and business impact.",
     "primaryAction": "View engineering cases",
     "secondaryAction": "Get in touch",
     "resumeAction": "Download resume"

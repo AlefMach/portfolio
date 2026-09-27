@@ -75,7 +75,7 @@ function FlowLine() {
   );
 }
 
-const outputNodes = ["TAG", "SLACK", "MR"] as const;
+const outputNodes = ["CONTEXT", "TOOLS", "ROUTE"] as const;
 
 export function AiSignalSketch() {
   return (
@@ -113,7 +113,7 @@ export function AiSignalSketch() {
       }}
     >
       <Box sx={{ gridColumn: 1, gridRow: 2 }}>
-        <DiagramNode label="CARD" />
+        <DiagramNode label="REQUEST" />
       </Box>
 
       <Box sx={{ display: "flex", gridColumn: 2, gridRow: 2 }}>
@@ -128,7 +128,7 @@ export function AiSignalSketch() {
           gridRow: 2,
         }}
       >
-        <DiagramNode emphasis label="LLM" />
+        <DiagramNode emphasis label="AGENT" />
       </Box>
 
       <Box sx={{ display: "flex", gridColumn: 4, gridRow: 2 }}>

@@ -9,8 +9,8 @@ export function getTimelineItemRange(index: number, totalItems: number) {
     return [0, 0.2] as const;
   }
 
-  const step = 1 / (totalItems - 1);
-  const center = index * step;
+  const step = 1 / totalItems;
+  const center = (index + 0.5) * step;
 
   return [
     clamp(center - itemRevealWidth),

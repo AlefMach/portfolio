@@ -11,24 +11,36 @@ export function ExperienceHighlights({
     <Box
       component="ul"
       sx={{
-        color: "text.secondary",
         display: "grid",
-        gap: 1,
-        gridTemplateColumns: {
-          xs: "1fr",
-          sm: "repeat(2, minmax(0, 1fr))",
-        },
-        lineHeight: 1.7,
-        listStylePosition: "outside",
+        gap: 1.1,
+        listStyle: "none",
         m: 0,
-        pl: 2.5,
+        p: 0,
       }}
     >
       {highlights.map((highlight) => (
         <Typography
           key={highlight}
           component="li"
-          sx={{ color: "text.secondary", lineHeight: 1.7 }}
+          sx={{
+            borderLeft: 2,
+            borderColor: "divider",
+            color: "text.secondary",
+            fontSize: "0.93rem",
+            lineHeight: 1.7,
+            pl: 1.35,
+            position: "relative",
+            "&::before": {
+              bgcolor: "primary.main",
+              borderRadius: "50%",
+              content: '\"\"',
+              height: 5,
+              left: -3.5,
+              position: "absolute",
+              top: "0.73em",
+              width: 5,
+            },
+          }}
         >
           {highlight}
         </Typography>

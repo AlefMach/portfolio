@@ -24,7 +24,7 @@ export function ExperienceTimeline({
 
       <Stack
         component="ol"
-        spacing={{ xs: 3, md: 4 }}
+        spacing={{ xs: 3, md: 5 }}
         sx={{ m: 0, p: 0, position: "relative" }}
       >
         {items.map((item, index) => (
