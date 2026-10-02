@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, useTheme } from "@mui/material";
 
 import { useTranslation } from "../../../hooks/useTranslation";
 import { downloadResumePdf } from "../../../utils/resumePdf";
@@ -7,6 +7,8 @@ import { HeroProfile } from "./components/HeroProfile";
 
 export function Hero() {
   const { language, t } = useTranslation();
+  const theme = useTheme();
+  const glow = theme.palette.mode === "dark" ? "0, 255, 194" : "91, 91, 214";
 
   return (
     <Box
@@ -16,14 +18,30 @@ export function Hero() {
         alignItems: "center",
         display: "flex",
         minHeight: { xs: "calc(100svh - 64px)", md: "calc(100svh - 72px)" },
+        position: "relative",
+        overflow: "hidden",
         pt: { xs: 5, sm: 7, md: 7, lg: 8 },
         pb: { xs: 5, sm: 7, md: 7, lg: 8 },
-        "@media (min-width: 900px) and (max-height: 900px)": {
-          pt: 5,
-          pb: 5,
-        },
         "@media (min-width: 900px) and (min-height: 901px)": {
           pb: "clamp(5rem, 10vh, 8rem)",
+        },
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          top: "-20%",
+          right: "-10%",
+          width: "55vw",
+          height: "55vw",
+          maxWidth: 720,
+          maxHeight: 720,
+          borderRadius: "50%",
+          background: `radial-gradient(circle, rgba(${glow}, 0.16) 0%, rgba(${glow}, 0) 65%)`,
+          pointerEvents: "none",
+          zIndex: 0,
+        },
+        "& > *": {
+          position: "relative",
+          zIndex: 1,
         },
       }}
     >

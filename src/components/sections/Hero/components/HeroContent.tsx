@@ -39,10 +39,12 @@ export function HeroContent({
         component="p"
         sx={{
           color: "primary.main",
-          fontSize: { xs: "1rem", md: "1.35rem", lg: "1.6rem" },
+          fontSize: { xs: "0.72rem", md: "0.78rem", lg: "0.85rem" },
           fontWeight: 800,
+          letterSpacing: "0.18em",
+          textTransform: "uppercase",
           "@media (min-width: 900px) and (max-height: 900px)": {
-            fontSize: "1.2rem",
+            fontSize: "0.72rem",
           },
         }}
       >
@@ -71,8 +73,12 @@ export function HeroContent({
 
         <Typography
           component="span"
-          sx={{
-            color: "primary.main",
+          sx={(theme) => ({
+            backgroundImage: `linear-gradient(90deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            color: "transparent",
             display: "block",
             fontSize: {
               xs: "1.25rem",
@@ -90,12 +96,14 @@ export function HeroContent({
               content: '"|"',
               display: "inline-block",
               ml: 0.5,
+              color: theme.palette.primary.main,
+              WebkitTextFillColor: theme.palette.primary.main,
             },
             "@keyframes cursorBlink": {
               "0%, 45%": { opacity: 1 },
               "46%, 100%": { opacity: 0 },
             },
-          }}
+          })}
         >
           {displayedSkill || "\u00A0"}
         </Typography>

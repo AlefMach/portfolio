@@ -63,7 +63,7 @@ export function ExperienceTimelineItem({
           "&::before": {
             background:
               "linear-gradient(90deg, primary.main, rgba(96, 165, 250, 0))",
-            content: '\"\"',
+            content: '""',
             height: 3,
             left: 0,
             opacity: 0.9,

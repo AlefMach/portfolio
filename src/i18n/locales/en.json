@@ -18,9 +18,9 @@
   "home": {
     "title": "Home",
     "aboutTitle": "About",
-    "aboutDescription": "Backend Software Engineer at Mid-Level III, focused on fintech, payments, mission-critical systems, and applied AI. I build and maintain reliable, observable backend services and AI-powered workflows for 24/7 operations.",
+    "aboutDescription": "Backend Software Engineer focused on fintech, payments, mission-critical systems, and applied AI. I design, build, and maintain reliable, observable backend services, plus AI-powered workflows for 24/7 operations.",
     "aboutFocusItems": [
-      "Mid-Level III backend engineering",
+      "Backend for critical financial systems",
       "Fintech and payments",
       "Mission-critical production systems",
       "APIs, messaging, and integrations",
@@ -49,36 +49,36 @@
       {
         "company": "Swap",
         "period": "2025 - Present",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Evolve account and statement services processing thousands of transactions per day, with a focus on financial data consistency and end-to-end traceability.",
-          "Design and maintain financial transaction APIs and asynchronous flows for transfers, integrations, and notifications, accounting for concurrency, failures, and operational safety.",
-          "Instrumented metrics, logs, and alerts across queues, workers, and webhooks. In a documented incident, the investigation found within 3 hours that Oban worker priorities were leaving messages without preferred processing.",
-          "Investigate incidents in a 24/7 operation, connecting application and messaging signals to operational impact to guide mitigation and follow-up fixes.",
+          "Evolve account and statement services processing thousands of transactions per day, ensuring financial data consistency and end-to-end traceability.",
+          "Design and maintain financial transaction APIs and asynchronous flows for transfers, integrations, and notifications, accounting for concurrency, failures, and operational safety from the ground up.",
+          "Instrumented metrics, logs, and alerts across queues, workers, and webhooks; in a documented incident, I cut diagnosis time to 3 hours by identifying that Oban worker priorities were leaving messages without preferred processing.",
+          "Investigate incidents in a 24/7 operation, connecting application and messaging signals to operational impact to guide mitigation and fixes.",
           "Build internal automations with LLMs, tool calling, and RAG to retrieve context, classify requests, and reduce manual steps; track quality through source relevance and response traceability.",
           "Lead technical discussions on architecture, messaging, and observability, proposing changes based on production bottlenecks.",
-          "Act as a buddy for less senior teammates and contribute code reviews to support technical quality and team growth."
+          "Act as a buddy for less senior teammates and contribute code reviews to raise technical quality and support team growth."
         ]
       },
       {
         "company": "Ghisolfi",
         "period": "2024 - 2025",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
           "Developed internal systems, APIs, and integrations to support the company's operational processes.",
           "Worked across infrastructure, on-premise servers, databases, deployments, and environment maintenance.",
-          "Built automations to reduce manual tasks and increase predictability in internal routines.",
-          "Maintained applications used by thousands of users, monitoring production, investigating failures, and delivering fixes to keep operational workflows available.",
+          "Built automations that reduced manual tasks and increased predictability in internal routines.",
+          "Maintained applications used by thousands of users, investigating production failures and delivering fixes to keep operational workflows available.",
           "Contributed to improvements in organization, reliability, and maintainability of legacy systems and local environments."
         ]
       },
       {
         "company": "Solf\u00e1cil",
         "period": "2022 - 2023",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
           "Worked on payment methods, integrations, APIs, and system maintenance in production environments.",
-          "Developed backend and frontend features, supporting product flows, maintenance, and feature evolution.",
+          "Developed backend and frontend, supporting product flows, maintenance, and feature evolution.",
           "Participated in QA, deployments, monitoring, bug fixing, and production issue analysis.",
           "Collaborated with product and engineering teams to deliver improvements in financial and operational workflows.",
           "Gained hands-on experience with maintenance, traceability, and incremental evolution of existing systems."
@@ -87,12 +87,12 @@
       {
         "company": "Alertrack",
         "period": "2021 - 2022",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Developed backend and frontend features for a real-time communication, bots, and automation platform.",
+          "Developed backend and frontend for a real-time communication, bots, and automation platform.",
           "Built a build system from scratch and supported deployments, QA, monitoring, and environment maintenance.",
           "Integrated APIs, webhooks, on-premise servers, and external automations.",
-          "Worked on infrastructure, technical support, and maintenance of applications used by a high volume of users.",
+          "Worked on infrastructure, technical support, and maintenance of applications with a high volume of users.",
           "Built Elixir services for a platform with more than 500,000 active users, using concurrent processing, webhooks, and caching to handle peaks in real-time messages and integrations."
         ]
       }

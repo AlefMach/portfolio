@@ -18,9 +18,9 @@
   "home": {
     "title": "Home",
     "aboutTitle": "Sobre",
-    "aboutDescription": "Backend Software Engineer com atuação Pleno III em fintech, pagamentos, sistemas críticos e IA aplicada. Construo e sustento serviços backend confiáveis e observáveis, além de fluxos com IA para operações 24/7.",
+    "aboutDescription": "Backend Software Engineer com atuação em fintech, pagamentos, sistemas críticos e IA aplicada. Projeto, construo e sustento serviços backend confiáveis e observáveis, além de fluxos com IA para operações 24/7.",
     "aboutFocusItems": [
-      "Atuação Pleno III em backend",
+      "Backend para sistemas financeiros críticos",
       "Fintech e pagamentos",
       "Sistemas críticos em produção",
       "APIs, mensageria e integrações",
@@ -49,50 +49,50 @@
       {
         "company": "Swap",
         "period": "2025 - Atual",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Evoluo serviços de contas e extrato que processam milhares de transações por dia, com foco em consistência dos dados financeiros e rastreabilidade ponta a ponta.",
-          "Desenho e mantenho APIs de movimentação financeira e fluxos assíncronos de transferências, integrações e notificações, considerando concorrência, falhas e segurança operacional.",
-          "Instrumentei métricas, logs e alertas para filas, workers e webhooks. Em um incidente documentado, a investigação identificou em 3 horas que a prioridade dos workers Oban deixava mensagens sem processamento preferencial.",
-          "Investigo incidentes em operação 24/7, conectando sinais de aplicação e mensageria ao impacto operacional para orientar mitigação e correções.",
+          "Evoluo serviços de contas e extrato que processam milhares de transações por dia, garantindo consistência dos dados financeiros e rastreabilidade ponta a ponta.",
+          "Projeto e mantenho APIs de movimentação financeira e fluxos assíncronos de transferências, integrações e notificações, considerando concorrência, falhas e segurança operacional desde o desenho.",
+          "Instrumentei métricas, logs e alertas para filas, workers e webhooks; em um incidente documentado, reduzi o tempo de diagnóstico para 3 horas ao identificar que a prioridade dos workers Oban deixava mensagens sem processamento preferencial.",
+          "Atuo na investigação de incidentes em operação 24/7, conectando sinais de aplicação e mensageria ao impacto operacional para orientar mitigação e correções.",
           "Construo automações internas com LLMs, tool calling e RAG para recuperar contexto, classificar demandas e reduzir etapas manuais; acompanho a qualidade por relevância das fontes e rastreabilidade das respostas.",
           "Conduzo discussões técnicas sobre arquitetura, mensageria e observabilidade, propondo mudanças a partir de gargalos identificados em produção.",
-          "Atuo como buddy de pessoas em níveis de senioridade mais baixos e contribuo com code reviews para apoiar a qualidade técnica e o desenvolvimento do time."
+          "Atuo como buddy de pessoas em níveis de senioridade mais baixos e contribuo com code reviews para elevar a qualidade técnica e apoiar o desenvolvimento do time."
         ]
       },
       {
         "company": "Ghisolfi",
         "period": "2024 - 2025",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Desenvolvimento de sistemas internos, APIs e integrações para apoiar processos operacionais da empresa.",
-          "Atuação em infraestrutura, servidores locais on-premise, banco de dados, deploys e manutenção de ambientes.",
-          "Criação de automações para reduzir tarefas manuais e aumentar previsibilidade em rotinas internas.",
-          "Sustentei aplicações utilizadas por milhares de usuários, acompanhando produção, investigando falhas e entregando correções para manter os processos operacionais disponíveis.",
-          "Contribuição em melhorias de organização, confiabilidade e manutenção de sistemas legados e ambientes locais."
+          "Desenvolvi sistemas internos, APIs e integrações para apoiar processos operacionais da empresa.",
+          "Atuei em infraestrutura, servidores locais on-premise, banco de dados, deploys e manutenção de ambientes.",
+          "Criei automações que reduziram tarefas manuais e aumentaram a previsibilidade de rotinas internas.",
+          "Sustentei aplicações utilizadas por milhares de usuários, investigando falhas em produção e entregando correções para manter os processos operacionais disponíveis.",
+          "Contribuí para melhorias de organização, confiabilidade e manutenção de sistemas legados e ambientes locais."
         ]
       },
       {
         "company": "Solfácil",
         "period": "2022 - 2023",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Atuação em métodos de pagamento, integrações, APIs e manutenção de sistemas em ambiente produtivo.",
-          "Desenvolvimento backend e frontend, apoiando fluxos de produto, sustentação e evolução de funcionalidades.",
-          "Participação em QA, deploys, monitoramento, correção de bugs e análise de problemas em produção.",
-          "Colaboração com times de produto e engenharia para entregar melhorias em fluxos financeiros e operacionais.",
-          "Experiência prática com sustentação, rastreabilidade e evolução incremental de sistemas existentes."
+          "Atuei em métodos de pagamento, integrações, APIs e manutenção de sistemas em ambiente produtivo.",
+          "Desenvolvi backend e frontend, apoiando fluxos de produto, sustentação e evolução de funcionalidades.",
+          "Participei de QA, deploys, monitoramento, correção de bugs e análise de problemas em produção.",
+          "Colaborei com times de produto e engenharia para entregar melhorias em fluxos financeiros e operacionais.",
+          "Ganhei experiência prática em sustentação, rastreabilidade e evolução incremental de sistemas existentes."
         ]
       },
       {
         "company": "Alertrack",
         "period": "2021 - 2022",
-        "role": "Software Engineer",
+        "role": "Backend Software Engineer",
         "highlights": [
-          "Desenvolvimento backend e frontend para plataforma de comunicação, bots e automações em tempo real.",
-          "Construção de build system do zero e apoio em deploys, QA, monitoramento e manutenção de ambientes.",
-          "Integração com APIs, webhooks, servidores locais on-premise e automações externas.",
-          "Atuação em infraestrutura, suporte técnico e sustentação de aplicações utilizadas por alto volume de usuários.",
+          "Desenvolvi backend e frontend para plataforma de comunicação, bots e automações em tempo real.",
+          "Construí o build system do zero e apoiei deploys, QA, monitoramento e manutenção de ambientes.",
+          "Integrei APIs, webhooks, servidores locais on-premise e automações externas.",
+          "Atuei em infraestrutura, suporte técnico e sustentação de aplicações com alto volume de usuários.",
           "Desenvolvi serviços em Elixir para uma plataforma com mais de 500 mil usuários ativos, usando processamento concorrente, webhooks e cache para absorver picos de mensagens e integrações em tempo real."
         ]
       }

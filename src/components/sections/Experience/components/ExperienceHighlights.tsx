@@ -33,7 +33,7 @@ export function ExperienceHighlights({
             "&::before": {
               bgcolor: "primary.main",
               borderRadius: "50%",
-              content: '\"\"',
+              content: '""',
               height: 5,
               left: -3.5,
               position: "absolute",
