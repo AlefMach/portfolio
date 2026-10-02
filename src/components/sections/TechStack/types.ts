@@ -1,8 +1,8 @@
-import type { SvgIconComponent } from "@mui/icons-material";
+import type { ElementType } from "react";
 
 export type StackCategory = {
   items: string[];
   title: string;
 };
 
-export type IconMap = Record<string, SvgIconComponent>;
+export type IconMap = Record<string, ElementType>;

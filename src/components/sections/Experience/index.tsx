@@ -23,6 +23,7 @@ export function Experience() {
       sx={{
         borderTop: 1,
         borderColor: "divider",
+        bgcolor: "background.paper",
         py: { xs: 6, sm: 8, md: 10 },
       }}
     >

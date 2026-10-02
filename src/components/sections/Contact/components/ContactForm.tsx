@@ -7,6 +7,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { AnimatePresence, motion } from "framer-motion";
 import { type ChangeEvent, type FormEvent, useState } from "react";
 
 import {
@@ -93,14 +94,28 @@ export function ContactForm({ labels }: ContactFormProps) {
       </Stack>
 
       {!isConfigured && <Alert severity="warning">{labels.configError}</Alert>}
-      {status === "success" && (
-        <Alert severity="success">{labels.success}</Alert>
-      )}
-      {status === "error" && (
-        <Alert severity="error">
-          {isConfigured ? labels.error : labels.configError}
-        </Alert>
-      )}
+      <AnimatePresence>
+        {status === "success" && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+          >
+            <Alert severity="success">{labels.success}</Alert>
+          </motion.div>
+        )}
+        {status === "error" && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+          >
+            <Alert severity="error">
+              {isConfigured ? labels.error : labels.configError}
+            </Alert>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
         <TextField

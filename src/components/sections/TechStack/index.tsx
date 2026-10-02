@@ -3,6 +3,7 @@ import { Box, Container, Stack } from "@mui/material";
 import { useTranslation } from "../../../hooks/useTranslation";
 import { StackCategoryGrid } from "./components/StackCategoryGrid";
 import { StackHeader } from "./components/StackHeader";
+import { TechMarquee } from "./components/TechMarquee";
 
 export function TechStack() {
   const { t } = useTranslation();
@@ -24,6 +25,8 @@ export function TechStack() {
             title={t.home.stackTitle}
             description={t.home.stackDescription}
           />
+
+          <TechMarquee />
 
           <StackCategoryGrid
             categories={t.home.stackCategories}

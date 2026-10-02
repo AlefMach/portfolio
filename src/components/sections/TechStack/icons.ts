@@ -7,7 +7,6 @@ import DataObjectOutlinedIcon from "@mui/icons-material/DataObjectOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import InsightsOutlinedIcon from "@mui/icons-material/InsightsOutlined";
 import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined";
-import MemoryOutlinedIcon from "@mui/icons-material/MemoryOutlined";
 import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
 import SchemaOutlinedIcon from "@mui/icons-material/SchemaOutlined";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
@@ -15,6 +14,27 @@ import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 import StorageOutlinedIcon from "@mui/icons-material/StorageOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+import {
+  SiApachecassandra,
+  SiApacheflink,
+  SiApachekafka,
+  SiDocker,
+  SiElixir,
+  SiGo,
+  SiKotlin,
+  SiKubernetes,
+  SiMongodb,
+  SiMui,
+  SiN8N,
+  SiNodedotjs,
+  SiOpentelemetry,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiRedis,
+  SiTerraform,
+  SiTypescript,
+} from "react-icons/si";
 
 import type { IconMap } from "./types";
 
@@ -35,25 +55,48 @@ export const categoryIcons: IconMap = {
 
 export const itemIcons: IconMap = {
   APIs: ApiOutlinedIcon,
+  "REST APIs": ApiOutlinedIcon,
+  "APIs REST": ApiOutlinedIcon,
   AWS: CloudQueueOutlinedIcon,
   "CI/CD": RocketLaunchOutlinedIcon,
-  Docker: RocketLaunchOutlinedIcon,
-  Elixir: BoltOutlinedIcon,
+  Docker: SiDocker,
+  Elixir: SiElixir,
+  Go: SiGo,
+  Kafka: SiApachekafka,
+  Kubernetes: SiKubernetes,
+  Kotlin: SiKotlin,
   LLMs: SmartToyOutlinedIcon,
   Logs: TerminalOutlinedIcon,
-  "Material UI": IntegrationInstructionsOutlinedIcon,
-  Mensageria: HubOutlinedIcon,
+  "Material UI": SiMui,
   Messaging: HubOutlinedIcon,
+  Mensageria: HubOutlinedIcon,
+  "Event-driven Architecture": SchemaOutlinedIcon,
+  "Arquitetura orientada a eventos": SchemaOutlinedIcon,
   Metrics: SpeedOutlinedIcon,
   Métricas: SpeedOutlinedIcon,
-  "Node.js": TerminalOutlinedIcon,
-  n8n: SchemaOutlinedIcon,
-  OpenTelemetry: VisibilityOutlinedIcon,
-  PostgreSQL: StorageOutlinedIcon,
+  Alerts: BoltOutlinedIcon,
+  Alertas: BoltOutlinedIcon,
+  MongoDB: SiMongodb,
+  "Node.js": SiNodedotjs,
+  OpenTelemetry: SiOpentelemetry,
+  PostgreSQL: SiPostgresql,
+  Python: SiPython,
   RAG: DataObjectOutlinedIcon,
-  React: CodeOutlinedIcon,
-  Redis: MemoryOutlinedIcon,
+  React: SiReact,
+  Redis: SiRedis,
+  Cassandra: SiApachecassandra,
   Slack: IntegrationInstructionsOutlinedIcon,
+  "SQL Server": StorageOutlinedIcon,
+  SqlServer: StorageOutlinedIcon,
+  Terraform: SiTerraform,
   Tracing: VisibilityOutlinedIcon,
-  TypeScript: CodeOutlinedIcon,
+  TypeScript: SiTypescript,
+  n8n: SiN8N,
+  Flink: SiApacheflink,
+  "AI Agents": SmartToyOutlinedIcon,
+  "Agentes de IA": SmartToyOutlinedIcon,
+  "Tool Calling": SchemaOutlinedIcon,
+  MCP: CodeOutlinedIcon,
+  "Internal Workflows": SchemaOutlinedIcon,
+  "Workflows internos": SchemaOutlinedIcon,
 };

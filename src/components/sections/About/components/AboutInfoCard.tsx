@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { motion, useReducedMotion } from "framer-motion";
 
 import { aboutCardIcons } from "../icons";
 import type { AboutCard } from "../types";
@@ -10,16 +11,31 @@ type AboutInfoCardProps = {
 
 export function AboutInfoCard({ card, index }: AboutInfoCardProps) {
   const CardIcon = aboutCardIcons[index % aboutCardIcons.length];
+  const shouldReduceMotion = Boolean(useReducedMotion());
 
   return (
     <Stack
+      component={motion.div}
       spacing={{ xs: 1.25, lg: 1.5 }}
+      initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+      whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
       sx={{
         border: 1,
         borderColor: "divider",
-        borderRadius: 2,
+        borderRadius: 2.5,
         minHeight: "100%",
         p: { xs: 1.75, lg: 2 },
+        transition: "border-color 0.2s ease, transform 0.2s ease",
+        "&:hover": {
+          borderColor: "primary.main",
+          transform: "translateY(-4px)",
+        },
+        "@media (prefers-reduced-motion: reduce)": {
+          transition: "none",
+          "&:hover": { transform: "none" },
+        },
         "@media (min-width: 900px) and (max-height: 820px)": {
           gap: 1.25,
           p: 1.5,

@@ -2,24 +2,16 @@ import { Box, Stack, Typography } from "@mui/material";
 import { motion, useReducedMotion } from "framer-motion";
 
 import type { ExploringCardData } from "../types";
-import { AiSignalSketch } from "./AiSignalSketch";
-import { SystemDesignSketch } from "./SystemDesignSketch";
+import { ExploringConsole } from "./ExploringConsole";
 
 type ExploringCardProps = {
   card: ExploringCardData;
   index: number;
 };
 
-const visualByCard = {
-  ai: AiSignalSketch,
-  system: SystemDesignSketch,
-};
-
 const signalDelays = [0.2, 0.8] as const;
 
 export function ExploringCard({ card, index }: ExploringCardProps) {
-  const Visual =
-    card.visual === "system" ? visualByCard.system : visualByCard.ai;
   const shouldReduceMotion = Boolean(useReducedMotion());
 
   return (
@@ -95,7 +87,9 @@ export function ExploringCard({ card, index }: ExploringCardProps) {
         />
       </Box>
 
-      <Visual />
+      <ExploringConsole
+        variant={card.visual === "system" ? "system" : "ai"}
+      />
 
       <Stack spacing={1.5} sx={{ position: "relative" }}>
         <Typography

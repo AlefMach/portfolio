@@ -292,6 +292,7 @@
         "title": "IA aplicada em produção",
         "description": "Um fluxo operacional real: uma demanda chega por um canal interno, o agente recebe o contexto relevante por retrieval e MCP, decide quais ferramentas chamar, classifica e direciona o trabalho e então dispara a notificação ou o workflow de desenvolvimento adequado, mantendo uma trilha auditável.",
         "visual": "ai",
+        "labels": ["DEMANDA", "AGENTE", "CONTEXTO", "FERRAMENTAS", "NOTIFICAÇÃO", "WORKFLOW"],
         "items": [
           "LLMs",
           "Agentes de IA",
@@ -306,6 +307,7 @@
         "title": "System Design",
         "description": "Projeto APIs, filas, observabilidade e integrações pensando em evolução, diagnóstico, operação e trade-offs desde as primeiras decisões técnicas.",
         "visual": "system",
+        "labels": ["API", "FILAS", "WORKER", "PERSISTÊNCIA", "OBSERVABILIDADE"],
         "items": [
           "APIs",
           "Filas",

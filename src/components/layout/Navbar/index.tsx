@@ -10,7 +10,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { useTranslation } from "../../../hooks/useTranslation";
 import { darkPalette, lightPalette } from "../../../theme/palette";
@@ -21,12 +21,30 @@ import { ThemeToggle } from "../../common/ThemeToggle";
 export default function Navbar() {
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("#home");
   const navItems = [
     { label: t.nav.home, href: "#home" },
     { label: t.nav.experience, href: "#experience" },
     { label: t.nav.projects, href: "#projects" },
     { label: t.nav.contact, href: "#contact" },
   ];
+
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.href.slice(1));
+    const handleScroll = () => {
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 120) current = id;
+      }
+      setActiveHref(`#${current}`);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const brand = "{ Alef /} ";
 
@@ -86,7 +104,8 @@ export default function Navbar() {
                 color="inherit"
                 sx={{
                   borderRadius: 2,
-                  color: "text.secondary",
+                  color: activeHref === item.href ? "primary.main" : "text.secondary",
+                  fontWeight: activeHref === item.href ? 800 : 600,
                   minWidth: "auto",
                   px: { sm: 1.4, md: 1.8 },
                   "&:hover": {
@@ -156,6 +175,8 @@ export default function Navbar() {
                 justifyContent: "flex-start",
                 minHeight: 44,
                 px: 1.5,
+                color: activeHref === item.href ? "primary.main" : "text.secondary",
+                fontWeight: activeHref === item.href ? 800 : 600,
               }}
             >
               {item.label}

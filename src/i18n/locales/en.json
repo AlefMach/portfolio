@@ -292,6 +292,7 @@
         "title": "Applied AI in Production",
         "description": "A real operational flow: a request arrives through an internal channel, the agent receives the relevant context through retrieval and MCP, decides which tools to call, classifies and routes the work, then triggers the right notification or development workflow with an auditable trail.",
         "visual": "ai",
+        "labels": ["REQUEST", "AGENT", "CONTEXT", "TOOLS", "NOTIFY", "WORKFLOW"],
         "items": [
           "LLMs",
           "AI Agents",
@@ -306,6 +307,7 @@
         "title": "System Design",
         "description": "I design APIs, queues, observability, and integrations with evolution, diagnosis, operations, and trade-offs in mind from the first technical decisions.",
         "visual": "system",
+        "labels": ["API", "QUEUES", "WORKER", "PERSISTENCE", "OBSERVABILITY"],
         "items": [
           "APIs",
           "Queues",

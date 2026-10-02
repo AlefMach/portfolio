@@ -9,7 +9,7 @@ export function CustomThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [mode, setMode] = useState<ThemeMode>("dark");
+  const [mode, setMode] = useState<ThemeMode>("light");
 
   const toggleTheme = () => {
     setMode((prev) => (prev === "light" ? "dark" : "light"));

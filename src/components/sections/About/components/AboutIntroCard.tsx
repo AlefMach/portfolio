@@ -1,5 +1,6 @@
 import RouteOutlinedIcon from "@mui/icons-material/RouteOutlined";
 import { Box, Stack, Typography } from "@mui/material";
+import { motion, useReducedMotion } from "framer-motion";
 
 type AboutIntroCardProps = {
   detail: string;
@@ -7,8 +8,15 @@ type AboutIntroCardProps = {
 };
 
 export function AboutIntroCard({ detail, intro }: AboutIntroCardProps) {
+  const shouldReduceMotion = Boolean(useReducedMotion());
+
   return (
     <Box
+      component={motion.div}
+      initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+      whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       sx={{
         position: "relative",
         overflow: "hidden",

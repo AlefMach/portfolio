@@ -1,5 +1,10 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { motion, useReducedMotion } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useReducedMotion,
+} from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 import { categoryIcons, fallbackStackIcon } from "../icons";
 import type { StackCategory } from "../types";
@@ -26,6 +31,24 @@ export function StackCategoryCard({
 }: StackCategoryCardProps) {
   const CategoryIcon = categoryIcons[category.title] ?? fallbackStackIcon;
   const shouldReduceMotion = Boolean(useReducedMotion());
+  const countRef = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(countRef, { once: true, margin: "-40px" });
+  const [toolCount, setToolCount] = useState(0);
+
+  useEffect(() => {
+    if (!inView || shouldReduceMotion) return;
+    const target = category.items.length;
+    const duration = 900;
+    const start = performance.now();
+    let frameId = 0;
+    const tick = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      setToolCount(Math.round(progress * target));
+      if (progress < 1) frameId = requestAnimationFrame(tick);
+    };
+    frameId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameId);
+  }, [inView, category.items.length, shouldReduceMotion]);
 
   return (
     <Stack
@@ -34,7 +57,7 @@ export function StackCategoryCard({
         border: 1,
         bgcolor: "background.default",
         borderColor: "divider",
-        borderRadius: 2,
+        borderRadius: 2.5,
         minHeight: "100%",
         overflow: "hidden",
         p: { xs: 2.5, md: 3 },
@@ -55,6 +78,9 @@ export function StackCategoryCard({
           borderColor: "primary.main",
           boxShadow: "0 22px 56px rgba(15, 23, 42, 0.12)",
           transform: "perspective(900px) translateY(-4px) rotateX(1.4deg)",
+        },
+        "&:hover .stack-category-icon": {
+          transform: "rotate(8deg) scale(1.08)",
         },
         "@media (prefers-reduced-motion: reduce)": {
           transition: "none",
@@ -103,12 +129,17 @@ export function StackCategoryCard({
         sx={{ alignItems: "center", position: "relative" }}
       >
         <Box
+          className="stack-category-icon"
           sx={{
             alignItems: "center",
-            bgcolor: "action.hover",
+            transition: "transform 0.3s ease",
+            background: (theme) =>
+              theme.palette.mode === "dark"
+                ? "linear-gradient(135deg, rgba(0, 255, 194, 0.16), rgba(0, 255, 194, 0.02))"
+                : "linear-gradient(135deg, rgba(91, 91, 214, 0.14), rgba(91, 91, 214, 0.02))",
             border: 1,
             borderColor: "divider",
-            borderRadius: 2,
+            borderRadius: 2.5,
             color: "primary.main",
             display: "flex",
             height: 48,
@@ -116,7 +147,7 @@ export function StackCategoryCard({
             width: 48,
           }}
         >
-          <CategoryIcon fontSize="small" />
+          <CategoryIcon />
         </Box>
 
         <Box>
@@ -127,6 +158,8 @@ export function StackCategoryCard({
             {category.title}
           </Typography>
           <Typography
+            ref={countRef}
+            component="div"
             sx={{
               color: "text.secondary",
               fontSize: "0.8rem",
@@ -134,7 +167,7 @@ export function StackCategoryCard({
               mt: 0.25,
             }}
           >
-            {category.items.length} {toolsLabel}
+            {shouldReduceMotion ? category.items.length : toolCount} {toolsLabel}
           </Typography>
         </Box>
       </Stack>
@@ -151,8 +184,12 @@ export function StackCategoryCard({
           position: "relative",
         }}
       >
-        {category.items.map((item) => (
-          <StackToolChip key={item} item={item} />
+        {category.items.map((item, itemIndex) => (
+          <StackToolChip
+            key={item}
+            delay={Math.min(itemIndex * 0.05, 0.6)}
+            item={item}
+          />
         ))}
       </Box>
     </Stack>
