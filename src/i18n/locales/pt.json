@@ -101,57 +101,40 @@
     "projectsDescription": "Casos práticos em sistemas críticos, pagamentos, mensageria, observabilidade e automação com IA, conectando decisões técnicas a impacto operacional.",
     "projectCards": [
       {
-        "title": "Automação Inteligente de Triagem e Fluxo de Desenvolvimento",
-        "description": "n8n • IA • Slack • Git Workflow Automation. Automação criada para classificar demandas, integrar sistemas internos e reduzir etapas manuais no fluxo operacional e de desenvolvimento.",
-        "image": "/portfolio/images/projects/n8n.png",
-        "alt": "Diagrama de workflow com nós conectados representando automação, integrações e pipeline de desenvolvimento",
-        "problemLabel": "Problema",
-        "problem": "O time recebia continuamente demandas como helpers, correções e refatorações que precisavam ser analisadas, classificadas, direcionadas e comunicadas manualmente antes do início do desenvolvimento.",
-        "solutionLabel": "Solução",
-        "solution": "Desenvolvi uma automação com n8n integrada com IA e Slack para interpretar contexto, classificar demandas, direcionar cada item ao fluxo correto e iniciar etapas relacionadas a tarefas fix ou refactor.",
-        "impactLabel": "Impacto e aprendizados",
-        "impact": "A automação reduziu etapas manuais no fluxo de triagem e reforçou a importância de criar automações observáveis, resilientes e orientadas a gargalos reais, usando IA como apoio à decisão operacional.",
-        "roleLabel": "Papel",
-        "role": "Desenvolvi o fluxo ponta a ponta, conectando classificação com IA, orquestração no n8n, notificações no Slack e etapas do workflow de desenvolvimento.",
-        "tags": [
-          "n8n",
-          "IA",
-          "Slack",
-          "APIs REST",
-          "Git Workflow",
-          "Automação de Processos",
-          "Arquitetura orientada a eventos"
-        ]
-      },
-      {
         "title": "Extrato 2.0 • Swap",
-        "description": "Reestruturação do fluxo de extrato com Kotlin e MongoDB para entregar histórico de saldo mais consistente, com contratos claros e modelagem pensada para consultas financeiras.",
+        "description": "Reestruturação do fluxo de extrato com Kotlin e MongoDB, substituindo ETL frágil por um modelo consistente, com contratos claros e modelagem orientada a consultas financeiras.",
         "image": "/portfolio/images/projects/extrato-bancário.webp",
         "alt": "Fluxo de extrato 2.0 da Swap",
         "problemLabel": "Contexto",
-        "problem": "O BalanceHistory 1.0 dependia de ETL, tinha baixa sincronização e muitas vezes retornava dados irreais para consultas de extrato e saldo.",
-        "solutionLabel": "Solução",
-        "solution": "Refatorei o fluxo do Extrato 2.0 em Kotlin, estruturando o MongoDB com base no método PACELC, definindo contratos claros e tratando race conditionals.",
+        "problem": "O BalanceHistory 1.0 dependia de ETL, tinha baixa sincronização e frequentemente retornava dados inconsistentes para consultas de extrato e saldo — risco direto para uma operação financeira.",
+        "solutionLabel": "Decisões técnicas",
+        "solution": "Atuei na modelagem do MongoDB guiada pelo critério PACELC, na redefinição de contratos do serviço e no tratamento de race conditions entre processos assíncronos, em Kotlin, com validação apoiada em treinamento com a MongoDB Atlas.",
         "impactLabel": "Impacto",
-        "impact": "A nova estrutura reduziu inconsistências no histórico de saldo, melhorou a confiabilidade das consultas e tornou o fluxo menos dependente de processos assíncronos frágeis.",
+        "impact": "Redução de inconsistências no histórico de saldo, maior previsibilidade nas consultas financeiras e um fluxo menos acoplado a processos ETL frágeis, com decisões de persistência justificadas em trade-offs explícitos.",
         "roleLabel": "Papel",
-        "role": "Atuei na modelagem do MongoDB, na evolução dos contratos do serviço e no cuidado com concorrência, além de participar de treinamento com a MongoDB Atlas para apoiar as decisões técnicas.",
-        "tags": ["Kotlin", "MongoDB", "Fintech"]
+        "role": "Ownership técnico do fluxo: modelei a persistência, evoluí os contratos do serviço, tratei concorrência e documentei as decisões para o time.",
+        "tags": [
+          "Kotlin",
+          "MongoDB",
+          "Fintech",
+          "Modelagem de Dados",
+          "Concorrência"
+        ]
       },
       {
-        "title": "Webhooks e Notificações • Swap",
-        "description": "Sistema de mensageria para alto volume de webhooks e notificações. O trabalho deu visibilidade ao fluxo real de mensagens por quantidade, URL e realm, expondo gargalos que antes ficavam invisíveis na aplicação.",
+        "title": "Workers, Webhooks e Observabilidade • Swap",
+        "description": "Diagnóstico e evolução do pipeline de webhooks e notificações: telemetria por URL, realm e fluxo para expor gargalos que a intuição não enxergava.",
         "link": "https://medium.com/@alef_mac/3-horas-para-descobrir-que-nossos-workers-oban-n%C3%A3o-tinham-prioridade-nenhuma-5dd8e324d760",
         "image": "/portfolio/images/projects/notifications.png",
         "alt": "Monitoramento do sistema de notificações",
         "problemLabel": "Problema",
-        "problem": "O sistema processava alto volume de mensagens, mas a operação não tinha clareza sobre quais URLs, realms e filas concentravam carga, nem sobre como a prioridade dos workers Oban afetava o processamento.",
+        "problem": "O sistema processava alto volume de mensagens, mas não havia visibilidade de quais URLs, realms e filas concentravam carga nem como a configuração dos workers Oban impactava a entrega. Incidentes eram investigados às cegas.",
         "solutionLabel": "Solução",
-        "solution": "Instrumentei telemetria para contar mensagens por URL, realm e fluxo da aplicação, conectando métricas operacionais ao comportamento dos workers e tornando visível onde a fila realmente acumulava.",
+        "solution": "Instrumentei telemetria para contar mensagens por URL, realm e fluxo da aplicação, correlacionando métricas ao comportamento dos workers Oban e tornando visível onde a fila acumulava e por quê.",
         "impactLabel": "Impacto",
-        "impact": "O diagnóstico saiu do campo da intuição: ficou possível identificar gargalos, ajustar prioridades de processamento e documentar o incidente em um artigo técnico com o caminho de investigação e correção.",
+        "impact": "Em um incidente documentado, o diagnóstico caiu de dias para cerca de 3 horas: a causa raiz (workers sem prioridade configurada) ficou evidente e a correção foi orientada por dados. O caminho virou artigo técnico.",
         "roleLabel": "Papel",
-        "role": "Instrumentei telemetria, investiguei o comportamento dos workers Oban, relacionei métricas ao impacto operacional e documentei o processo de diagnóstico em artigo técnico.",
+        "role": "Atuei ponta a ponta: defini as métricas necessárias, instrumentei a aplicação, investiguei o incidente, propus a correção e documentei o processo em artigo.",
         "tags": [
           "Elixir",
           "Oban",
@@ -164,51 +147,71 @@
         "button": "Ler artigo"
       },
       {
-        "title": "Cache em Memória para Redução de Carga no Banco",
-        "description": "RememberMe • Elixir • ETS • Engenharia de Performance. Biblioteca open source de cache em memória criada para reduzir consultas repetitivas e melhorar leitura em cenários de alta concorrência.",
+        "title": "Automação de Triagem com IA • Swap",
+        "description": "Fluxo de automação com n8n, IA e Slack para classificar demandas, acionar workflows de desenvolvimento e tirar trabalho manual da operação.",
+        "image": "/portfolio/images/projects/n8n.png",
+        "alt": "Diagrama de workflow com nós conectados representando automação e integrações",
+        "problemLabel": "Problema",
+        "problem": "Demandas como fixes, refatorações e helpers chegavam de forma contínua e precisavam ser analisadas, classificadas e direcionadas manualmente antes de qualquer desenvolvimento.",
+        "solutionLabel": "Solução",
+        "solution": "Construí uma automação com n8n integrada a LLMs e Slack que interpreta o contexto da demanda, classifica, direciona para o fluxo correto e dispara as etapas adequadas (fix, refactor, análise), mantendo rastreabilidade.",
+        "impactLabel": "Impacto e aprendizados",
+        "impact": "Redução de etapas manuais na triagem e padronização do intake do time. Reforçou na prática a necessidade de automações observáveis, resilientes a falhas de LLM e com fallback humano para casos ambíguos.",
+        "roleLabel": "Papel",
+        "role": "Desenhei e implementei o fluxo ponta a ponta: classificação com IA, orquestração no n8n, notificações e integração com o workflow de desenvolvimento.",
+        "tags": [
+          "n8n",
+          "LLMs",
+          "Slack",
+          "APIs REST",
+          "Automação",
+          "Arquitetura orientada a eventos"
+        ]
+      },
+      {
+        "title": "Plataforma de Comunicação em Tempo Real • Alertrack",
+        "description": "Backend e frontend de uma plataforma de comunicação, bots e automações em tempo real, incluindo o build system do zero e a sustentação de mais de 500 mil usuários ativos.",
+        "image": "/portfolio/images/projects/alertrack.svg",
+        "alt": "Ilustração de fluxo de mensagens em tempo real",
+        "problemLabel": "Contexto",
+        "problem": "Uma plataforma de comunicação com alto volume de usuários precisava de serviços resilientes a picos de mensagens, integrações com webhooks e APIs externas e um build/deploy que não dependesse de processos manuais frágeis.",
+        "solutionLabel": "Solução",
+        "solution": "Desenvolvi serviços em Elixir usando concorrência nativa, webhooks e cache para absorver picos de mensagens; integrei APIs, webhooks e servidores on-premise; e construí o build system do zero, apoiando deploys, QA, monitoramento e sustentação.",
+        "impactLabel": "Impacto",
+        "impact": "Plataforma sustentada para mais de 500 mil usuários ativos, com picos de mensagens absorvidos por concorrência e cache, e pipelines de deploy reproduzíveis que reduziram atrito de release e incidentes operacionais.",
+        "roleLabel": "Papel",
+        "role": "Atuei do desenvolvimento à infraestrutura: serviços Elixir, build system, integrações, suporte técnico e sustentação de ambientes de alto volume.",
+        "tags": [
+          "Elixir",
+          "Webhooks",
+          "Cache",
+          "Concorrência",
+          "Build System",
+          "On-premise"
+        ]
+      },
+      {
+        "title": "RememberMe • Cache em Memória para Elixir",
+        "description": "Biblioteca open source de cache em memória (ETS) criada para reduzir carga no banco em cenários de alta concorrência e publicada no Hex.",
         "link": "https://hex.pm/packages/remember_me",
         "image": "/portfolio/images/projects/logo.jpg",
+        "alt": "Logo do pacote RememberMe",
         "problemLabel": "Problema",
-        "problem": "Um serviço recebia aproximadamente 2.000 requisições concorrentes consultando o mesmo conjunto de dados. O acesso repetitivo gerava carga desnecessária no banco de dados e aumentava a latência da aplicação.",
+        "problem": "Um serviço recebia ~2.000 requisições concorrentes consultando o mesmo conjunto de dados; o acesso repetitivo sobrecarregava o banco e elevava a latência.",
         "solutionLabel": "Solução",
-        "solution": "Desenvolvi a biblioteca RememberMe, uma solução de cache em memória baseada em ETS para armazenar dados frequentemente acessados e evitar consultas repetidas ao banco. O projeto foi publicado como pacote open source no Hex para reutilização em diferentes aplicações.",
+        "solution": "Implementei uma biblioteca de cache em memória baseada em ETS, com estratégia de invalidação simples e API ergonômica, publicada como pacote open source no Hex para reutilização.",
         "impactLabel": "Impacto",
-        "impact": "A solução reduziu pressão sobre o banco de dados, melhorou a latência de operações de leitura e consolidou uma abordagem reutilizável de cache em memória para aplicações Elixir em cenários de alta concorrência.",
+        "impact": "Redução de pressão no banco, menor latência de leitura sob concorrência e um padrão de cache reutilizável por outras aplicações Elixir.",
         "roleLabel": "Papel",
-        "role": "Identifiquei o gargalo de performance, defini a estratégia de cache, implementei a biblioteca, publiquei o pacote no Hex e documentei sua utilização.",
+        "role": "Identifiquei o gargalo, defini a estratégia, implementei, documentei e publiquei o pacote.",
         "tags": [
           "Elixir",
           "ETS",
           "Caching",
           "Performance",
-          "Concorrência",
-          "Open Source",
-          "Design de Bibliotecas"
+          "Open Source"
         ],
         "button": "Ver pacote"
-      },
-      {
-        "title": "Tech Talk: IA, RAG e Observabilidade",
-        "description": "Uma série recorrente de conversas técnicas sobre IA, RAG e observabilidade, incluindo discussões que conduzo sobre como manter sistemas resilientes quando componentes falham.",
-        "image": "/portfolio/images/projects/images.png",
-        "alt": "Visualização conceitual de busca semântica e observabilidade em um fluxo de RAG",
-        "problemLabel": "Tópicos",
-        "problem": "Como construir sistemas resilientes quando dependências falham, recuperar contexto útil sem tratar similaridade vetorial como sinônimo automático de relevância e tornar fluxos observáveis e depuráveis.",
-        "solutionLabel": "Conteúdo",
-        "solution": "Além de embeddings, busca vetorial e avaliação de RAG, a conversa abordou estratégias de resiliência diante de falhas, uso de Grafana com IA para apoiar a análise operacional e quando logs ajudam  ou só geram ruído  no diagnóstico.",
-        "impactLabel": "Observabilidade",
-        "impact": "Explora como combinar métricas, logs e rastreamento para entender falhas e manter a operação resiliente, usando Grafana e IA como apoio e avaliando a utilidade prática dos loggers em cada contexto.",
-        "roleLabel": "Formato",
-        "role": "Conduzo conversas recorrentes sobre observabilidade e resiliência, conectando exemplos de arquitetura, Grafana com IA, RAG e critérios para decidir quando logs são úteis no diagnóstico.",
-        "tags": [
-          "IA",
-          "LLMs",
-          "RAG",
-          "Embeddings",
-          "Similaridade Cosseno",
-          "Observabilidade",
-          "Avaliação"
-        ]
       }
     ],
     "buildTitle": "Áreas de atuação",
@@ -258,15 +261,33 @@
       },
       {
         "title": "Dados e Persistência",
-        "items": ["PostgreSQL", "Redis", "Cassandra", "MongoDB", "SqlServer"]
+        "items": [
+          "PostgreSQL",
+          "Redis",
+          "Cassandra",
+          "MongoDB",
+          "SqlServer"
+        ]
       },
       {
         "title": "Produção e Plataforma",
-        "items": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+        "items": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Terraform"
+        ]
       },
       {
         "title": "Observabilidade",
-        "items": ["OpenTelemetry", "Logs", "Métricas", "Tracing", "Alertas"]
+        "items": [
+          "OpenTelemetry",
+          "Logs",
+          "Métricas",
+          "Tracing",
+          "Alertas"
+        ]
       },
       {
         "title": "IA e Automação",
@@ -282,7 +303,11 @@
       },
       {
         "title": "Frontend de apoio",
-        "items": ["React", "TypeScript", "Material UI"]
+        "items": [
+          "React",
+          "TypeScript",
+          "Material UI"
+        ]
       }
     ],
     "exploringTitle": "IA aplicada e System Design",
@@ -292,7 +317,14 @@
         "title": "IA aplicada em produção",
         "description": "Um fluxo operacional real: uma demanda chega por um canal interno, o agente recebe o contexto relevante por retrieval e MCP, decide quais ferramentas chamar, classifica e direciona o trabalho e então dispara a notificação ou o workflow de desenvolvimento adequado, mantendo uma trilha auditável.",
         "visual": "ai",
-        "labels": ["DEMANDA", "AGENTE", "CONTEXTO", "FERRAMENTAS", "NOTIFICAÇÃO", "WORKFLOW"],
+        "labels": [
+          "DEMANDA",
+          "AGENTE",
+          "CONTEXTO",
+          "FERRAMENTAS",
+          "NOTIFICAÇÃO",
+          "WORKFLOW"
+        ],
         "items": [
           "LLMs",
           "Agentes de IA",
@@ -307,7 +339,13 @@
         "title": "System Design",
         "description": "Projeto APIs, filas, observabilidade e integrações pensando em evolução, diagnóstico, operação e trade-offs desde as primeiras decisões técnicas.",
         "visual": "system",
-        "labels": ["API", "FILAS", "WORKER", "PERSISTÊNCIA", "OBSERVABILIDADE"],
+        "labels": [
+          "API",
+          "FILAS",
+          "WORKER",
+          "PERSISTÊNCIA",
+          "OBSERVABILIDADE"
+        ],
         "items": [
           "APIs",
           "Filas",

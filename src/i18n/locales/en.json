@@ -73,7 +73,7 @@
         ]
       },
       {
-        "company": "Solf\u00e1cil",
+        "company": "Solfácil",
         "period": "2022 - 2023",
         "role": "Backend Software Engineer",
         "highlights": [
@@ -101,57 +101,40 @@
     "projectsDescription": "Practical cases in critical systems, payments, messaging, observability, and AI automation, connecting technical decisions to operational impact.",
     "projectCards": [
       {
-        "title": "Intelligent Triage and Development Workflow Automation",
-        "description": "n8n \u2022 AI \u2022 Slack \u2022 Git Workflow Automation. Automation built to classify requests, integrate internal systems, and reduce manual steps across operational and development workflows.",
-        "image": "/portfolio/images/projects/n8n.png",
-        "alt": "Workflow diagram with connected nodes representing automation, integrations, and a development pipeline",
-        "problemLabel": "Problem",
-        "problem": "The team continuously received helper requests, fixes, and refactors that had to be analyzed, classified, routed, and communicated manually before development could begin.",
-        "solutionLabel": "Solution",
-        "solution": "I built an automation with n8n integrated with AI and Slack to interpret context, classify requests, route each item to the correct flow, and start steps related to fix or refactor tasks.",
-        "impactLabel": "Impact and learnings",
-        "impact": "The automation reduced manual steps in the triage flow and reinforced the importance of building observable, resilient automations aimed at real bottlenecks, using AI as support for operational decision-making.",
-        "roleLabel": "Role",
-        "role": "I developed the end-to-end flow, connecting AI classification, n8n orchestration, Slack notifications, and development workflow steps.",
-        "tags": [
-          "n8n",
-          "AI",
-          "Slack",
-          "REST APIs",
-          "Git Workflow",
-          "Process Automation",
-          "Event-driven Architecture"
-        ]
-      },
-      {
         "title": "Statement 2.0 • Swap",
-        "description": "Statement flow redesign with Kotlin and MongoDB to provide a more consistent balance history, using clear contracts and a data model shaped for financial queries.",
+        "description": "Redesign of the statement flow with Kotlin and MongoDB, replacing a fragile ETL with a consistent model, clear contracts, and query-oriented data design.",
         "image": "/portfolio/images/projects/extrato-bancário.webp",
         "alt": "Swap Statement 2.0 flow",
         "problemLabel": "Context",
-        "problem": "BalanceHistory 1.0 depended on ETL, had poor synchronization, and often returned unrealistic data for statement and balance queries.",
-        "solutionLabel": "Solution",
-        "solution": "I refactored the Statement 2.0 flow in Kotlin, structured MongoDB around the PACELC method, defined clear contracts, and handled race conditions.",
+        "problem": "BalanceHistory 1.0 depended on ETL, had poor synchronization, and often returned inconsistent data for statement and balance queries — a direct risk for a financial operation.",
+        "solutionLabel": "Technical decisions",
+        "solution": "I worked on MongoDB modeling guided by the PACELC criterion, redefined service contracts, and handled race conditions between asynchronous processes, in Kotlin, backed by MongoDB Atlas training.",
         "impactLabel": "Impact",
-        "impact": "The new structure reduced balance-history inconsistencies, improved query reliability, and made the flow less dependent on fragile asynchronous processes.",
+        "impact": "Fewer balance-history inconsistencies, more predictable financial queries, and a flow less coupled to fragile ETL processes, with persistence decisions justified by explicit trade-offs.",
         "roleLabel": "Role",
-        "role": "I worked on MongoDB modeling, service contract evolution, and concurrency concerns, while also joining MongoDB Atlas training to support the technical decisions.",
-        "tags": ["Kotlin", "MongoDB", "Fintech"]
+        "role": "Technical ownership of the flow: I modeled persistence, evolved service contracts, handled concurrency, and documented decisions for the team.",
+        "tags": [
+          "Kotlin",
+          "MongoDB",
+          "Fintech",
+          "Data Modeling",
+          "Concurrency"
+        ]
       },
       {
-        "title": "Webhooks and Notifications \u2022 Swap",
-        "description": "Messaging system for high-volume webhooks and notifications. The work brought visibility into the real message flow by quantity, URL, and realm, exposing bottlenecks that were previously invisible in the application.",
+        "title": "Workers, Webhooks and Observability • Swap",
+        "description": "Diagnosis and evolution of the webhooks and notifications pipeline: telemetry per URL, realm and flow to expose bottlenecks that intuition could not see.",
         "link": "https://medium.com/@alef_mac/3-horas-para-descobrir-que-nossos-workers-oban-n%C3%A3o-tinham-prioridade-nenhuma-5dd8e324d760",
         "image": "/portfolio/images/projects/notifications.png",
         "alt": "Notification system monitoring",
         "problemLabel": "Problem",
-        "problem": "The system processed a high volume of messages, but operations lacked clarity on which URLs, realms, and queues concentrated load, or how Oban worker priorities affected processing.",
+        "problem": "The system processed high message volume, but there was no visibility into which URLs, realms and queues concentrated load or how Oban worker configuration impacted delivery. Incidents were investigated blind.",
         "solutionLabel": "Solution",
-        "solution": "I instrumented telemetry to count messages by URL, realm, and application flow, connecting operational metrics to worker behavior and making visible where the queue was actually accumulating.",
+        "solution": "I instrumented telemetry to count messages by URL, realm, and application flow, correlating metrics with Oban worker behavior and making visible where the queue accumulated and why.",
         "impactLabel": "Impact",
-        "impact": "The diagnosis moved beyond intuition: it became possible to identify bottlenecks, adjust processing priorities, and document the incident in a technical article with the investigation and correction path.",
+        "impact": "In a documented incident, diagnosis dropped from days to about 3 hours: the root cause (workers with no priority configured) became obvious and the fix was data-driven. The path became a technical article.",
         "roleLabel": "Role",
-        "role": "I instrumented telemetry, investigated Oban worker behavior, connected metrics to operational impact, and documented the diagnostic process in a technical article.",
+        "role": "End-to-end ownership: I defined the needed metrics, instrumented the application, investigated the incident, proposed the fix, and documented the process in an article.",
         "tags": [
           "Elixir",
           "Oban",
@@ -164,51 +147,71 @@
         "button": "Read article"
       },
       {
-        "title": "In-Memory Cache to Reduce Database Load",
-        "description": "RememberMe \u2022 Elixir \u2022 ETS \u2022 Performance Engineering. Open-source in-memory cache library created to reduce repetitive queries and improve read performance in high-concurrency scenarios.",
+        "title": "AI-Powered Triage Automation • Swap",
+        "description": "Automation flow with n8n, AI, and Slack to classify requests, trigger development workflows, and remove manual work from operations.",
+        "image": "/portfolio/images/projects/n8n.png",
+        "alt": "Workflow diagram with connected nodes representing automation and integrations",
+        "problemLabel": "Problem",
+        "problem": "Demands such as fixes, refactors, and helpers arrived continuously and had to be analyzed, classified, and routed manually before any development.",
+        "solutionLabel": "Solution",
+        "solution": "I built an automation with n8n integrated with LLMs and Slack that interprets the request context, classifies, routes to the correct flow, and triggers the right steps (fix, refactor, analysis), keeping traceability.",
+        "impactLabel": "Impact and learnings",
+        "impact": "Fewer manual steps in triage and a standardized intake. It reinforced the need for observable, resilient automations with human fallback for ambiguous cases.",
+        "roleLabel": "Role",
+        "role": "I designed and implemented the end-to-end flow: AI classification, n8n orchestration, notifications, and integration with the development workflow.",
+        "tags": [
+          "n8n",
+          "LLMs",
+          "Slack",
+          "REST APIs",
+          "Automation",
+          "Event-driven Architecture"
+        ]
+      },
+      {
+        "title": "Real-Time Communication Platform • Alertrack",
+        "description": "Backend and frontend for a communication platform, bots, and real-time automations, including building the build system from scratch and sustaining over 500k active users.",
+        "image": "/portfolio/images/projects/alertrack.svg",
+        "alt": "Real-time message flow illustration",
+        "problemLabel": "Context",
+        "problem": "A communication platform with high user volume needed services resilient to message spikes, webhook integrations with external APIs, and a build/deploy that did not rely on fragile manual processes.",
+        "solutionLabel": "Solution",
+        "solution": "I developed Elixir services using native concurrency, webhooks, and cache to absorb message spikes; integrated APIs, webhooks, and on-premise servers; and built the build system from scratch, supporting deploys, QA, monitoring, and operations.",
+        "impactLabel": "Impact",
+        "impact": "Platform sustained for over 500k active users, with message spikes absorbed through concurrency and cache, and reproducible deploy pipelines that reduced release friction and operational incidents.",
+        "roleLabel": "Role",
+        "role": "I worked from development to infrastructure: Elixir services, build system, integrations, technical support, and high-volume environment operations.",
+        "tags": [
+          "Elixir",
+          "Webhooks",
+          "Cache",
+          "Concurrency",
+          "Build System",
+          "On-premise"
+        ]
+      },
+      {
+        "title": "RememberMe • In-Memory Cache for Elixir",
+        "description": "Open source in-memory cache library (ETS) built to reduce database load under high concurrency, published on Hex.",
         "link": "https://hex.pm/packages/remember_me",
         "image": "/portfolio/images/projects/logo.jpg",
+        "alt": "RememberMe package logo",
         "problemLabel": "Problem",
-        "problem": "A service was receiving approximately 2,000 concurrent requests querying the same dataset. Repetitive access created unnecessary database load and increased application latency.",
+        "problem": "A service received ~2,000 concurrent requests querying the same dataset; repetitive access overloaded the database and increased latency.",
         "solutionLabel": "Solution",
-        "solution": "I developed RememberMe, an ETS-based in-memory caching solution to store frequently accessed data and avoid repeated database queries. The project was published as an open-source package on Hex for reuse across different applications.",
+        "solution": "I implemented an in-memory cache library based on ETS, with simple invalidation and an ergonomic API, published as an open source package on Hex for reuse.",
         "impactLabel": "Impact",
-        "impact": "The solution reduced pressure on the database, improved read-operation latency, and consolidated a reusable in-memory cache approach for Elixir applications in high-concurrency scenarios.",
+        "impact": "Lower database pressure, reduced read latency under concurrency, and a reusable caching pattern for other Elixir applications.",
         "roleLabel": "Role",
-        "role": "I identified the performance bottleneck, defined the caching strategy, implemented the library, published the package on Hex, and documented its usage.",
+        "role": "I identified the bottleneck, defined the strategy, implemented, documented, and published the package.",
         "tags": [
           "Elixir",
           "ETS",
           "Caching",
           "Performance",
-          "Concurrency",
-          "Open Source",
-          "Library Design"
+          "Open Source"
         ],
         "button": "View package"
-      },
-      {
-        "title": "Tech Talk: AI, RAG, and Observability",
-        "description": "A recurring series of technical discussions on AI, RAG, and observability, including topics I lead on keeping systems resilient when components fail.",
-        "image": "/portfolio/images/projects/images.png",
-        "alt": "Conceptual view of semantic search and observability in a RAG workflow",
-        "problemLabel": "Topics",
-        "problem": "How to build resilient systems when dependencies fail, retrieve useful context without treating vector similarity as an automatic proxy for relevance, and make workflows observable and debuggable.",
-        "solutionLabel": "Content",
-        "solution": "Alongside embeddings, vector search, and RAG evaluation, the discussion covered resilience strategies for failures, using Grafana with AI to support operational analysis, and when logs helpor only add noiseto diagnosis.",
-        "impactLabel": "Observability",
-        "impact": "Explores how to combine metrics, logs, and traces to understand failures and keep operations resilient, using Grafana and AI as support while judging the practical value of loggers in each context.",
-        "roleLabel": "Format",
-        "role": "I lead recurring discussions on observability and resilience, connecting architecture examples, Grafana with AI, RAG, and criteria for deciding when logs help diagnosis.",
-        "tags": [
-          "AI",
-          "LLMs",
-          "RAG",
-          "Embeddings",
-          "Cosine Similarity",
-          "Observability",
-          "Evaluation"
-        ]
       }
     ],
     "buildTitle": "Focus Areas",
@@ -258,15 +261,33 @@
       },
       {
         "title": "Data and Persistence",
-        "items": ["PostgreSQL", "Redis", "Cassandra", "MongoDB", "SQL Server"]
+        "items": [
+          "PostgreSQL",
+          "Redis",
+          "Cassandra",
+          "MongoDB",
+          "SQL Server"
+        ]
       },
       {
         "title": "Production and Platform",
-        "items": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+        "items": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Terraform"
+        ]
       },
       {
         "title": "Observability",
-        "items": ["OpenTelemetry", "Logs", "Metrics", "Tracing", "Alerts"]
+        "items": [
+          "OpenTelemetry",
+          "Logs",
+          "Metrics",
+          "Tracing",
+          "Alerts"
+        ]
       },
       {
         "title": "AI and Automation",
@@ -282,7 +303,11 @@
       },
       {
         "title": "Supporting Frontend",
-        "items": ["React", "TypeScript", "Material UI"]
+        "items": [
+          "React",
+          "TypeScript",
+          "Material UI"
+        ]
       }
     ],
     "exploringTitle": "Applied AI and System Design",
@@ -292,7 +317,14 @@
         "title": "Applied AI in Production",
         "description": "A real operational flow: a request arrives through an internal channel, the agent receives the relevant context through retrieval and MCP, decides which tools to call, classifies and routes the work, then triggers the right notification or development workflow with an auditable trail.",
         "visual": "ai",
-        "labels": ["REQUEST", "AGENT", "CONTEXT", "TOOLS", "NOTIFY", "WORKFLOW"],
+        "labels": [
+          "REQUEST",
+          "AGENT",
+          "CONTEXT",
+          "TOOLS",
+          "NOTIFY",
+          "WORKFLOW"
+        ],
         "items": [
           "LLMs",
           "AI Agents",
@@ -307,7 +339,13 @@
         "title": "System Design",
         "description": "I design APIs, queues, observability, and integrations with evolution, diagnosis, operations, and trade-offs in mind from the first technical decisions.",
         "visual": "system",
-        "labels": ["API", "QUEUES", "WORKER", "PERSISTENCE", "OBSERVABILITY"],
+        "labels": [
+          "API",
+          "QUEUES",
+          "WORKER",
+          "PERSISTENCE",
+          "OBSERVABILITY"
+        ],
         "items": [
           "APIs",
           "Queues",
@@ -342,7 +380,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Backend \u2022 Fintech \u2022 Payments \u2022 Observability \u2022 Applied AI",
+    "eyebrow": "Backend • Fintech • Payments • Observability • Applied AI",
     "title": "Hi, I'm Alef,",
     "skills": [
       "Backend Engineer for critical financial systems.",
@@ -358,7 +396,7 @@
     "resumeAction": "Download resume"
   },
   "footer": {
-    "title": "\u00a9 2026 Alef Machado. All rights reserved.",
+    "title": "© 2026 Alef Machado. All rights reserved.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "email": "Email"
